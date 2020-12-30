@@ -444,10 +444,10 @@ def get_seq(pairs, lang, type):
 def load_and_cache_examples(
         example_file, tokenizer, local_rank, cached_features_file, shuffle=True):
     # Combine multimodal dataset loader
-    data_path_babi = '/Users/shiquan/PycharmProjects/MultiModalKB/s2s-ft/multimodalKB/data/0_synthetic/dialog-babi'
-    data_path = '/Users/shiquan/PycharmProjects/MultiModalKB/s2s-ft/multimodalKB/data/2_20K_multimodal_dataset/all_instances_extended_kb_lowercase_gold.txt'
-    data_path = '/Users/shiquan/PycharmProjects/MultiModalKB/s2s-ft/multimodalKB/data/2_20K_multimodal_dataset/for_debug.txt'
-    img_path = '/Users/shiquan/PycharmProjects/MultiModalKB/s2s-ft/multimodalKB/images/restaurant'
+    data_path_babi = '/home/shiquan/Projects/unilm_joint_learning/unilm/s2s-ft/multimodalKB/data/0_synthetic/dialog-babi'
+    data_path = '/home/shiquan/Projects/unilm_joint_learning/unilm/s2s-ft/multimodalKB/data/2_20K_multimodal_dataset/all_instances_extended_kb_lowercase_gold.txt'
+    # data_path = '/Users/shiquan/PycharmProjects/MultiModalKB/s2s-ft/multimodalKB/data/2_20K_multimodal_dataset/for_debug.txt'
+    img_path = '/home/shiquan/Projects/unilm_joint_learning/unilm/s2s-ft/multimodalKB/images/restaurant'
     file_train = '{}'.format(data_path)
     # file_train = '{}-trn-multimodal-phase1-version-lowercase.txt'.format(data_path)
     # file_train = '{}-task{}trn.txt'.format(data_path, task)
