@@ -1,0 +1,992 @@
+[
+ {
+  "name": "adelphi_theatre",
+  "has_movie": "kismet",
+  "directed_by": "william_dieterle",
+  "starred_actors": "marlene_dietrich",
+  "extended_neighbor": "state_library",
+  "extended_district": "carlton",
+  "extended_district_larger": "rose_bay"
+ },
+ {
+  "name": "allston_hall",
+  "has_movie": "flags_of_our_fathers",
+  "directed_by": "clint_eastwood",
+  "starred_actors": "ryan_phillippe",
+  "extended_neighbor": "collins_square",
+  "extended_district": "richmond",
+  "extended_district_larger": "bondi_beach"
+ },
+ {
+  "name": "allston_theatre",
+  "has_movie": "the_bride_wore_black",
+  "directed_by": "françois_truffaut",
+  "starred_actors": "jeanne_moreau",
+  "extended_neighbor": "treasury_gardens",
+  "extended_district": "toorak",
+  "extended_district_larger": "randwich"
+ },
+ {
+  "name": "apollo_theatre",
+  "has_movie": "dirty_filthy_love",
+  "directed_by": "adrian_shergold",
+  "starred_actors": "michael_sheen",
+  "extended_neighbor": "city_park",
+  "extended_district": "hawthorn",
+  "extended_district_larger": "vaucluse"
+ },
+ {
+  "name": "the_arena",
+  "has_movie": "the_dark_horse",
+  "directed_by": "alfred_e._green",
+  "starred_actors": "bette_davis",
+  "extended_neighbor": "fitzroy_gardens",
+  "extended_district": "prahran",
+  "extended_district_larger": "mosman"
+ },
+ {
+  "name": "arlington_theatre",
+  "has_movie": "the_sentinel",
+  "directed_by": "clark_johnson",
+  "starred_actors": "michael_douglas",
+  "extended_neighbor": "parliament_house",
+  "extended_district": "malvern",
+  "extended_district_larger": "manly"
+ },
+ {
+  "name": "austins_nickelodeon",
+  "has_movie": "funny_about_love",
+  "directed_by": "leonard_nimoy",
+  "starred_actors": "gene_wilder",
+  "extended_neighbor": "trinity_church",
+  "extended_district": "hawthorn",
+  "extended_district_larger": "freshwater"
+ },
+ {
+  "name": "beach_street_theatre",
+  "has_movie": "kissed",
+  "directed_by": "lynne_stopkewich",
+  "starred_actors": "jay_brazeau",
+  "extended_neighbor": "federation_square",
+  "extended_district": "camberwell",
+  "extended_district_larger": "brookvale"
+ },
+ {
+  "name": "beacon_theatre",
+  "has_movie": "alive",
+  "directed_by": "ryûhei_kitamura",
+  "starred_actors": "hideo_sakaki",
+  "extended_neighbor": "flinders_railway_station",
+  "extended_district": "elwood",
+  "extended_district_larger": "seaforth"
+ },
+ {
+  "name": "beethoven_hall",
+  "has_movie": "snow_queen",
+  "directed_by": "david_wu",
+  "starred_actors": "bridget_fonda",
+  "extended_neighbor": "southern_cross_station",
+  "extended_district": "brighton",
+  "extended_district_larger": "balgowlah"
+ },
+ {
+  "name": "bijou",
+  "has_movie": "chopper",
+  "directed_by": "andrew_dominik",
+  "starred_actors": "eric_bana",
+  "extended_neighbor": "batman_park",
+  "extended_district": "caulfield",
+  "extended_district_larger": "surry_hills"
+ },
+ {
+  "name": "board_alley_theatre",
+  "has_movie": "the_mistress_of_spices",
+  "directed_by": "paul_mayeda_berges",
+  "starred_actors": "dylan_mcdermott",
+  "extended_neighbor": "contemporary_art_center",
+  "extended_district": "oakleigh",
+  "extended_district_larger": "newtown"
+ },
+ {
+  "name": "boston_arena",
+  "has_movie": "snow_dogs",
+  "directed_by": "brian_levant",
+  "starred_actors": "cuba_gooding_jr.",
+  "extended_neighbor": "royal_botanic_gardens",
+  "extended_district": "clayton",
+  "extended_district_larger": "mascot"
+ },
+ {
+  "name": "boston_hippodrome",
+  "has_movie": "house",
+  "directed_by": "steve_miner",
+  "starred_actors": "william_katt",
+  "extended_neighbor": "eastern_lawn",
+  "extended_district": "ashwood",
+  "extended_district_larger": "maroubra"
+ },
+ {
+  "name": "boston_museum",
+  "has_movie": "the_hidden_fortress",
+  "directed_by": "akira_kurosawa",
+  "starred_actors": "toshirô_mifune",
+  "extended_neighbor": "palm_lawn",
+  "extended_district": "chadstone",
+  "extended_district_larger": "leichhardt"
+ },
+ {
+  "name": "boston_olympic_theatre",
+  "has_movie": "i_want_to_live!",
+  "directed_by": "robert_wise",
+  "starred_actors": "susan_hayward",
+  "extended_neighbor": "southern_lawn",
+  "extended_district": "burwood",
+  "extended_district_larger": "marrickville"
+ },
+ {
+  "name": "boston_opera_house",
+  "has_movie": "mrs._parkington",
+  "directed_by": "tay_garnett",
+  "starred_actors": "agnes_moorehead",
+  "extended_neighbor": "western_lawn",
+  "extended_district": "huntingdale",
+  "extended_district_larger": "rockdale"
+ },
+ {
+  "name": "boston_theatre",
+  "has_movie": "the_wolf_man",
+  "directed_by": "george_waggner",
+  "starred_actors": "claude_rains",
+  "extended_neighbor": "oak_lawn",
+  "extended_district": "clarinda",
+  "extended_district_larger": "kogarah"
+ },
+ {
+  "name": "bowdoin_square_theatre",
+  "has_movie": "a_cruel_romance",
+  "directed_by": "eldar_ryazanov",
+  "starred_actors": "alisa_freyndlikh",
+  "extended_neighbor": "herb_garden",
+  "extended_district": "moorabbin",
+  "extended_district_larger": "drummoyne"
+ },
+ {
+  "name": "bowdoin_theatre",
+  "has_movie": "love_happens",
+  "directed_by": "brandon_camp",
+  "starred_actors": "aaron_eckhart",
+  "extended_neighbor": "canna_bed_rain_garden",
+  "extended_district": "highett",
+  "extended_district_larger": "artarmon"
+ },
+ {
+  "name": "boylston_hall",
+  "has_movie": "innocence",
+  "directed_by": "hilary_brougher",
+  "starred_actors": "kelly_reilly",
+  "extended_neighbor": "tropical_glasshouse",
+  "extended_district": "hampton",
+  "extended_district_larger": "st_leonards"
+ },
+ {
+  "name": "casino_theatre",
+  "has_movie": "before_the_rain",
+  "directed_by": "milcho_manchevski",
+  "starred_actors": "rade_serbedzija",
+  "extended_neighbor": "eastern_lawn",
+  "extended_district": "springvale",
+  "extended_district_larger": "chatswood"
+ },
+ {
+  "name": "castle_square_theatre",
+  "has_movie": "radioland_murders",
+  "directed_by": "mel_smith",
+  "starred_actors": "ned_beatty",
+  "extended_neighbor": "eucalypt_lawn",
+  "extended_district": "braeside",
+  "extended_district_larger": "gladesville"
+ },
+ {
+  "name": "chickering_hall",
+  "has_movie": "sleep,_my_love",
+  "directed_by": "douglas_sirk",
+  "starred_actors": "robert_cummings",
+  "extended_neighbor": "central_lawn",
+  "extended_district": "dandenong",
+  "extended_district_larger": "ryde"
+ },
+ {
+  "name": "cobb_theatre",
+  "has_movie": "cousins",
+  "directed_by": "joel_schumacher",
+  "starred_actors": "sean_young",
+  "extended_neighbor": "tennyson_lawn",
+  "extended_district": "mordialloc",
+  "extended_district_larger": "ashfield"
+ },
+ {
+  "name": "columbia_theatre",
+  "has_movie": "i_can't_sleep",
+  "directed_by": "claire_denis",
+  "starred_actors": "laurent_grévill",
+  "extended_neighbor": "fawkner_park",
+  "extended_district": "braeside",
+  "extended_district_larger": "earlwood"
+ },
+ {
+  "name": "columbian_museum",
+  "has_movie": "moonlight_mile",
+  "directed_by": "brad_silberling",
+  "starred_actors": "jake_gyllenhaal",
+  "extended_neighbor": "lincoln_park",
+  "extended_district": "glen_waverley",
+  "extended_district_larger": "blakehurst"
+ },
+ {
+  "name": "concert_hall",
+  "has_movie": "china_o'brien",
+  "directed_by": "robert_clouse",
+  "starred_actors": "richard_norton",
+  "extended_neighbor": "argo_reserve",
+  "extended_district": "vermont",
+  "extended_district_larger": "hurstville"
+ },
+ {
+  "name": "continental_theatre",
+  "has_movie": "the_well-digger's_daughter",
+  "directed_by": "daniel_auteuil",
+  "starred_actors": "daniel_auteuil",
+  "extended_neighbor": "connell_reserve",
+  "extended_district": "blackburn",
+  "extended_district_larger": "riverwood"
+ },
+ {
+  "name": "copley_theater",
+  "has_movie": "chastity_bites",
+  "directed_by": "john_v._knowles",
+  "starred_actors": "louise_griffiths",
+  "extended_neighbor": "wesley_college",
+  "extended_district": "box_hill",
+  "extended_district_larger": "peakhurst"
+ },
+ {
+  "name": "cort_theatre",
+  "has_movie": "the_ice_storm",
+  "directed_by": "ang_lee",
+  "starred_actors": "sigourney_weaver",
+  "extended_neighbor": "grattan_gardens",
+  "extended_district": "surrey_hills",
+  "extended_district_larger": "kingsgrove"
+ },
+ {
+  "name": "donnelly_theatre",
+  "has_movie": "red_beard",
+  "directed_by": "akira_kurosawa",
+  "starred_actors": "toshirô_mifune",
+  "extended_neighbor": "princes_gardens",
+  "extended_district": "nunawading",
+  "extended_district_larger": "campsie"
+ },
+ {
+  "name": "dudley_street_opera_house",
+  "has_movie": "desperate_search",
+  "directed_by": "joseph_h._lewis",
+  "starred_actors": "keenan_wynn",
+  "extended_neighbor": "dye_works_park",
+  "extended_district": "mitcham",
+  "extended_district_larger": "burwood"
+ },
+ {
+  "name": "dudley_theatre",
+  "has_movie": "the_war_within",
+  "directed_by": "joseph_castelo",
+  "starred_actors": "sarita_choudhury",
+  "extended_neighbor": "victoria_gardens",
+  "extended_district": "forest_hill",
+  "extended_district_larger": "strathfield"
+ },
+ {
+  "name": "eagle_theatre",
+  "has_movie": "killer_movie",
+  "directed_by": "jeff_fisher",
+  "starred_actors": "kaley_cuoco-sweeting",
+  "extended_neighbor": "fairbairn_reserve",
+  "extended_district": "mount_waverley",
+  "extended_district_larger": "homebush"
+ },
+ {
+  "name": "egleston_theatre",
+  "has_movie": "the_mighty_ducks",
+  "directed_by": "stephen_herek",
+  "starred_actors": "emilio_estevez",
+  "extended_neighbor": "brookville_gardens",
+  "extended_district": "chelsea",
+  "extended_district_larger": "lakemba"
+ },
+ {
+  "name": "everett_square_theatre",
+  "has_movie": "the_unknown_soldier",
+  "directed_by": "rauni_mollberg",
+  "starred_actors": "pirkka-pekka_petelius",
+  "extended_neighbor": "como_park",
+  "extended_district": "braeside",
+  "extended_district_larger": "roselands"
+ },
+ {
+  "name": "exeter_street_theatre",
+  "has_movie": "martyrs",
+  "directed_by": "pascal_laugier",
+  "starred_actors": "mylène_jampanoï",
+  "extended_neighbor": "golden_square_park",
+  "extended_district": "lyndhurst",
+  "extended_district_larger": "punchbowl"
+ },
+ {
+  "name": "faneuil_hall",
+  "has_movie": "mighty_joe_young",
+  "directed_by": "ron_underwood",
+  "starred_actors": "charlize_theron",
+  "extended_neighbor": "burnley_park",
+  "extended_district": "beaconsfield",
+  "extended_district_larger": "bankstown"
+ },
+ {
+  "name": "federal_street_theatre",
+  "has_movie": "starlift",
+  "directed_by": "roy_del_ruth",
+  "starred_actors": "doris_day",
+  "extended_neighbor": "richmond_park",
+  "extended_district": "cranbourne",
+  "extended_district_larger": "yagoona"
+ },
+ {
+  "name": "fenway_theatre",
+  "has_movie": "the_raid_2",
+  "directed_by": "gareth_evans",
+  "starred_actors": "iko_uwais",
+  "extended_neighbor": "mason_playground",
+  "extended_district": "frankston",
+  "extended_district_larger": "chullora"
+ },
+ {
+  "name": "forest_garden",
+  "has_movie": "shriek_if_you_know_what_i_did_last_friday_the_thirteenth",
+  "directed_by": "john_blanchard",
+  "starred_actors": "kim_greist",
+  "extended_neighbor": "smart_street_reserve",
+  "extended_district": "mornington",
+  "extended_district_larger": "lidcombe"
+ },
+ {
+  "name": "franklin_park_theatre",
+  "has_movie": "the_bridges_of_madison_county",
+  "directed_by": "clint_eastwood",
+  "starred_actors": "clint_eastwood",
+  "extended_neighbor": "grace_park",
+  "extended_district": "berwick",
+  "extended_district_larger": "padstow"
+ },
+ {
+  "name": "gaiety_theatre",
+  "has_movie": "net_worth",
+  "directed_by": "jerry_ciccoritti",
+  "starred_actors": "kevin_conway",
+  "extended_neighbor": "central_gardens",
+  "extended_district": "emerald",
+  "extended_district_larger": "eastwood"
+ },
+ {
+  "name": "gem_theatre",
+  "has_movie": "hanna",
+  "directed_by": "joe_wright",
+  "starred_actors": "cate_blanchett",
+  "extended_neighbor": "alexandra_gardens",
+  "extended_district": "heidelberg",
+  "extended_district_larger": "epping"
+ },
+ {
+  "name": "germania_theatre",
+  "has_movie": "de_dana_dan",
+  "directed_by": "priyadarshan",
+  "starred_actors": "akshay_kumar",
+  "extended_neighbor": "outer_circle_linear_park",
+  "extended_district": "warrandyte",
+  "extended_district_larger": "carlingford"
+ },
+ {
+  "name": "globe_theatre",
+  "has_movie": "marnie",
+  "directed_by": "alfred_hitchcock",
+  "starred_actors": "sean_connery",
+  "extended_neighbor": "myrtle_park",
+  "extended_district": "croydon",
+  "extended_district_larger": "beecroft"
+ },
+ {
+  "name": "grand_dime_museum",
+  "has_movie": "dreams",
+  "directed_by": "akira_kurosawa,_ishirô_honda",
+  "starred_actors": "akira_terao",
+  "extended_neighbor": "glass_creek_wetland",
+  "extended_district": "lilydale",
+  "extended_district_larger": "pennant_hills"
+ },
+ {
+  "name": "grand_museum",
+  "has_movie": "toy_story_2",
+  "directed_by": "lee_unkrich,_john_lasseter,_ash_brannon",
+  "starred_actors": "tom_hanks",
+  "extended_neighbor": "willsmere_park",
+  "extended_district": "ringwood",
+  "extended_district_larger": "thornleigh"
+ },
+ {
+  "name": "grand_theatre",
+  "has_movie": "the_marrying_kind",
+  "directed_by": "george_cukor",
+  "starred_actors": "judy_holliday",
+  "extended_neighbor": "pitcher_park",
+  "extended_district": "preston",
+  "extended_district_larger": "wahroonga"
+ },
+ {
+  "name": "harmony_hall",
+  "has_movie": "my_favorite_season",
+  "directed_by": "andré_téchiné",
+  "starred_actors": "catherine_deneuve",
+  "extended_neighbor": "miles_street_reserve",
+  "extended_district": "templestowe",
+  "extended_district_larger": "turramurra"
+ },
+ {
+  "name": "horticultural_hall",
+  "has_movie": "reflections_in_a_golden_eye",
+  "directed_by": "john_huston",
+  "starred_actors": "marlon_brando",
+  "extended_neighbor": "southern_oval",
+  "extended_district": "essendon",
+  "extended_district_larger": "pymble"
+ },
+ {
+  "name": "hollis_street_theatre",
+  "has_movie": "the_sensation_of_sight",
+  "directed_by": "aaron_j._wiederspahn",
+  "starred_actors": "david_strathairn",
+  "extended_neighbor": "northern_oval",
+  "extended_district": "broadmeadows",
+  "extended_district_larger": "gordon"
+ },
+ {
+  "name": "ideal_theatre",
+  "has_movie": "call_me_bwana",
+  "directed_by": "gordon_douglas",
+  "starred_actors": "anita_ekberg",
+  "extended_neighbor": "preston_city_oval",
+  "extended_district": "epping",
+  "extended_district_larger": "killara"
+ },
+ {
+  "name": "jane_englishs_new_tremont_theatre",
+  "has_movie": "newlyweds",
+  "directed_by": "edward_burns",
+  "starred_actors": "edward_burns",
+  "extended_neighbor": "preston_library",
+  "extended_district": "tullamarine",
+  "extended_district_larger": "lindfield"
+ },
+ {
+  "name": "keith_and_bachellers_new_york_dime_museum",
+  "has_movie": "alps",
+  "directed_by": "yorgos_lanthimos",
+  "starred_actors": "ariane_labed",
+  "extended_neighbor": "preston_market",
+  "extended_district": "williamstown",
+  "extended_district_larger": "forestville"
+ },
+ {
+  "name": "keiths_theatre",
+  "has_movie": "halloween_ii",
+  "directed_by": "rob_zombie",
+  "starred_actors": "brad_dourif",
+  "extended_neighbor": "edwardes_lake",
+  "extended_district": "altona",
+  "extended_district_larger": "belrose"
+ },
+ {
+  "name": "keith-albee_boston_theatre",
+  "has_movie": "romeo_must_die",
+  "directed_by": "andrzej_bartkowiak",
+  "starred_actors": "jet_li",
+  "extended_neighbor": "moomba_park",
+  "extended_district": "laverton",
+  "extended_district_larger": "asquith"
+ },
+ {
+  "name": "lancaster_theatre",
+  "has_movie": "20,000_leagues_under_the_sea",
+  "directed_by": "michael_anderson",
+  "starred_actors": "richard_crenna",
+  "extended_neighbor": "martin_reserve",
+  "extended_district": "point_cook",
+  "extended_district_larger": "hornsby"
+ },
+ {
+  "name": "lion_theatre",
+  "has_movie": "miss_pettigrew_lives_for_a_day",
+  "directed_by": "bharat_nalluri",
+  "starred_actors": "amy_adams",
+  "extended_neighbor": "bain_reserve",
+  "extended_district": "hoppers",
+  "extended_district_larger": "cherrybrook"
+ },
+ {
+  "name": "lothrops_grand_museum",
+  "has_movie": "the_business_of_strangers",
+  "directed_by": "patrick_stettner",
+  "starred_actors": "julia_stiles",
+  "extended_neighbor": "sanger_reserve",
+  "extended_district": "werribee",
+  "extended_district_larger": "parramatta"
+ },
+ {
+  "name": "lyceum_theatre",
+  "has_movie": "the_saint",
+  "directed_by": "phillip_noyce",
+  "starred_actors": "val_kilmer",
+  "extended_neighbor": "harmony_park",
+  "extended_district": "sunshine",
+  "extended_district_larger": "merrylands"
+ },
+ {
+  "name": "magnet_theatre",
+  "has_movie": "the_grand_maneuver",
+  "directed_by": "rené_clair",
+  "starred_actors": "jean_desailly",
+  "extended_neighbor": "robinson_reserve",
+  "extended_district": "burnside",
+  "extended_district_larger": "chester"
+ },
+ {
+  "name": "melodeon",
+  "has_movie": "david_and_lisa",
+  "directed_by": "frank_perry",
+  "starred_actors": "keir_dullea",
+  "extended_neighbor": "anderson_reserve",
+  "extended_district": "brooklyn",
+  "extended_district_larger": "villawood"
+ },
+ {
+  "name": "metropolitan_theatre",
+  "has_movie": "the_girl_on_the_train",
+  "directed_by": "larry_brand",
+  "starred_actors": "stephen_lang",
+  "extended_neighbor": "palazzolo_park",
+  "extended_district": "tottenham",
+  "extended_district_larger": "fairfield"
+ },
+ {
+  "name": "national_theatre",
+  "has_movie": "hoop_dreams",
+  "directed_by": "steve_james",
+  "starred_actors": "arthur_agee",
+  "extended_neighbor": "gandolfo_gardens",
+  "extended_district": "footscray",
+  "extended_district_larger": "liverpool"
+ },
+ {
+  "name": "new_boylston_museum",
+  "has_movie": "apartment_1303",
+  "directed_by": "ataru_oikawa",
+  "starred_actors": "eriko_hatsune",
+  "extended_neighbor": "warr_park",
+  "extended_district": "spotswood",
+  "extended_district_larger": "moorebank"
+ },
+ {
+  "name": "new_dime_museum",
+  "has_movie": "gilles'_wife",
+  "directed_by": "frédéric_fonteyne",
+  "starred_actors": "clovis_cornillac",
+  "extended_neighbor": "randazoo_park",
+  "extended_district": "newport",
+  "extended_district_larger": "smithfield"
+ },
+ {
+  "name": "new_england_museum",
+  "has_movie": "thank_you,_mr._moto",
+  "directed_by": "norman_foster",
+  "starred_actors": "peter_lorre",
+  "extended_neighbor": "foletta_park",
+  "extended_district": "braybrook",
+  "extended_district_larger": "greystanes"
+ },
+ {
+  "name": "nickelodeon",
+  "has_movie": "ninja_assassin",
+  "directed_by": "james_mcteigue",
+  "starred_actors": "rain",
+  "extended_neighbor": "hockey_ground",
+  "extended_district": "flemington",
+  "extended_district_larger": "blacktown"
+ },
+ {
+  "name": "nickelodeon_musee_and_parlor_theatre",
+  "has_movie": "hangman's_curse",
+  "directed_by": "rafal_zielinski",
+  "starred_actors": "leighton_meester",
+  "extended_neighbor": "barkly_street_park",
+  "extended_district": "brunswick",
+  "extended_district_larger": "milperra"
+ },
+ {
+  "name": "novelty_theatre",
+  "has_movie": "big_brown_eyes",
+  "directed_by": "raoul_walsh",
+  "starred_actors": "cary_grant",
+  "extended_neighbor": "chelsworth_park",
+  "extended_district": "strathmore",
+  "extended_district_larger": "mount_vernon"
+ },
+ {
+  "name": "oakland_garden",
+  "has_movie": "the_shipping_news",
+  "directed_by": "lasse_hallström",
+  "starred_actors": "kevin_spacey",
+  "extended_neighbor": "heide_museum_of_modern_art",
+  "extended_district": "coburg",
+  "extended_district_larger": "kingswood"
+ },
+ {
+  "name": "ocean_garden",
+  "has_movie": "montana_sky",
+  "directed_by": "mike_robe",
+  "starred_actors": "diane_ladd",
+  "extended_neighbor": "heide_park",
+  "extended_district": "parkville",
+  "extended_district_larger": "penrith"
+ },
+ {
+  "name": "olympic_saloon",
+  "has_movie": "zorba_the_greek",
+  "directed_by": "mihalis_kakogiannis",
+  "starred_actors": "anthony_quinn",
+  "extended_neighbor": "heidelberg_park",
+  "extended_district": "keilor",
+  "extended_district_larger": "springwood"
+ },
+ {
+  "name": "ordway_hall",
+  "has_movie": "sabah",
+  "directed_by": "ruba_nadda",
+  "starred_actors": "arsinée_khanjian",
+  "extended_neighbor": "westerfolds_park",
+  "extended_district": "glenroy",
+  "extended_district_larger": "woodford"
+ },
+ {
+  "name": "palace_theatre",
+  "has_movie": "captain_ron",
+  "directed_by": "thom_eberhardt",
+  "starred_actors": "kurt_russell",
+  "extended_neighbor": "lower_eltham_park",
+  "extended_district": "greenvale",
+  "extended_district_larger": "linden"
+ },
+ {
+  "name": "palais_royal",
+  "has_movie": "the_island",
+  "directed_by": "michael_bay",
+  "starred_actors": "ewan_mcgregor",
+  "extended_neighbor": "griffith_park",
+  "extended_district": "warrandyte",
+  "extended_district_larger": "lawson"
+ },
+ {
+  "name": "park_garden",
+  "has_movie": "sometimes_they_come_back..._for_more",
+  "directed_by": "daniel_zelik_berk",
+  "starred_actors": "faith_ford",
+  "extended_neighbor": "andrew_park",
+  "extended_district": "donnybrook",
+  "extended_district_larger": "bullaburra"
+ },
+ {
+  "name": "park_square_theatre",
+  "has_movie": "enough_said",
+  "directed_by": "nicole_holofcener",
+  "starred_actors": "julia_louis-dreyfus",
+  "extended_neighbor": "research_park",
+  "extended_district": "woodstock",
+  "extended_district_larger": "kurmond"
+ },
+ {
+  "name": "park_theatre",
+  "has_movie": "secretary",
+  "directed_by": "steven_shainberg",
+  "starred_actors": "maggie_gyllenhaal",
+  "extended_neighbor": "warrandyte_state_park",
+  "extended_district": "whittlesea",
+  "extended_district_larger": "nelson"
+ },
+ {
+  "name": "plymouth_theatre",
+  "has_movie": "the_taste_of_tea",
+  "directed_by": "katsuhito_ishii",
+  "starred_actors": "tadanobu_asano",
+  "extended_neighbor": "cresco_park",
+  "extended_district": "beveridge",
+  "extended_district_larger": "kenthurst"
+ },
+ {
+  "name": "pompeiian_amphitheater",
+  "has_movie": "how_they_get_there",
+  "directed_by": "spike_jonze",
+  "starred_actors": "rico_bueno",
+  "extended_neighbor": "colman_park",
+  "extended_district": "sunbury",
+  "extended_district_larger": "berowra"
+ },
+ {
+  "name": "puritan_theatre",
+  "has_movie": "merrill's_marauders",
+  "directed_by": "samuel_fuller",
+  "starred_actors": "andrew_duggan",
+  "extended_neighbor": "monterey_bush_park",
+  "extended_district": "curlewis",
+  "extended_district_larger": "newport"
+ },
+ {
+  "name": "scenic_temple",
+  "has_movie": "hyde_park_on_hudson",
+  "directed_by": "roger_michell",
+  "starred_actors": "bill_murray",
+  "extended_neighbor": "ainslie_park",
+  "extended_district": "grovedale",
+  "extended_district_larger": "bayview"
+ },
+ {
+  "name": "scollay_square_olympia_theatre",
+  "has_movie": "loving_leah",
+  "directed_by": "jeff_bleckner",
+  "starred_actors": "susie_essman",
+  "extended_neighbor": "hookey_park",
+  "extended_district": "geelong",
+  "extended_district_larger": "palm_beach"
+ },
+ {
+  "name": "scollay_theatre",
+  "has_movie": "the_exorcist_iii",
+  "directed_by": "william_peter_blatty",
+  "starred_actors": "george_c._scott",
+  "extended_neighbor": "caulfield_racecourse",
+  "extended_district": "avalon",
+  "extended_district_larger": "narrabeen"
+ },
+ {
+  "name": "seville_theatre",
+  "has_movie": "seven_ways_from_sundown",
+  "directed_by": "harry_keller",
+  "starred_actors": "john_mcintire",
+  "extended_neighbor": "caufield_park",
+  "extended_district": "inverleigh",
+  "extended_district_larger": "chester_hill"
+ },
+ {
+  "name": "siege_of_paris_opera_house",
+  "has_movie": "the_shawshank_redemption",
+  "directed_by": "frank_darabont",
+  "starred_actors": "morgan_freeman",
+  "extended_neighbor": "elsternwick_park",
+  "extended_district": "wensleydale",
+  "extended_district_larger": "campbelltown"
+ },
+ {
+  "name": "selwyn_theatre",
+  "has_movie": "you're_next",
+  "directed_by": "adam_wingard",
+  "starred_actors": "sharni_vinson",
+  "extended_neighbor": "school_park",
+  "extended_district": "lorne",
+  "extended_district_larger": "camden"
+ },
+ {
+  "name": "shawmut_theatre",
+  "has_movie": "i'll_cry_tomorrow",
+  "directed_by": "daniel_mann",
+  "starred_actors": "eddie_albert",
+  "extended_neighbor": "st_kilda_botanical_gardens",
+  "extended_district": "torquay",
+  "extended_district_larger": "harrington"
+ },
+ {
+  "name": "star_theatre",
+  "has_movie": "are_you_listening?",
+  "directed_by": "harry_beaumont",
+  "starred_actors": "karen_morley",
+  "extended_neighbor": "st_kilda_adventure_playround",
+  "extended_district": "queenscliff",
+  "extended_district_larger": "wedderburn"
+ },
+ {
+  "name": "suffolk_drive-in",
+  "has_movie": "head",
+  "directed_by": "bob_rafelson",
+  "starred_actors": "micky_dolenz",
+  "extended_neighbor": "harleston_park",
+  "extended_district": "teesdale",
+  "extended_district_larger": "gilead"
+ },
+ {
+  "name": "superb_theatre",
+  "has_movie": "chicago_overcoat",
+  "directed_by": "brian_caunter",
+  "starred_actors": "mike_starr",
+  "extended_neighbor": "hopetoun_garden",
+  "extended_district": "anakie",
+  "extended_district_larger": "menangle"
+ },
+ {
+  "name": "theatre_comique",
+  "has_movie": "handle_with_care",
+  "directed_by": "jonathan_demme",
+  "starred_actors": "bruce_mcgill",
+  "extended_neighbor": "landcox_park",
+  "extended_district": "meredith",
+  "extended_district_larger": "picton"
+ },
+ {
+  "name": "toy_theatre",
+  "has_movie": "golden_boy",
+  "directed_by": "rouben_mamoulian",
+  "starred_actors": "lee_j._cobb",
+  "extended_neighbor": "westfield_southland_shopping_center",
+  "extended_district": "bacchus_marsh",
+  "extended_district_larger": "maldon"
+ },
+ {
+  "name": "tremont_theatre",
+  "has_movie": "a_pure_formality",
+  "directed_by": "giuseppe_tornatore",
+  "starred_actors": "gérard_depardieu",
+  "extended_neighbor": "john_batman_gardens",
+  "extended_district": "craigieburn",
+  "extended_district_larger": "wilton"
+ },
+ {
+  "name": "unique_theatre",
+  "has_movie": "the_world's_greatest_athlete",
+  "directed_by": "robert_scheerer",
+  "starred_actors": "john_amos",
+  "extended_neighbor": "allambee_park",
+  "extended_district": "donnybrook",
+  "extended_district_larger": "appin"
+ },
+ {
+  "name": "vaudeville_saloon",
+  "has_movie": "the_killer",
+  "directed_by": "john_woo",
+  "starred_actors": "yun-fat_chow",
+  "extended_neighbor": "centenary_park",
+  "extended_district": "springfield",
+  "extended_district_larger": "razorback"
+ },
+ {
+  "name": "waldrons_casino",
+  "has_movie": "the_first_texan",
+  "directed_by": "byron_haskin",
+  "starred_actors": "joel_mccrea",
+  "extended_neighbor": "landcox_park",
+  "extended_district": "kyneton",
+  "extended_district_larger": "balmoral"
+ },
+ {
+  "name": "washington_gardens",
+  "has_movie": "people_of_the_wind",
+  "directed_by": "anthony_howarth",
+  "starred_actors": "james_mason",
+  "extended_neighbor": "argyle_square",
+  "extended_district": "castlemaine",
+  "extended_district_larger": "braemar"
+ },
+ {
+  "name": "washington_hall",
+  "has_movie": "the_boy_friend",
+  "directed_by": "ken_russell",
+  "starred_actors": "max_adrian",
+  "extended_neighbor": "macarthur_square",
+  "extended_district": "bendigo",
+  "extended_district_larger": "balaclava"
+ },
+ {
+  "name": "washington_theatre",
+  "has_movie": "fido",
+  "directed_by": "andrew_currie",
+  "starred_actors": "david_kaye",
+  "extended_neighbor": "murchison_square",
+  "extended_district": "kilmore",
+  "extended_district_larger": "mittagong"
+ },
+ {
+  "name": "washingtonian_hall",
+  "has_movie": "when_the_wind_blows",
+  "directed_by": "jimmy_t._murakami",
+  "starred_actors": "john_mills",
+  "extended_neighbor": "carlton_gardens",
+  "extended_district": "healesville",
+  "extended_district_larger": "bowral"
+ },
+ {
+  "name": "williams_hall",
+  "has_movie": "blood_creek",
+  "directed_by": "joel_schumacher",
+  "starred_actors": "michael_fassbender",
+  "extended_neighbor": "royal_park",
+  "extended_district": "truganina",
+  "extended_district_larger": "berrima"
+ },
+ {
+  "name": "windsor_theatre",
+  "has_movie": "side_by_side",
+  "directed_by": "christopher_kenneally",
+  "starred_actors": "michael_ballhaus",
+  "extended_neighbor": "braybrook_park",
+  "extended_district": "ivanhoe",
+  "extended_district_larger": "mossvale"
+ },
+ {
+  "name": "worlds_museum",
+  "has_movie": "midnight's_children",
+  "directed_by": "deepa_mehta",
+  "starred_actors": "anupam_kher",
+  "extended_neighbor": "westgate_park",
+  "extended_district": "doncaster",
+  "extended_district_larger": "corrimal"
+ },
+ {
+  "name": "athenaeum_theatre",
+  "has_movie": "surf_ninjas",
+  "directed_by": "neal_israel",
+  "starred_actors": "john_karlen",
+  "extended_neighbor": "sandridge_beach",
+  "extended_district": "pakenham",
+  "extended_district_larger": "bellambi"
+ },
+ {
+  "name": "capitol_theatre",
+  "has_movie": "the_art_of_the_steal",
+  "directed_by": "jonathan_sobol",
+  "starred_actors": "kurt_russell",
+  "extended_neighbor": "catani_gardens",
+  "extended_district": "derrimut",
+  "extended_district_larger": "warilla"
+ },
+ {
+  "name": "comedy_theatre",
+  "has_movie": "17_again",
+  "directed_by": "burr_steers",
+  "starred_actors": "leslie_mann",
+  "extended_neighbor": "dendy_park",
+  "extended_district": "maidstone",
+  "extended_district_larger": "kiama"
+ }
+]

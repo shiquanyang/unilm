@@ -1,0 +1,882 @@
+[
+ {
+  "name": "pizza_hut_city_centre",
+  "cuisine": "italian",
+  "price_range": "cheap",
+  "extended_neighbor": "state_library",
+  "extended_district": "carlton",
+  "extended_district_larger": "rose_bay"
+ },
+ {
+  "name": "the_missing_sock",
+  "cuisine": "international",
+  "price_range": "cheap",
+  "extended_neighbor": "collins_square",
+  "extended_district": "richmond",
+  "extended_district_larger": "bondi_beach"
+ },
+ {
+  "name": "curry_garden",
+  "cuisine": "indian",
+  "price_range": "expensive",
+  "extended_neighbor": "treasury_gardens",
+  "extended_district": "toorak",
+  "extended_district_larger": "randwich"
+ },
+ {
+  "name": "the_good_luck_chinese_food_takeaway",
+  "cuisine": "chinese",
+  "price_range": "expensive",
+  "extended_neighbor": "city_park",
+  "extended_district": "hawthorn",
+  "extended_district_larger": "vaucluse"
+ },
+ {
+  "name": "pizza_hut_cherry_hinton",
+  "cuisine": "italian",
+  "price_range": "moderate",
+  "extended_neighbor": "fitzroy_gardens",
+  "extended_district": "prahran",
+  "extended_district_larger": "mosman"
+ },
+ {
+  "name": "taj_tandoori",
+  "cuisine": "indian",
+  "price_range": "expensive",
+  "extended_neighbor": "parliament_house",
+  "extended_district": "malvern",
+  "extended_district_larger": "manly"
+ },
+ {
+  "name": "restaurant_alimentum",
+  "cuisine": "modern_european",
+  "price_range": "moderate",
+  "extended_neighbor": "trinity_church",
+  "extended_district": "hawthorn",
+  "extended_district_larger": "freshwater"
+ },
+ {
+  "name": "yu_garden",
+  "cuisine": "chinese",
+  "price_range": "expensive",
+  "extended_neighbor": "federation_square",
+  "extended_district": "camberwell",
+  "extended_district_larger": "brookvale"
+ },
+ {
+  "name": "stazione_restaurant_and_coffee_bar",
+  "cuisine": "italian",
+  "price_range": "expensive",
+  "extended_neighbor": "flinders_railway_station",
+  "extended_district": "elwood",
+  "extended_district_larger": "seaforth"
+ },
+ {
+  "name": "curry_prince",
+  "cuisine": "indian",
+  "price_range": "moderate",
+  "extended_neighbor": "southern_cross_station",
+  "extended_district": "brighton",
+  "extended_district_larger": "balgowlah"
+ },
+ {
+  "name": "charlie_chan",
+  "cuisine": "chinese",
+  "price_range": "cheap",
+  "extended_neighbor": "batman_park",
+  "extended_district": "caulfield",
+  "extended_district_larger": "surry_hills"
+ },
+ {
+  "name": "eraina",
+  "cuisine": "european",
+  "price_range": "expensive",
+  "extended_neighbor": "contemporary_art_center",
+  "extended_district": "oakleigh",
+  "extended_district_larger": "newtown"
+ },
+ {
+  "name": "pizza_express",
+  "cuisine": "italian",
+  "price_range": "moderate",
+  "extended_neighbor": "royal_botanic_gardens",
+  "extended_district": "clayton",
+  "extended_district_larger": "mascot"
+ },
+ {
+  "name": "restaurant_one_seven",
+  "cuisine": "british",
+  "price_range": "moderate",
+  "extended_neighbor": "eastern_lawn",
+  "extended_district": "ashwood",
+  "extended_district_larger": "maroubra"
+ },
+ {
+  "name": "ask_restaurant",
+  "cuisine": "italian",
+  "price_range": "cheap",
+  "extended_neighbor": "palm_lawn",
+  "extended_district": "chadstone",
+  "extended_district_larger": "leichhardt"
+ },
+ {
+  "name": "jinling_noodle_bar",
+  "cuisine": "chinese",
+  "price_range": "moderate",
+  "extended_neighbor": "southern_lawn",
+  "extended_district": "burwood",
+  "extended_district_larger": "marrickville"
+ },
+ {
+  "name": "de_luca_cucina_and_bar",
+  "cuisine": "modern_european",
+  "price_range": "moderate",
+  "extended_neighbor": "western_lawn",
+  "extended_district": "huntingdale",
+  "extended_district_larger": "rockdale"
+ },
+ {
+  "name": "backstreet_bistro",
+  "cuisine": "gastropub",
+  "price_range": "expensive",
+  "extended_neighbor": "oak_lawn",
+  "extended_district": "clarinda",
+  "extended_district_larger": "kogarah"
+ },
+ {
+  "name": "tandoori_palace",
+  "cuisine": "indian",
+  "price_range": "expensive",
+  "extended_neighbor": "herb_garden",
+  "extended_district": "moorabbin",
+  "extended_district_larger": "drummoyne"
+ },
+ {
+  "name": "riverside_brasserie",
+  "cuisine": "modern_european",
+  "price_range": "moderate",
+  "extended_neighbor": "canna_bed_rain_garden",
+  "extended_district": "highett",
+  "extended_district_larger": "artarmon"
+ },
+ {
+  "name": "kohinoor",
+  "cuisine": "indian",
+  "price_range": "cheap",
+  "extended_neighbor": "tropical_glasshouse",
+  "extended_district": "hampton",
+  "extended_district_larger": "st_leonards"
+ },
+ {
+  "name": "chiquito_restaurant_bar",
+  "cuisine": "mexican",
+  "price_range": "expensive",
+  "extended_neighbor": "eastern_lawn",
+  "extended_district": "springvale",
+  "extended_district_larger": "chatswood"
+ },
+ {
+  "name": "prezzo",
+  "cuisine": "italian",
+  "price_range": "moderate",
+  "extended_neighbor": "eucalypt_lawn",
+  "extended_district": "braeside",
+  "extended_district_larger": "gladesville"
+ },
+ {
+  "name": "rice_house",
+  "cuisine": "chinese",
+  "price_range": "cheap",
+  "extended_neighbor": "central_lawn",
+  "extended_district": "dandenong",
+  "extended_district_larger": "ryde"
+ },
+ {
+  "name": "ali_baba",
+  "cuisine": "lebanese",
+  "price_range": "moderate",
+  "extended_neighbor": "tennyson_lawn",
+  "extended_district": "mordialloc",
+  "extended_district_larger": "ashfield"
+ },
+ {
+  "name": "the_varsity_restaurant",
+  "cuisine": "international",
+  "price_range": "moderate",
+  "extended_neighbor": "fawkner_park",
+  "extended_district": "braeside",
+  "extended_district_larger": "earlwood"
+ },
+ {
+  "name": "darrys_cookhouse_and_wine_shop",
+  "cuisine": "modern_european",
+  "price_range": "expensive",
+  "extended_neighbor": "lincoln_park",
+  "extended_district": "glen_waverley",
+  "extended_district_larger": "blakehurst"
+ },
+ {
+  "name": "the_golden_curry",
+  "cuisine": "indian",
+  "price_range": "expensive",
+  "extended_neighbor": "argo_reserve",
+  "extended_district": "vermont",
+  "extended_district_larger": "hurstville"
+ },
+ {
+  "name": "cocum",
+  "cuisine": "indian",
+  "price_range": "expensive",
+  "extended_neighbor": "connell_reserve",
+  "extended_district": "blackburn",
+  "extended_district_larger": "riverwood"
+ },
+ {
+  "name": "michaelhouse_cafe",
+  "cuisine": "european",
+  "price_range": "expensive",
+  "extended_neighbor": "wesley_college",
+  "extended_district": "box_hill",
+  "extended_district_larger": "peakhurst"
+ },
+ {
+  "name": "rice_boat",
+  "cuisine": "indian",
+  "price_range": "expensive",
+  "extended_neighbor": "grattan_gardens",
+  "extended_district": "surrey_hills",
+  "extended_district_larger": "kingsgrove"
+ },
+ {
+  "name": "hotel_du_vin_and_bistro",
+  "cuisine": "european",
+  "price_range": "moderate",
+  "extended_neighbor": "princes_gardens",
+  "extended_district": "nunawading",
+  "extended_district_larger": "campsie"
+ },
+ {
+  "name": "maharajah_tandoori_restaurant",
+  "cuisine": "indian",
+  "price_range": "expensive",
+  "extended_neighbor": "dye_works_park",
+  "extended_district": "mitcham",
+  "extended_district_larger": "burwood"
+ },
+ {
+  "name": "bloomsbury_restaurant",
+  "cuisine": "international",
+  "price_range": "moderate",
+  "extended_neighbor": "victoria_gardens",
+  "extended_district": "forest_hill",
+  "extended_district_larger": "strathfield"
+ },
+ {
+  "name": "thanh_binh",
+  "cuisine": "vietnamese",
+  "price_range": "cheap",
+  "extended_neighbor": "fairbairn_reserve",
+  "extended_district": "mount_waverley",
+  "extended_district_larger": "homebush"
+ },
+ {
+  "name": "la_tasca",
+  "cuisine": "spanish",
+  "price_range": "moderate",
+  "extended_neighbor": "brookville_gardens",
+  "extended_district": "chelsea",
+  "extended_district_larger": "lakemba"
+ },
+ {
+  "name": "da_vinci_pizzeria",
+  "cuisine": "italian",
+  "price_range": "cheap",
+  "extended_neighbor": "como_park",
+  "extended_district": "braeside",
+  "extended_district_larger": "roselands"
+ },
+ {
+  "name": "restaurant_two_two",
+  "cuisine": "french",
+  "price_range": "expensive",
+  "extended_neighbor": "golden_square_park",
+  "extended_district": "lyndhurst",
+  "extended_district_larger": "punchbowl"
+ },
+ {
+  "name": "ugly_duckling",
+  "cuisine": "chinese",
+  "price_range": "expensive",
+  "extended_neighbor": "burnley_park",
+  "extended_district": "beaconsfield",
+  "extended_district_larger": "bankstown"
+ },
+ {
+  "name": "wagamama",
+  "cuisine": "japanese",
+  "price_range": "expensive",
+  "extended_neighbor": "richmond_park",
+  "extended_district": "cranbourne",
+  "extended_district_larger": "yagoona"
+ },
+ {
+  "name": "lan_hong_house",
+  "cuisine": "chinese",
+  "price_range": "moderate",
+  "extended_neighbor": "mason_playground",
+  "extended_district": "frankston",
+  "extended_district_larger": "chullora"
+ },
+ {
+  "name": "nandos",
+  "cuisine": "portuguese",
+  "price_range": "cheap",
+  "extended_neighbor": "smart_street_reserve",
+  "extended_district": "mornington",
+  "extended_district_larger": "lidcombe"
+ },
+ {
+  "name": "the_oak_bistro",
+  "cuisine": "british",
+  "price_range": "moderate",
+  "extended_neighbor": "grace_park",
+  "extended_district": "berwick",
+  "extended_district_larger": "padstow"
+ },
+ {
+  "name": "the_copper_kettle",
+  "cuisine": "british",
+  "price_range": "moderate",
+  "extended_neighbor": "central_gardens",
+  "extended_district": "emerald",
+  "extended_district_larger": "eastwood"
+ },
+ {
+  "name": "the_lucky_star",
+  "cuisine": "chinese",
+  "price_range": "cheap",
+  "extended_neighbor": "alexandra_gardens",
+  "extended_district": "heidelberg",
+  "extended_district_larger": "epping"
+ },
+ {
+  "name": "fitzbillies_restaurant",
+  "cuisine": "british",
+  "price_range": "expensive",
+  "extended_neighbor": "outer_circle_linear_park",
+  "extended_district": "warrandyte",
+  "extended_district_larger": "carlingford"
+ },
+ {
+  "name": "little_seoul",
+  "cuisine": "korean",
+  "price_range": "expensive",
+  "extended_neighbor": "myrtle_park",
+  "extended_district": "croydon",
+  "extended_district_larger": "beecroft"
+ },
+ {
+  "name": "meze_bar",
+  "cuisine": "turkish",
+  "price_range": "expensive",
+  "extended_neighbor": "glass_creek_wetland",
+  "extended_district": "lilydale",
+  "extended_district_larger": "pennant_hills"
+ },
+ {
+  "name": "dojo_noodle_bar",
+  "cuisine": "asian_oriental",
+  "price_range": "cheap",
+  "extended_neighbor": "willsmere_park",
+  "extended_district": "ringwood",
+  "extended_district_larger": "thornleigh"
+ },
+ {
+  "name": "la_margherita",
+  "cuisine": "italian",
+  "price_range": "cheap",
+  "extended_neighbor": "pitcher_park",
+  "extended_district": "preston",
+  "extended_district_larger": "wahroonga"
+ },
+ {
+  "name": "yippee_noodle_bar",
+  "cuisine": "asian_oriental",
+  "price_range": "moderate",
+  "extended_neighbor": "miles_street_reserve",
+  "extended_district": "templestowe",
+  "extended_district_larger": "turramurra"
+ },
+ {
+  "name": "the_nirala",
+  "cuisine": "indian",
+  "price_range": "moderate",
+  "extended_neighbor": "southern_oval",
+  "extended_district": "essendon",
+  "extended_district_larger": "pymble"
+ },
+ {
+  "name": "cotto",
+  "cuisine": "british",
+  "price_range": "moderate",
+  "extended_neighbor": "northern_oval",
+  "extended_district": "broadmeadows",
+  "extended_district_larger": "gordon"
+ },
+ {
+  "name": "saint_johns_chop_house",
+  "cuisine": "british",
+  "price_range": "moderate",
+  "extended_neighbor": "preston_city_oval",
+  "extended_district": "epping",
+  "extended_district_larger": "killara"
+ },
+ {
+  "name": "pizza_hut_fen_ditton",
+  "cuisine": "italian",
+  "price_range": "moderate",
+  "extended_neighbor": "preston_library",
+  "extended_district": "tullamarine",
+  "extended_district_larger": "lindfield"
+ },
+ {
+  "name": "golden_house",
+  "cuisine": "chinese",
+  "price_range": "cheap",
+  "extended_neighbor": "preston_market",
+  "extended_district": "williamstown",
+  "extended_district_larger": "forestville"
+ },
+ {
+  "name": "j_restaurant",
+  "cuisine": "asian_oriental",
+  "price_range": "cheap",
+  "extended_neighbor": "edwardes_lake",
+  "extended_district": "altona",
+  "extended_district_larger": "belrose"
+ },
+ {
+  "name": "galleria",
+  "cuisine": "european",
+  "price_range": "moderate",
+  "extended_neighbor": "moomba_park",
+  "extended_district": "laverton",
+  "extended_district_larger": "asquith"
+ },
+ {
+  "name": "the_cow_pizza_kitchen_and_bar",
+  "cuisine": "gastropub",
+  "price_range": "moderate",
+  "extended_neighbor": "martin_reserve",
+  "extended_district": "point_cook",
+  "extended_district_larger": "hornsby"
+ },
+ {
+  "name": "bedouin",
+  "cuisine": "african",
+  "price_range": "expensive",
+  "extended_neighbor": "bain_reserve",
+  "extended_district": "hoppers",
+  "extended_district_larger": "cherrybrook"
+ },
+ {
+  "name": "the_gardenia",
+  "cuisine": "mediterranean",
+  "price_range": "cheap",
+  "extended_neighbor": "sanger_reserve",
+  "extended_district": "werribee",
+  "extended_district_larger": "parramatta"
+ },
+ {
+  "name": "zizzi_cambridge",
+  "cuisine": "italian",
+  "price_range": "cheap",
+  "extended_neighbor": "harmony_park",
+  "extended_district": "sunshine",
+  "extended_district_larger": "merrylands"
+ },
+ {
+  "name": "pipasha_restaurant",
+  "cuisine": "indian",
+  "price_range": "expensive",
+  "extended_neighbor": "robinson_reserve",
+  "extended_district": "burnside",
+  "extended_district_larger": "chester"
+ },
+ {
+  "name": "nandos_city_centre",
+  "cuisine": "portuguese",
+  "price_range": "cheap",
+  "extended_neighbor": "anderson_reserve",
+  "extended_district": "brooklyn",
+  "extended_district_larger": "villawood"
+ },
+ {
+  "name": "royal_spice",
+  "cuisine": "indian",
+  "price_range": "cheap",
+  "extended_neighbor": "palazzolo_park",
+  "extended_district": "tottenham",
+  "extended_district_larger": "fairfield"
+ },
+ {
+  "name": "hakka",
+  "cuisine": "chinese",
+  "price_range": "expensive",
+  "extended_neighbor": "gandolfo_gardens",
+  "extended_district": "footscray",
+  "extended_district_larger": "liverpool"
+ },
+ {
+  "name": "la_raza",
+  "cuisine": "spanish",
+  "price_range": "cheap",
+  "extended_neighbor": "warr_park",
+  "extended_district": "spotswood",
+  "extended_district_larger": "moorebank"
+ },
+ {
+  "name": "the_gandhi",
+  "cuisine": "indian",
+  "price_range": "cheap",
+  "extended_neighbor": "randazoo_park",
+  "extended_district": "newport",
+  "extended_district_larger": "smithfield"
+ },
+ {
+  "name": "golden_wok",
+  "cuisine": "chinese",
+  "price_range": "moderate",
+  "extended_neighbor": "foletta_park",
+  "extended_district": "braybrook",
+  "extended_district_larger": "greystanes"
+ },
+ {
+  "name": "meghna",
+  "cuisine": "indian",
+  "price_range": "moderate",
+  "extended_neighbor": "hockey_ground",
+  "extended_district": "flemington",
+  "extended_district_larger": "blacktown"
+ },
+ {
+  "name": "saffron_brasserie",
+  "cuisine": "indian",
+  "price_range": "expensive",
+  "extended_neighbor": "barkly_street_park",
+  "extended_district": "brunswick",
+  "extended_district_larger": "milperra"
+ },
+ {
+  "name": "la_mimosa",
+  "cuisine": "mediterranean",
+  "price_range": "expensive",
+  "extended_neighbor": "chelsworth_park",
+  "extended_district": "strathmore",
+  "extended_district_larger": "mount_vernon"
+ },
+ {
+  "name": "shanghai_family_restaurant",
+  "cuisine": "chinese",
+  "price_range": "moderate",
+  "extended_neighbor": "heide_museum_of_modern_art",
+  "extended_district": "coburg",
+  "extended_district_larger": "kingswood"
+ },
+ {
+  "name": "loch_fyne",
+  "cuisine": "seafood",
+  "price_range": "expensive",
+  "extended_neighbor": "heide_park",
+  "extended_district": "parkville",
+  "extended_district_larger": "penrith"
+ },
+ {
+  "name": "mahal_of_cambridge",
+  "cuisine": "indian",
+  "price_range": "cheap",
+  "extended_neighbor": "heidelberg_park",
+  "extended_district": "keilor",
+  "extended_district_larger": "springwood"
+ },
+ {
+  "name": "pizza_express_Fen_Ditton",
+  "cuisine": "italian",
+  "price_range": "moderate",
+  "extended_neighbor": "westerfolds_park",
+  "extended_district": "glenroy",
+  "extended_district_larger": "woodford"
+ },
+ {
+  "name": "sala_thong",
+  "cuisine": "thai",
+  "price_range": "expensive",
+  "extended_neighbor": "lower_eltham_park",
+  "extended_district": "greenvale",
+  "extended_district_larger": "linden"
+ },
+ {
+  "name": "city_stop_restaurant",
+  "cuisine": "european",
+  "price_range": "expensive",
+  "extended_neighbor": "griffith_park",
+  "extended_district": "warrandyte",
+  "extended_district_larger": "lawson"
+ },
+ {
+  "name": "saigon_city",
+  "cuisine": "asian_oriental",
+  "price_range": "expensive",
+  "extended_neighbor": "andrew_park",
+  "extended_district": "donnybrook",
+  "extended_district_larger": "bullaburra"
+ },
+ {
+  "name": "peking_restaurant",
+  "cuisine": "chinese",
+  "price_range": "expensive",
+  "extended_neighbor": "research_park",
+  "extended_district": "woodstock",
+  "extended_district_larger": "kurmond"
+ },
+ {
+  "name": "frankie_and_bennys",
+  "cuisine": "italian",
+  "price_range": "expensive",
+  "extended_neighbor": "warrandyte_state_park",
+  "extended_district": "whittlesea",
+  "extended_district_larger": "nelson"
+ },
+ {
+  "name": "graffiti",
+  "cuisine": "british",
+  "price_range": "expensive",
+  "extended_neighbor": "cresco_park",
+  "extended_district": "beveridge",
+  "extended_district_larger": "kenthurst"
+ },
+ {
+  "name": "india_house",
+  "cuisine": "indian",
+  "price_range": "expensive",
+  "extended_neighbor": "colman_park",
+  "extended_district": "sunbury",
+  "extended_district_larger": "berowra"
+ },
+ {
+  "name": "cambridge_lodge_restaurant",
+  "cuisine": "european",
+  "price_range": "expensive",
+  "extended_neighbor": "monterey_bush_park",
+  "extended_district": "curlewis",
+  "extended_district_larger": "newport"
+ },
+ {
+  "name": "grafton_hotel_restaurant",
+  "cuisine": "british",
+  "price_range": "expensive",
+  "extended_neighbor": "ainslie_park",
+  "extended_district": "grovedale",
+  "extended_district_larger": "bayview"
+ },
+ {
+  "name": "the_hotpot",
+  "cuisine": "chinese",
+  "price_range": "expensive",
+  "extended_neighbor": "hookey_park",
+  "extended_district": "geelong",
+  "extended_district_larger": "palm_beach"
+ },
+ {
+  "name": "the_river_bar_steakhouse_and_grill",
+  "cuisine": "modern_european",
+  "price_range": "cheap",
+  "extended_neighbor": "caulfield_racecourse",
+  "extended_district": "avalon",
+  "extended_district_larger": "narrabeen"
+ },
+ {
+  "name": "clowns_cafe",
+  "cuisine": "italian",
+  "price_range": "expensive",
+  "extended_neighbor": "caufield_park",
+  "extended_district": "inverleigh",
+  "extended_district_larger": "chester_hill"
+ },
+ {
+  "name": "anatolia",
+  "cuisine": "turkish",
+  "price_range": "moderate",
+  "extended_neighbor": "elsternwick_park",
+  "extended_district": "wensleydale",
+  "extended_district_larger": "campbelltown"
+ },
+ {
+  "name": "panahar",
+  "cuisine": "indian",
+  "price_range": "expensive",
+  "extended_neighbor": "school_park",
+  "extended_district": "lorne",
+  "extended_district_larger": "camden"
+ },
+ {
+  "name": "tang_chinese",
+  "cuisine": "chinese",
+  "price_range": "expensive",
+  "extended_neighbor": "st_kilda_botanical_gardens",
+  "extended_district": "torquay",
+  "extended_district_larger": "harrington"
+ },
+ {
+  "name": "the_slug_and_lettuce",
+  "cuisine": "gastropub",
+  "price_range": "expensive",
+  "extended_neighbor": "st_kilda_adventure_playround",
+  "extended_district": "queenscliff",
+  "extended_district_larger": "wedderburn"
+ },
+ {
+  "name": "curry_king",
+  "cuisine": "indian",
+  "price_range": "expensive",
+  "extended_neighbor": "harleston_park",
+  "extended_district": "teesdale",
+  "extended_district_larger": "gilead"
+ },
+ {
+  "name": "travellers_rest",
+  "cuisine": "british",
+  "price_range": "expensive",
+  "extended_neighbor": "hopetoun_garden",
+  "extended_district": "anakie",
+  "extended_district_larger": "menangle"
+ },
+ {
+  "name": "curry_queen",
+  "cuisine": "indian",
+  "price_range": "expensive",
+  "extended_neighbor": "landcox_park",
+  "extended_district": "meredith",
+  "extended_district_larger": "picton"
+ },
+ {
+  "name": "royal_standard",
+  "cuisine": "gastropub",
+  "price_range": "expensive",
+  "extended_neighbor": "westfield_southland_shopping_center",
+  "extended_district": "bacchus_marsh",
+  "extended_district_larger": "maldon"
+ },
+ {
+  "name": "rajmahal",
+  "cuisine": "indian",
+  "price_range": "moderate",
+  "extended_neighbor": "john_batman_gardens",
+  "extended_district": "craigieburn",
+  "extended_district_larger": "wilton"
+ },
+ {
+  "name": "hk_fusion",
+  "cuisine": "chinese",
+  "price_range": "expensive",
+  "extended_neighbor": "allambee_park",
+  "extended_district": "donnybrook",
+  "extended_district_larger": "appin"
+ },
+ {
+  "name": "efes_restaurant",
+  "cuisine": "turkish",
+  "price_range": "moderate",
+  "extended_neighbor": "centenary_park",
+  "extended_district": "springfield",
+  "extended_district_larger": "razorback"
+ },
+ {
+  "name": "gourmet_burger_kitchen",
+  "cuisine": "north_american",
+  "price_range": "expensive",
+  "extended_neighbor": "landcox_park",
+  "extended_district": "kyneton",
+  "extended_district_larger": "balmoral"
+ },
+ {
+  "name": "don_pasquale_pizzeria",
+  "cuisine": "italian",
+  "price_range": "expensive",
+  "extended_neighbor": "argyle_square",
+  "extended_district": "castlemaine",
+  "extended_district_larger": "braemar"
+ },
+ {
+  "name": "the_cambridge_chop_house",
+  "cuisine": "british",
+  "price_range": "expensive",
+  "extended_neighbor": "macarthur_square",
+  "extended_district": "bendigo",
+  "extended_district_larger": "balaclava"
+ },
+ {
+  "name": "kymmoy",
+  "cuisine": "asian_oriental",
+  "price_range": "expensive",
+  "extended_neighbor": "murchison_square",
+  "extended_district": "kilmore",
+  "extended_district_larger": "mittagong"
+ },
+ {
+  "name": "sitar_tandoori",
+  "cuisine": "indian",
+  "price_range": "expensive",
+  "extended_neighbor": "carlton_gardens",
+  "extended_district": "healesville",
+  "extended_district_larger": "bowral"
+ },
+ {
+  "name": "shiraz_restaurant",
+  "cuisine": "mediterranean",
+  "price_range": "expensive",
+  "extended_neighbor": "royal_park",
+  "extended_district": "truganina",
+  "extended_district_larger": "berrima"
+ },
+ {
+  "name": "midsummer_house_restaurant",
+  "cuisine": "british",
+  "price_range": "expensive",
+  "extended_neighbor": "braybrook_park",
+  "extended_district": "ivanhoe",
+  "extended_district_larger": "mossvale"
+ },
+ {
+  "name": "cote",
+  "cuisine": "french",
+  "price_range": "expensive",
+  "extended_neighbor": "westgate_park",
+  "extended_district": "doncaster",
+  "extended_district_larger": "corrimal"
+ },
+ {
+  "name": "caffe_uno",
+  "cuisine": "italian",
+  "price_range": "expensive",
+  "extended_neighbor": "sandridge_beach",
+  "extended_district": "pakenham",
+  "extended_district_larger": "bellambi"
+ },
+ {
+  "name": "sesame_restaurant_and_bar",
+  "cuisine": "chinese",
+  "price_range": "expensive",
+  "extended_neighbor": "catani_gardens",
+  "extended_district": "derrimut",
+  "extended_district_larger": "warilla"
+ },
+ {
+  "name": "bangkok_city",
+  "cuisine": "thai",
+  "price_range": "expensive",
+  "extended_neighbor": "dendy_park",
+  "extended_district": "maidstone",
+  "extended_district_larger": "kiama"
+ }
+]

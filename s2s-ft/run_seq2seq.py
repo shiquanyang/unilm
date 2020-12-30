@@ -19,6 +19,7 @@ except:
 import tqdm
 
 from s2s_ft.modeling import BertForSequenceToSequence
+from multimodalKB.models.MultimodalKB_Local import MultimodalKBLocal
 from transformers import AdamW, get_linear_schedule_with_warmup
 from transformers import \
     RobertaConfig, BertConfig, \
@@ -29,7 +30,7 @@ from s2s_ft.tokenization_unilm import UnilmTokenizer
 from s2s_ft.configuration_minilm import MinilmConfig
 from s2s_ft.tokenization_minilm import MinilmTokenizer
 
-from s2s_ft import utils
+from s2s_ft import utils_combined
 from s2s_ft.config import BertForSeq2SeqConfig
 
 logger = logging.getLogger(__name__)
@@ -74,7 +75,7 @@ def prepare_for_training(args, model, checkpoint_state_dict, amp):
     return model, optimizer
 
 
-def train(args, training_features, model, tokenizer):
+def train(args, training_features, model, tokenizer, multimodalKB_model, train_data_info, lang):
     """ Train the model """
     if args.local_rank in [-1, 0] and args.log_dir:
         tb_writer = SummaryWriter(log_dir=args.log_dir)
@@ -90,7 +91,7 @@ def train(args, training_features, model, tokenizer):
         amp = None
 
     # model recover
-    recover_step = utils.get_max_epoch_model(args.output_dir)
+    recover_step = utils_combined.get_max_epoch_model(args.output_dir)
 
     # if recover_step:
     #     model_recover_checkpoint = os.path.join(args.output_dir, "model.{}.bin".format(recover_step))
@@ -123,17 +124,18 @@ def train(args, training_features, model, tokenizer):
     if checkpoint_state_dict:
         scheduler.load_state_dict(checkpoint_state_dict["lr_scheduler"])
 
-    train_dataset = utils.Seq2seqDatasetForBert(
+    train_dataset = utils_combined.Seq2seqDatasetForBert(
         features=training_features, max_source_len=args.max_source_seq_length,
         max_target_len=args.max_target_seq_length, vocab_size=tokenizer.vocab_size,
         cls_id=tokenizer.cls_token_id, sep_id=tokenizer.sep_token_id, pad_id=tokenizer.pad_token_id,
         mask_id=tokenizer.mask_token_id, random_prob=args.random_prob, keep_prob=args.keep_prob,
         offset=train_batch_size * global_step, num_training_instances=train_batch_size * args.num_training_steps,
+        data_info=train_data_info, lang=lang,
     )
 
     logger.info("Check dataset:")
     for i in range(5):
-        source_ids, target_ids, pseudo_ids, num_source_tokens, num_target_tokens = train_dataset.__getitem__(i)
+        source_ids, target_ids, pseudo_ids, num_source_tokens, num_target_tokens = train_dataset.__getitem__(i)['unilm_info']
         logger.info("Instance-%d" % i)
         logger.info("Source tokens = %s" % " ".join(tokenizer.convert_ids_to_tokens(source_ids)))
         logger.info("Target tokens = %s" % " ".join(tokenizer.convert_ids_to_tokens(target_ids)))
@@ -159,7 +161,7 @@ def train(args, training_features, model, tokenizer):
         train_dataloader = DataLoader(
             train_dataset, sampler=train_sampler,
             batch_size=per_node_train_batch_size // args.gradient_accumulation_steps,
-            collate_fn=utils.batch_list_to_batch_tensors)
+            collate_fn=utils_combined.batch_list_to_batch_tensors)
 
         train_iterator = tqdm.tqdm(
             train_dataloader, initial=global_step,
@@ -167,16 +169,23 @@ def train(args, training_features, model, tokenizer):
 
         model.train()
         model.zero_grad()
+        multimodalKB_model.local_semantics_extractor_optimizer.zero_grad()
 
         tr_loss, logging_loss = 0.0, 0.0
 
         for step, batch in enumerate(train_iterator):
-            batch = tuple(t.to(args.device) for t in batch)
-            inputs = {'source_ids': batch[0],
-                      'target_ids': batch[1],
-                      'pseudo_ids': batch[2],
-                      'num_source_tokens': batch[3],
-                      'num_target_tokens': batch[4]}
+            # batch = tuple(t.to(args.device) for t in batch)
+
+            local_semantic_vectors, lengths = multimodalKB_model.train_batch(batch, int(args.clip), reset=(step==0))
+
+            inputs = {'source_ids': batch['unilm_info'][0],
+                      'target_ids': batch['unilm_info'][1],
+                      'pseudo_ids': batch['unilm_info'][2],
+                      'num_source_tokens': batch['unilm_info'][3],
+                      'num_target_tokens': batch['unilm_info'][4],
+                      'local_semantic_vectors': local_semantic_vectors,
+                      'lengths': lengths}
+
             loss = model(**inputs)
             if args.n_gpu > 1:
                 loss = loss.mean()  # mean() to average on multi-gpu parallel (not distributed) training
@@ -199,9 +208,13 @@ def train(args, training_features, model, tokenizer):
                 else:
                     torch.nn.utils.clip_grad_norm_(model.parameters(), args.max_grad_norm)
 
+                torch.nn.utils.clip_grad_norm_(multimodalKB_model.local_semantics_extractor.parameters(), args.max_grad_norm)
+                multimodalKB_model.local_semantics_extractor_optimizer.step()
+
                 optimizer.step()
                 scheduler.step()  # Update learning rate schedule
                 model.zero_grad()
+                multimodalKB_model.local_semantics_extractor_optimizer.zero_grad()
                 global_step += 1
 
                 if args.local_rank in [-1, 0] and args.logging_steps > 0 and global_step % args.logging_steps == 0:
@@ -216,7 +229,19 @@ def train(args, training_features, model, tokenizer):
                     os.makedirs(save_path, exist_ok=True)
                     model_to_save = model.module if hasattr(model, "module") else model
                     model_to_save.save_pretrained(save_path)
-                    
+
+                    # save MultimodalKBLocal model
+                    name_data = "MULTIWOZ/"
+                    layer_info = str(multimodalKB_model.n_layers)
+                    directory = 'save/MultimodalKBLocal-' + args["addName"] + name_data + str(multimodalKB_model.task) + 'HDD' + str(
+                        multimodalKB_model.hidden_size) + 'BSZ' + str(args['batch']) + 'DR' + str(
+                        multimodalKB_model.dropout) + 'L' + layer_info + 'lr' + str(multimodalKB_model.lr) + 'IC' + str(
+                        multimodalKB_model.input_channels) + 'OC' + str(multimodalKB_model.output_channels) + 'CK' + str(
+                        multimodalKB_model.conv_kernel_size) + 'PK' + str(multimodalKB_model.pool_kernel_size) + str('MultiModalLocal')
+                    if not os.path.exists(directory):
+                        os.makedirs(directory)
+                    torch.save(multimodalKB_model.local_semantics_extractor, directory + '/local_semantics_extractor.th')
+
                     # optim_to_save = {
                     #     "optimizer": optimizer.state_dict(),
                     #     "lr_scheduler": scheduler.state_dict(),
@@ -314,6 +339,41 @@ def get_args():
                              "See details at https://nvidia.github.io/apex/amp.html")
     parser.add_argument('--server_ip', type=str, default='', help="Can be used for distant debugging.")
     parser.add_argument('--server_port', type=str, default='', help="Can be used for distant debugging.")
+
+    parser.add_argument('-ds', '--dataset', help='dataset, babi or kvr', required=False)
+    parser.add_argument('-t', '--task', help='Task Number', required=False, default="")
+    parser.add_argument('-dec', '--decoder', help='decoder model', required=False)
+    parser.add_argument('-hdd', '--hidden', help='Hidden size', required=False, default=128)
+    parser.add_argument('-bsz', '--batch', help='Batch_size', required=False, default=8)
+    parser.add_argument('-lr', '--learn', help='Learning Rate', required=False, default=0.001)
+    parser.add_argument('-dr', '--drop', help='Drop Out', required=False, default=0.2)
+    parser.add_argument('-um', '--unk_mask', help='mask out input token to UNK', type=int, required=False, default=1)
+    parser.add_argument('-l', '--layer', help='Layer Number', required=False, default=1)
+    parser.add_argument('-lm', '--limit', help='Word Limit', required=False, default=-10000)
+    parser.add_argument('-path', '--path', help='path of the file to load', required=False)
+    parser.add_argument('-clip', '--clip', help='gradient clipping', required=False, default=10)
+    parser.add_argument('-tfr', '--teacher_forcing_ratio', help='teacher_forcing_ratio', type=float, required=False,
+                        default=0.5)
+
+    parser.add_argument('-sample', '--sample', help='Number of Samples', required=False, default=None)
+    parser.add_argument('-evalp', '--evalp', help='evaluation period', required=False, default=1)
+    parser.add_argument('-an', '--addName', help='An add name for the save folder', required=False, default='')
+    parser.add_argument('-gs', '--genSample', help='Generate Sample', required=False, default=0)
+    parser.add_argument('-es', '--earlyStop', help='Early Stop Criteria, BLEU or ENTF1', required=False, default='BLEU')
+    parser.add_argument('-abg', '--ablationG', help='ablation global memory pointer', type=int, required=False,
+                        default=0)
+    parser.add_argument('-abh', '--ablationH', help='ablation context embedding', type=int, required=False, default=0)
+    parser.add_argument('-rec', '--record', help='use record function during inference', type=int, required=False,
+                        default=0)
+    parser.add_argument('-inchannels', '--inchannels', help='input channels', type=int, required=False, default=1024)
+    parser.add_argument('-outchannels', '--outchannels', help='output channels', type=int, required=False, default=256)
+    parser.add_argument('-convkernelsize', '--convkernelsize', help='convolutional kernel size', type=int,
+                        required=False, default=3)
+    parser.add_argument('-poolkernelsize', '--poolkernelsize', help='pool kernel size', type=int, required=False,
+                        default=3)
+    # parser.add_argument('-beam','--beam_search', help='use beam_search during inference, default is greedy search', type=int, required=False, default=0)
+    # parser.add_argument('-viz','--vizualization', help='vizualization', type=int, required=False, default=0)
+
     args = parser.parse_args()
     return args
 
@@ -408,12 +468,26 @@ def main():
 
     if args.cached_train_features_file is None:
         args.cached_train_features_file = os.path.join(args.output_dir, "cached_features_for_training.pt")
-    training_features = utils.load_and_cache_examples(
+    training_features, train_data_info, lang = utils_combined.load_and_cache_examples(
         example_file=args.train_file, tokenizer=tokenizer, local_rank=args.local_rank,
         cached_features_file=args.cached_train_features_file, shuffle=True,
     )
 
-    train(args, training_features, model, tokenizer)
+    multimodalKB_model = MultimodalKBLocal(
+        int(args.hidden),
+        lang,
+        40,
+        args.path,
+        args.dataset,
+        lr=float(args.learn),
+        n_layers=int(args.layer),
+        dropout=float(args.drop),
+        input_channels=int(args.inchannels),
+        output_channels=int(args.outchannels),
+        conv_kernel_size=int(args.convkernelsize),
+        pool_kernel_size=int(args.poolkernelsize))
+
+    train(args, training_features, model, tokenizer, multimodalKB_model, train_data_info, lang)
 
 
 if __name__ == "__main__":

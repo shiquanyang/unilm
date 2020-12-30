@@ -162,7 +162,7 @@ class BertEmbeddings(nn.Module):
         self.LayerNorm = BertLayerNorm(config.hidden_size, eps=config.layer_norm_eps)
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
 
-    def forward(self, input_ids=None, token_type_ids=None, position_ids=None, inputs_embeds=None):
+    def forward(self, input_ids=None, token_type_ids=None, position_ids=None, inputs_embeds=None, split_lengths=None, local_semantic_vectors=None):
         if input_ids is not None:
             input_shape = input_ids.size()
         else:
@@ -178,6 +178,17 @@ class BertEmbeddings(nn.Module):
 
         if inputs_embeds is None:
             inputs_embeds = self.word_embeddings(input_ids)
+
+        # modify input_embeds using local_semantic_vectors
+        # - input_embeds: batch_size * (src_len + tgt_len + tgt_len) * embed_dim
+        # - local_semantic_vectors: batch_size * max_turn * embed_dim (max_turn < src_len)
+        src_len = split_lengths[0]
+        batch_size = inputs_embeds.size()[0]
+        embed_dim = inputs_embeds.size()[-1]
+        max_turn = local_semantic_vectors.size()[1]
+        inputs_embeds[:, :src_len, :] = torch.zeros(batch_size, src_len, embed_dim)
+        inputs_embeds[:, :max_turn, :] = inputs_embeds[:, :max_turn, :] + local_semantic_vectors
+
         position_embeddings = self.position_embeddings(position_ids)
 
         embeddings = inputs_embeds + position_embeddings
@@ -380,7 +391,7 @@ class BertModel(BertPreTrainedForSeq2SeqModel):
         self.encoder = BertEncoder(config)
 
     def forward(self, input_ids=None, attention_mask=None, token_type_ids=None,
-                position_ids=None, inputs_embeds=None, split_lengths=None):
+                position_ids=None, inputs_embeds=None, split_lengths=None, local_semantic_vectors=None):
         if input_ids is not None and inputs_embeds is not None:
             raise ValueError("You cannot specify both input_ids and inputs_embeds at the same time")
         elif input_ids is not None:
@@ -415,7 +426,7 @@ class BertModel(BertPreTrainedForSeq2SeqModel):
         extended_attention_mask = (1.0 - extended_attention_mask) * -10000.0
 
         embedding_output = self.embeddings(
-            input_ids=input_ids, position_ids=position_ids, token_type_ids=token_type_ids, inputs_embeds=inputs_embeds)
+            input_ids=input_ids, position_ids=position_ids, token_type_ids=token_type_ids, inputs_embeds=inputs_embeds, split_lengths=split_lengths, local_semantic_vectors=local_semantic_vectors)
         encoder_outputs = self.encoder(
             embedding_output, attention_mask=extended_attention_mask, split_lengths=split_lengths)
         sequence_output = encoder_outputs[0]
@@ -534,7 +545,7 @@ class BertForSequenceToSequence(BertPreTrainedForSeq2SeqModel):
 
         return (true_tokens_mask | pseudo_tokens_mask).type_as(source_mask)
 
-    def forward(self, source_ids, target_ids, pseudo_ids, num_source_tokens, num_target_tokens, target_span_ids=None):
+    def forward(self, source_ids, target_ids, pseudo_ids, num_source_tokens, num_target_tokens, local_semantic_vectors, lengths, target_span_ids=None):
         source_len = source_ids.size(1)
         target_len = target_ids.size(1)
         pseudo_len = pseudo_ids.size(1)
@@ -549,10 +560,15 @@ class BertForSequenceToSequence(BertPreTrainedForSeq2SeqModel):
              torch.ones_like(target_ids) * self.target_type_id,
              torch.ones_like(pseudo_ids) * self.target_type_id), dim=1)
 
+        # source_mask, source_position_ids = \
+        #     self.create_mask_and_position_ids(num_source_tokens, source_len)
+        lengths = torch.LongTensor(lengths)
         source_mask, source_position_ids = \
-            self.create_mask_and_position_ids(num_source_tokens, source_len)
+            self.create_mask_and_position_ids(lengths, source_len)
+        # target_mask, target_position_ids = \
+        #     self.create_mask_and_position_ids(num_target_tokens, target_len, offset=num_source_tokens)
         target_mask, target_position_ids = \
-            self.create_mask_and_position_ids(num_target_tokens, target_len, offset=num_source_tokens)
+            self.create_mask_and_position_ids(num_target_tokens, target_len, offset=lengths)
 
         position_ids = torch.cat((source_position_ids, target_position_ids, target_position_ids), dim=1)
         if target_span_ids is None:
@@ -561,7 +577,7 @@ class BertForSequenceToSequence(BertPreTrainedForSeq2SeqModel):
 
         outputs = self.bert(
             input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids,
-            position_ids=position_ids, split_lengths=split_lengths)
+            position_ids=position_ids, split_lengths=split_lengths, local_semantic_vectors=local_semantic_vectors)
 
         sequence_output = outputs[0]
         pseudo_sequence_output = sequence_output[:, source_len + target_len:, ]

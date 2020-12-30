@@ -1,0 +1,1019 @@
+1 sitar_tandoori address 43_high_street_cherry_hinton_cherry_hinton
+2 sitar_tandoori cuisine indian
+3 sitar_tandoori price expensive
+4 sitar_tandoori location east
+5 sitar_tandoori image1 restaurant-rooftop-bar/31.png
+6 sitar_tandoori image2 restaurant-with-private-room/44.png
+7 stazione_restaurant_and_coffee_bar address market_hill_city_centre
+8 stazione_restaurant_and_coffee_bar cuisine italian
+9 stazione_restaurant_and_coffee_bar price expensive
+10 stazione_restaurant_and_coffee_bar location centre
+11 stazione_restaurant_and_coffee_bar image1 restaurant-with-private-room/247.png
+12 stazione_restaurant_and_coffee_bar image2 restaurant-with-bar/28.png
+13 dojo_noodle_bar address 40210_millers_yard_city_centre
+14 dojo_noodle_bar cuisine asian_oriental
+15 dojo_noodle_bar price cheap
+16 dojo_noodle_bar location centre
+17 dojo_noodle_bar image1 restaurant-with-private-room/95.png
+18 dojo_noodle_bar image2 restaurant-with-balcony/24.png
+19 the_cambridge_chop_house address 1_kings_parade
+20 the_cambridge_chop_house cuisine british
+21 the_cambridge_chop_house price expensive
+22 the_cambridge_chop_house location centre
+23 the_cambridge_chop_house image1 restaurant-kid-friendly/108.png
+24 the_cambridge_chop_house image2 restaurant-with-dance-floor/32.png
+25 the_gardenia address 2_rose_crescent_city_centre
+26 the_gardenia cuisine mediterranean
+27 the_gardenia price cheap
+28 the_gardenia location centre
+29 the_gardenia image1 restaurant-kid-friendly/77.png
+30 the_gardenia image2 restaurant-with-garden/40.png
+31 hey could you advise me on a good restaurant around ? 	yea sure is an expensive  indian restaurant right here in the east of the city located at high street cherry hinton its called sitar_tandoori43	['expensive', 'east', 'sitar_tandoori', 'indian']
+32 is it suitable for group meals ?	yes they have large private rooms inside	[]
+33 how about rooftop views  ?	no the restaurant doesn t have a rooftop area to have meals	[]
+
+1 the_varsity_restaurant address 35_saint_andrews_street_city_centre
+2 the_varsity_restaurant cuisine international
+3 the_varsity_restaurant price moderate
+4 the_varsity_restaurant location centre
+5 the_varsity_restaurant image1 restaurant-rooftop/2.png
+6 the_varsity_restaurant image2 restaurant-with-dance-floor/88.png
+7 bangkok_city address 24_green_street_city_centre
+8 bangkok_city cuisine thai
+9 bangkok_city price expensive
+10 bangkok_city location centre
+11 bangkok_city image1 restaurant-rooftop-bar/36.png
+12 bangkok_city image2 restaurant-with-bar/1.png
+13 golden_house address 12_lensfield_road_city_centre
+14 golden_house cuisine chinese
+15 golden_house price cheap
+16 golden_house location centre
+17 golden_house image1 restaurant-riverside/20.png
+18 golden_house image2 restaurant-with-couches/136.png
+19 the_river_bar_steakhouse_and_grill address quayside_off_bridge_street
+20 the_river_bar_steakhouse_and_grill cuisine modern_european
+21 the_river_bar_steakhouse_and_grill price cheap
+22 the_river_bar_steakhouse_and_grill location centre
+23 the_river_bar_steakhouse_and_grill image1 restaurant-with-couches/107.png
+24 the_river_bar_steakhouse_and_grill image2 restaurant-with-sea-view/97.png
+25 bedouin address 100_mill_road_city_centre
+26 bedouin cuisine african
+27 bedouin price expensive
+28 bedouin location centre
+29 bedouin image1 restaurant-with-garden/77.png
+30 bedouin image2 restaurant-with-private-room/281.png
+31 i m trying to find a restaurant know a place ?	sure there s a place called the_varsity_restaurant they sell international food their price range is moderate too they re done at the centre	['centre', 'international', 'the_varsity_restaurant', 'moderate']
+32 can we order drinks there ?	yes there is a bar inside	[]
+33 do they offer balcony tables outside  ?	no the restaurant doesn t have a balcony to have food	[]
+
+1 restaurant_one_seven address de_vere_university_arms_regent_street_city_centre
+2 restaurant_one_seven cuisine british
+3 restaurant_one_seven price moderate
+4 restaurant_one_seven location centre
+5 restaurant_one_seven image1 restaurant-dining-room/214.png
+6 restaurant_one_seven image2 restaurant-with-balcony/6.png
+7 meghna address 205_victoria_road_chesterton
+8 meghna cuisine indian
+9 meghna price moderate
+10 meghna location west
+11 meghna image1 restaurant-with-garden/114.png
+12 meghna image2 restaurant-with-balcony/22.png
+13 eraina address free_school_lane_city_centre
+14 eraina cuisine european
+15 eraina price expensive
+16 eraina location centre
+17 eraina image1 restaurant-with-private-room/239.png
+18 eraina image2 restaurant-with-garden/63.png
+19 rice_boat address 37_newnham_road_newnham
+20 rice_boat cuisine indian
+21 rice_boat price expensive
+22 rice_boat location west
+23 rice_boat image1 restaurant-with-couches/129.png
+24 rice_boat image2 restaurant-rooftop-bar/100.png
+25 cambridge_lodge_restaurant address cambridge_lodge_hotel_139_huntingdon_road_city_centre
+26 cambridge_lodge_restaurant cuisine european
+27 cambridge_lodge_restaurant price expensive
+28 cambridge_lodge_restaurant location west
+29 cambridge_lodge_restaurant image1 restaurant-with-sea-view/21.png
+30 cambridge_lodge_restaurant image2 restaurant-with-dance-floor/105.png
+31 i would like to find a place to eat for lunch can you help me please ?	yes of course i would recommend a british restaurant restaurant_one_seven with a moderate price range located at the centre of the city	['centre', 'moderate', 'british', 'restaurant_one_seven']
+32 how is the view of the restaurant ?	you can have a nice ocean view outside	[]
+33 does it have couches  ?	no  they don t	[]
+
+1 clowns_cafe address 54_king_street_city_centre
+2 clowns_cafe cuisine italian
+3 clowns_cafe price expensive
+4 clowns_cafe location centre
+5 clowns_cafe image1 restaurant-with-balcony/21.png
+6 clowns_cafe image2 restaurant-rooftop/287.png
+7 chiquito_restaurant_bar address 2g_cambridge_leisure_park_cherry_hinton_road_cherry_hinton
+8 chiquito_restaurant_bar cuisine mexican
+9 chiquito_restaurant_bar price expensive
+10 chiquito_restaurant_bar location south
+11 chiquito_restaurant_bar image1 restaurant-with-bar/57.png
+12 chiquito_restaurant_bar image2 restaurant-with-private-room/255.png
+13 efes_restaurant address king_street_city_centre
+14 efes_restaurant cuisine turkish
+15 efes_restaurant price moderate
+16 efes_restaurant location centre
+17 efes_restaurant image1 restaurant-rooftop-bar/133.png
+18 efes_restaurant image2 restaurant-with-balcony/42.png
+19 clowns_cafe address 54_king_street_city_centre
+20 clowns_cafe cuisine italian
+21 clowns_cafe price expensive
+22 clowns_cafe location centre
+23 clowns_cafe image1 restaurant-with-balcony/21.png
+24 clowns_cafe image2 restaurant-rooftop/287.png
+25 riverside_brasserie address doubletree_by_hilton_cambridge_granta_place_mill_lane
+26 riverside_brasserie cuisine modern_european
+27 riverside_brasserie price moderate
+28 riverside_brasserie location centre
+29 riverside_brasserie image1 restaurant-rooftop-bar/96.png
+30 riverside_brasserie image2 restaurant-with-dance-floor/6.png
+31 where is a good restaurant that serves high-end italian food please ?	yes you should try clowns_cafe in the centre of the city where they offer really good but expensive italian food	['expensive', 'centre', 'clowns_cafe', 'italian']
+32 how is the scenery of the restaurant ?	you can enjoy a nice city view inside the restaurant	[]
+33 what about the private tables in that place  ?	no  there aren t any	[]
+
+1 curry_garden address 106_regent_street_city_centre
+2 curry_garden cuisine indian
+3 curry_garden price expensive
+4 curry_garden location centre
+5 curry_garden image1 restaurant-with-balcony/59.png
+6 curry_garden image2 restaurant-with-garden/103.png
+7 j_restaurant address 86_regent_street_city_centre
+8 j_restaurant cuisine asian_oriental
+9 j_restaurant price cheap
+10 j_restaurant location centre
+11 j_restaurant image1 restaurant-rooftop/252.png
+12 j_restaurant image2 restaurant-with-couches/124.png
+13 the_hotpot address 66_chesterton_road_chesterton
+14 the_hotpot cuisine chinese
+15 the_hotpot price expensive
+16 the_hotpot location north
+17 the_hotpot image1 restaurant-rooftop-bar/94.png
+18 the_hotpot image2 restaurant-with-private-room/45.png
+19 dojo_noodle_bar address 40210_millers_yard_city_centre
+20 dojo_noodle_bar cuisine asian_oriental
+21 dojo_noodle_bar price cheap
+22 dojo_noodle_bar location centre
+23 dojo_noodle_bar image1 restaurant-with-private-room/95.png
+24 dojo_noodle_bar image2 restaurant-with-balcony/24.png
+25 restaurant_alimentum address 152_-_154_hills_road
+26 restaurant_alimentum cuisine modern_european
+27 restaurant_alimentum price moderate
+28 restaurant_alimentum location south
+29 restaurant_alimentum image1 restaurant-with-dance-floor/121.png
+30 restaurant_alimentum image2 restaurant-with-private-room/27.png
+31 hi there i am looking for an indian restaurant i heard there is one nearby a bit expensive	you are right it is on regent street go straighforward to the city centre and you will see it	['centre']
+32 can we have food outside ?	yes they have tables and booths outside	[]
+33 does it a child friendly place  ?	no the restaurant doesn t have a kids zone	[]
+
+1 pizza_hut_city_centre address regent_street_city_centre
+2 pizza_hut_city_centre cuisine italian
+3 pizza_hut_city_centre price cheap
+4 pizza_hut_city_centre location centre
+5 pizza_hut_city_centre image1 restaurant-with-bar/3.png
+6 pizza_hut_city_centre image2 restaurant-with-garden/142.png
+7 graffiti address hotel_felix_whitehouse_lane_huntingdon_road
+8 graffiti cuisine british
+9 graffiti price expensive
+10 graffiti location west
+11 graffiti image1 restaurant-with-balcony/60.png
+12 graffiti image2 restaurant-with-garden/167.png
+13 sesame_restaurant_and_bar address 17_hills_road_city_centre
+14 sesame_restaurant_and_bar cuisine chinese
+15 sesame_restaurant_and_bar price expensive
+16 sesame_restaurant_and_bar location centre
+17 sesame_restaurant_and_bar image1 restaurant-with-bar/12.png
+18 sesame_restaurant_and_bar image2 restaurant-kid-friendly/4.png
+19 curry_prince address 451_newmarket_road_fen_ditton
+20 curry_prince cuisine indian
+21 curry_prince price moderate
+22 curry_prince location east
+23 curry_prince image1 restaurant-with-couches/106.png
+24 curry_prince image2 restaurant-kid-friendly/29.png
+25 de_luca_cucina_and_bar address 83_regent_street
+26 de_luca_cucina_and_bar cuisine modern_european
+27 de_luca_cucina_and_bar price moderate
+28 de_luca_cucina_and_bar location centre
+29 de_luca_cucina_and_bar image1 restaurant-rooftop-bar/134.png
+30 de_luca_cucina_and_bar image2 restaurant-with-private-room/258.png
+31 i am broke but i really want some pizza right now what is a good place ?	i know that feeling there is a cheap italian place in the centre of the city called pizza_hut_city_centre	['centre', 'cheap', 'italian', 'pizza_hut_city_centre']
+32 how is the atmosphere there ?	it looks very nice with lots of green plants	[]
+33 can i enjoy rooftop bars there  ?	no  they don t	[]
+
+1 michaelhouse_cafe address st._michael's_church_trinity_street_city_centre
+2 michaelhouse_cafe cuisine european
+3 michaelhouse_cafe price expensive
+4 michaelhouse_cafe location centre
+5 michaelhouse_cafe image1 restaurant-with-balcony/10.png
+6 michaelhouse_cafe image2 restaurant-dining-room/108.png
+7 loch_fyne address the_little_rose_37_trumpington_street
+8 loch_fyne cuisine seafood
+9 loch_fyne price expensive
+10 loch_fyne location centre
+11 loch_fyne image1 restaurant-with-bar/53.png
+12 loch_fyne image2 restaurant-with-couches/78.png
+13 golden_house address 12_lensfield_road_city_centre
+14 golden_house cuisine chinese
+15 golden_house price cheap
+16 golden_house location centre
+17 golden_house image1 restaurant-riverside/20.png
+18 golden_house image2 restaurant-with-couches/136.png
+19 meghna address 205_victoria_road_chesterton
+20 meghna cuisine indian
+21 meghna price moderate
+22 meghna location west
+23 meghna image1 restaurant-with-garden/114.png
+24 meghna image2 restaurant-with-balcony/22.png
+25 j_restaurant address 86_regent_street_city_centre
+26 j_restaurant cuisine asian_oriental
+27 j_restaurant price cheap
+28 j_restaurant location centre
+29 j_restaurant image1 restaurant-rooftop/252.png
+30 j_restaurant image2 restaurant-with-couches/124.png
+31 i am looking for excellent european food can you advise where the nearest restaurant of this type is located ? 	yes i recommend that you try michaelhouse_cafe  it is an expensive european restaurant located in the city centre	['michaelhouse_cafe', 'expensive', 'centre', 'european']
+32 is there open areas in the restaurant ?	yes they have open balcony there	[]
+33 is there any outside seat in it  ?	no  they don t	[]
+
+1 the_good_luck_chinese_food_takeaway address 82_cherry_hinton_road_cherry_hinton
+2 the_good_luck_chinese_food_takeaway cuisine chinese
+3 the_good_luck_chinese_food_takeaway price expensive
+4 the_good_luck_chinese_food_takeaway location south
+5 the_good_luck_chinese_food_takeaway image1 restaurant-riverside/72.png
+6 the_good_luck_chinese_food_takeaway image2 restaurant-with-private-room/257.png
+7 pizza_express_fen_ditton address jesus_lane_fen_ditton
+8 pizza_express_fen_ditton cuisine italian
+9 pizza_express_fen_ditton price moderate
+10 pizza_express_fen_ditton location centre
+11 pizza_express_fen_ditton image1 restaurant-riverside/129.png
+12 pizza_express_fen_ditton image2 restaurant-with-dance-floor/78.png
+13 shiraz_restaurant address 84_regent_street_city_centre
+14 shiraz_restaurant cuisine mediterranean
+15 shiraz_restaurant price expensive
+16 shiraz_restaurant location centre
+17 shiraz_restaurant image1 restaurant-with-private-room/298.png
+18 shiraz_restaurant image2 restaurant-rooftop-bar/165.png
+19 j_restaurant address 86_regent_street_city_centre
+20 j_restaurant cuisine asian_oriental
+21 j_restaurant price cheap
+22 j_restaurant location centre
+23 j_restaurant image1 restaurant-rooftop/252.png
+24 j_restaurant image2 restaurant-with-couches/124.png
+25 yu_garden address 529_newmarket_road_fen_ditton
+26 yu_garden cuisine chinese
+27 yu_garden price expensive
+28 yu_garden location east
+29 yu_garden image1 restaurant-rooftop/223.png
+30 yu_garden image2 restaurant-riverside/27.png
+31 any high quality chinese food around me ? i want some dimsum	the good luck chinese food serves high quality chinese cuisine located south of town	['south', 'chinese']
+32 how is the view of the restaurant ?	you can enjoy a nice river view there	[]
+33 can we eat on the balcony of the restaurant  ?	no	[]
+
+1 stazione_restaurant_and_coffee_bar address market_hill_city_centre
+2 stazione_restaurant_and_coffee_bar cuisine italian
+3 stazione_restaurant_and_coffee_bar price expensive
+4 stazione_restaurant_and_coffee_bar location centre
+5 stazione_restaurant_and_coffee_bar image1 restaurant-with-private-room/247.png
+6 stazione_restaurant_and_coffee_bar image2 restaurant-with-bar/28.png
+7 loch_fyne address the_little_rose_37_trumpington_street
+8 loch_fyne cuisine seafood
+9 loch_fyne price expensive
+10 loch_fyne location centre
+11 loch_fyne image1 restaurant-with-bar/53.png
+12 loch_fyne image2 restaurant-with-couches/78.png
+13 midsummer_house_restaurant address midsummer_common
+14 midsummer_house_restaurant cuisine british
+15 midsummer_house_restaurant price expensive
+16 midsummer_house_restaurant location centre
+17 midsummer_house_restaurant image1 restaurant-rooftop-bar/201.png
+18 midsummer_house_restaurant image2 restaurant-with-garden/44.png
+19 galleria address 33_bridge_street
+20 galleria cuisine european
+21 galleria price moderate
+22 galleria location centre
+23 galleria image1 restaurant-rooftop-bar/30.png
+24 galleria image2 restaurant-with-private-room/219.png
+25 travellers_rest address huntingdon_road_city_centre
+26 travellers_rest cuisine british
+27 travellers_rest price expensive
+28 travellers_rest location west
+29 travellers_rest image1 restaurant-with-sea-view/96.png
+30 travellers_rest image2 restaurant-dining-room/285.png
+31 can you recommend me a really nice place to eat for dinner ?	yes of course there is an expensive italian restaurant stazione_restaurant_and_coffee_bar located at the centre of the city	['expensive', 'centre', 'stazione_restaurant_and_coffee_bar', 'italian']
+32 can we have drinks there ?	yes they have a bar inside	[]
+33 can i enjoy food in an outside area there  ?	no there aren t tables and chairs available by the side of the sea	[]
+
+1 prezzo address 21_-_24_northampton_road
+2 prezzo cuisine italian
+3 prezzo price moderate
+4 prezzo location west
+5 prezzo image1 restaurant-rooftop/6.png
+6 prezzo image2 restaurant-with-sea-view/71.png
+7 golden_house address 12_lensfield_road_city_centre
+8 golden_house cuisine chinese
+9 golden_house price cheap
+10 golden_house location centre
+11 golden_house image1 restaurant-riverside/20.png
+12 golden_house image2 restaurant-with-couches/136.png
+13 wagamama address 36_saint_andrews_street
+14 wagamama cuisine japanese
+15 wagamama price expensive
+16 wagamama location centre
+17 wagamama image1 restaurant-with-garden/131.png
+18 wagamama image2 restaurant-with-couches/14.png
+19 don_pasquale_pizzeria address 12_market_hill_city_centre
+20 don_pasquale_pizzeria cuisine italian
+21 don_pasquale_pizzeria price expensive
+22 don_pasquale_pizzeria location centre
+23 don_pasquale_pizzeria image1 restaurant-kid-friendly/74.png
+24 don_pasquale_pizzeria image2 restaurant-with-bar/89.png
+25 da_vinci_pizzeria address 20_milton_road_chesterton
+26 da_vinci_pizzeria cuisine italian
+27 da_vinci_pizzeria price cheap
+28 da_vinci_pizzeria location north
+29 da_vinci_pizzeria image1 restaurant-with-dance-floor/30.png
+30 da_vinci_pizzeria image2 restaurant-with-balcony/16.png
+31 i will like to know the location of any available restaurants around their price range and the kind of cuisine offered	ok there is restaurant that offers italian delicacies at moderate prices and the name of the restaurant is prezzo it is located at 21_24_northampton_road	['prezzo', 'italian', 'moderate']
+32 can we eat outside ?	they have tables outside	[]
+33 does it have table for four  ?	no there aren t tables for four available in the restaurant	[]
+
+1 thanh_binh address 17_magdalene_street_city_centre
+2 thanh_binh cuisine vietnamese
+3 thanh_binh price cheap
+4 thanh_binh location west
+5 thanh_binh image1 restaurant-with-balcony/47.png
+6 thanh_binh image2 restaurant-riverside/103.png
+7 cambridge_lodge_restaurant address cambridge_lodge_hotel_139_huntingdon_road_city_centre
+8 cambridge_lodge_restaurant cuisine european
+9 cambridge_lodge_restaurant price expensive
+10 cambridge_lodge_restaurant location west
+11 cambridge_lodge_restaurant image1 restaurant-with-sea-view/21.png
+12 cambridge_lodge_restaurant image2 restaurant-with-dance-floor/105.png
+13 sala_thong address 35_newnham_road_newnham
+14 sala_thong cuisine thai
+15 sala_thong price expensive
+16 sala_thong location west
+17 sala_thong image1 restaurant-rooftop/89.png
+18 sala_thong image2 restaurant-rooftop-bar/156.png
+19 taj_tandoori address 64_cherry_hinton_road_cherry_hinton
+20 taj_tandoori cuisine indian
+21 taj_tandoori price expensive
+22 taj_tandoori location south
+23 taj_tandoori image1 restaurant-with-balcony/20.png
+24 taj_tandoori image2 restaurant-with-dance-floor/150.png
+25 yu_garden address 529_newmarket_road_fen_ditton
+26 yu_garden cuisine chinese
+27 yu_garden price expensive
+28 yu_garden location east
+29 yu_garden image1 restaurant-rooftop/223.png
+30 yu_garden image2 restaurant-riverside/27.png
+31 can you recommend a restaurant to me please to eat some cheap food at  ?	thanh birh located on  magdalene street in the west of the city serving cheap vietnamese  food is good for that	['west', 'vietnamese', 'cheap']
+32 can we have food outside ?	yes they have tables and booths by the river	[]
+33 do they have bars  ?	no the restaurant doesn t have bars	[]
+
+1 pizza_express_fen_ditton address jesus_lane_fen_ditton
+2 pizza_express_fen_ditton cuisine italian
+3 pizza_express_fen_ditton price moderate
+4 pizza_express_fen_ditton location centre
+5 pizza_express_fen_ditton image1 restaurant-riverside/129.png
+6 pizza_express_fen_ditton image2 restaurant-with-dance-floor/78.png
+7 lan_hong_house address 12_norfolk_street_city_centre
+8 lan_hong_house cuisine chinese
+9 lan_hong_house price moderate
+10 lan_hong_house location centre
+11 lan_hong_house image1 restaurant-kid-friendly/33.png
+12 lan_hong_house image2 restaurant-with-garden/32.png
+13 zizzi_cambridge address 47-53_regent_street
+14 zizzi_cambridge cuisine italian
+15 zizzi_cambridge price cheap
+16 zizzi_cambridge location centre
+17 zizzi_cambridge image1 restaurant-rooftop/280.png
+18 zizzi_cambridge image2 restaurant-with-private-room/118.png
+19 nandos_city_centre address 33-34_saint_andrews_street
+20 nandos_city_centre cuisine portuguese
+21 nandos_city_centre price cheap
+22 nandos_city_centre location centre
+23 nandos_city_centre image1 restaurant-with-balcony/62.png
+24 nandos_city_centre image2 restaurant-dining-room/107.png
+25 curry_prince address 451_newmarket_road_fen_ditton
+26 curry_prince cuisine indian
+27 curry_prince price moderate
+28 curry_prince location east
+29 curry_prince image1 restaurant-with-couches/106.png
+30 curry_prince image2 restaurant-kid-friendly/29.png
+31 i am new in this city is there any place you could recommend for good pizza ?	sure i know of an italian restaurant pizza_express_fen_ditton with a moderate price range and it is situated in the centre of the city	['centre', 'moderate', 'italian', 'pizza_express_fen_ditton']
+32 how is the view of the restaurant ?	you can enjoy a river view outside	[]
+33 what about the bars  ?	no  there aren t any	[]
+
+1 ali_baba address 59_hills_road_city_centre
+2 ali_baba cuisine lebanese
+3 ali_baba price moderate
+4 ali_baba location centre
+5 ali_baba image1 restaurant-with-sea-view/116.png
+6 ali_baba image2 restaurant-with-private-room/133.png
+7 sala_thong address 35_newnham_road_newnham
+8 sala_thong cuisine thai
+9 sala_thong price expensive
+10 sala_thong location west
+11 sala_thong image1 restaurant-rooftop/89.png
+12 sala_thong image2 restaurant-rooftop-bar/156.png
+13 pipasha_restaurant address newmarket_road_fen_ditton
+14 pipasha_restaurant cuisine indian
+15 pipasha_restaurant price expensive
+16 pipasha_restaurant location east
+17 pipasha_restaurant image1 restaurant-kid-friendly/90.png
+18 pipasha_restaurant image2 restaurant-with-private-room/75.png
+19 sitar_tandoori address 43_high_street_cherry_hinton_cherry_hinton
+20 sitar_tandoori cuisine indian
+21 sitar_tandoori price expensive
+22 sitar_tandoori location east
+23 sitar_tandoori image1 restaurant-rooftop-bar/31.png
+24 sitar_tandoori image2 restaurant-with-private-room/44.png
+25 riverside_brasserie address doubletree_by_hilton_cambridge_granta_place_mill_lane
+26 riverside_brasserie cuisine modern_european
+27 riverside_brasserie price moderate
+28 riverside_brasserie location centre
+29 riverside_brasserie image1 restaurant-rooftop-bar/96.png
+30 riverside_brasserie image2 restaurant-with-dance-floor/6.png
+31 question:  are there any good lebanese restaurants in town ?  answer: there s one called ali baba right in the centre and it s moderately priced	there s one called ali_baba right in the centre and it s moderately priced	['centre', 'ali_baba']
+32 how is the view of the restaurant ?	you can enjoy beautiful sea view in the restaurant	[]
+33 does it have river view for enjoying  ?	no there aren t any rivers around the restaurant	[]
+
+1 zizzi_cambridge address 47-53_regent_street
+2 zizzi_cambridge cuisine italian
+3 zizzi_cambridge price cheap
+4 zizzi_cambridge location centre
+5 zizzi_cambridge image1 restaurant-rooftop/280.png
+6 zizzi_cambridge image2 restaurant-with-private-room/118.png
+7 riverside_brasserie address doubletree_by_hilton_cambridge_granta_place_mill_lane
+8 riverside_brasserie cuisine modern_european
+9 riverside_brasserie price moderate
+10 riverside_brasserie location centre
+11 riverside_brasserie image1 restaurant-rooftop-bar/96.png
+12 riverside_brasserie image2 restaurant-with-dance-floor/6.png
+13 the_copper_kettle address 4_kings_parade_city_centre
+14 the_copper_kettle cuisine british
+15 the_copper_kettle price moderate
+16 the_copper_kettle location centre
+17 the_copper_kettle image1 restaurant-with-couches/134.png
+18 the_copper_kettle image2 restaurant-with-dance-floor/48.png
+19 la_mimosa address thompsons_lane_fen_ditton
+20 la_mimosa cuisine mediterranean
+21 la_mimosa price expensive
+22 la_mimosa location centre
+23 la_mimosa image1 restaurant-rooftop-bar/4.png
+24 la_mimosa image2 restaurant-dining-room/77.png
+25 cote address bridge_street_city_centre
+26 cote cuisine french
+27 cote price expensive
+28 cote location centre
+29 cote image1 restaurant-with-dance-floor/3.png
+30 cote image2 restaurant-with-balcony/31.png
+31 is there a good place that is inexpensive that serves italian cuisine ?	yes zizzi_cambridge is an inexpensive italian restaurant	['zizzi_cambridge', 'italian']
+32 is it suitable for group meals ?	yes they have private rooms for it	[]
+33 can we dance in the restaurant  ?	no the restaurant doesn t provide dancing areas to have fun	[]
+
+1 don_pasquale_pizzeria address 12_market_hill_city_centre
+2 don_pasquale_pizzeria cuisine italian
+3 don_pasquale_pizzeria price expensive
+4 don_pasquale_pizzeria location centre
+5 don_pasquale_pizzeria image1 restaurant-kid-friendly/74.png
+6 don_pasquale_pizzeria image2 restaurant-with-bar/89.png
+7 cotto address 183_east_road_city_centre
+8 cotto cuisine british
+9 cotto price moderate
+10 cotto location centre
+11 cotto image1 restaurant-with-sea-view/117.png
+12 cotto image2 restaurant-dining-room/304.png
+13 bangkok_city address 24_green_street_city_centre
+14 bangkok_city cuisine thai
+15 bangkok_city price expensive
+16 bangkok_city location centre
+17 bangkok_city image1 restaurant-rooftop-bar/36.png
+18 bangkok_city image2 restaurant-with-bar/1.png
+19 the_hotpot address 66_chesterton_road_chesterton
+20 the_hotpot cuisine chinese
+21 the_hotpot price expensive
+22 the_hotpot location north
+23 the_hotpot image1 restaurant-rooftop-bar/94.png
+24 the_hotpot image2 restaurant-with-private-room/45.png
+25 saigon_city address 169_high_street_chesterton_chesterton
+26 saigon_city cuisine asian_oriental
+27 saigon_city price expensive
+28 saigon_city location north
+29 saigon_city image1 restaurant-dining-room/323.png
+30 saigon_city image2 restaurant-kid-friendly/39.png
+31 could you please show me an italian restaurant which is expensive in the centre ?	sure thing don_pasquale_pizzeria at 12_market_hill_city_centre serves expensive italian food	['expensive', 'don_pasquale_pizzeria', 'italian', '12_market_hill_city_centre']
+32 is it a kid-friendly restaurant ?	yes they have lots of toys in the corner	[]
+33 do they have any dancing floors  ?	no the restaurant doesn t have a dancing floor to have fun	[]
+
+1 backstreet_bistro address 2_sturton_street_city_centre
+2 backstreet_bistro cuisine gastropub
+3 backstreet_bistro price expensive
+4 backstreet_bistro location centre
+5 backstreet_bistro image1 restaurant-rooftop/24.png
+6 backstreet_bistro image2 restaurant-with-garden/21.png
+7 sitar_tandoori address 43_high_street_cherry_hinton_cherry_hinton
+8 sitar_tandoori cuisine indian
+9 sitar_tandoori price expensive
+10 sitar_tandoori location east
+11 sitar_tandoori image1 restaurant-rooftop-bar/31.png
+12 sitar_tandoori image2 restaurant-with-private-room/44.png
+13 wagamama address 36_saint_andrews_street
+14 wagamama cuisine japanese
+15 wagamama price expensive
+16 wagamama location centre
+17 wagamama image1 restaurant-with-garden/131.png
+18 wagamama image2 restaurant-with-couches/14.png
+19 bangkok_city address 24_green_street_city_centre
+20 bangkok_city cuisine thai
+21 bangkok_city price expensive
+22 bangkok_city location centre
+23 bangkok_city image1 restaurant-rooftop-bar/36.png
+24 bangkok_city image2 restaurant-with-bar/1.png
+25 caffe_uno address 32_bridge_street_city_centre
+26 caffe_uno cuisine italian
+27 caffe_uno price expensive
+28 caffe_uno location centre
+29 caffe_uno image1 restaurant-with-dance-floor/85.png
+30 caffe_uno image2 restaurant-with-bar/11.png
+31 i m looking for a trendy gastropub in the city centre  do you know of any ?	there s backstreet_bistro on sturton street  it s on the pricier side	['backstreet_bistro']
+32 can we eat in an open area ?	yes they have open areas on the balcony	[]
+33 is there a kids corner in the restaurant  ?	no the restaurant doesn t have a kids zone	[]
+
+1 the_cambridge_chop_house address 1_kings_parade
+2 the_cambridge_chop_house cuisine british
+3 the_cambridge_chop_house price expensive
+4 the_cambridge_chop_house location centre
+5 the_cambridge_chop_house image1 restaurant-kid-friendly/108.png
+6 the_cambridge_chop_house image2 restaurant-with-dance-floor/32.png
+7 pizza_hut_fen_ditton address cambridge_retail_park_newmarket_road_fen_ditton
+8 pizza_hut_fen_ditton cuisine italian
+9 pizza_hut_fen_ditton price moderate
+10 pizza_hut_fen_ditton location east
+11 pizza_hut_fen_ditton image1 restaurant-riverside/139.png
+12 pizza_hut_fen_ditton image2 restaurant-with-garden/137.png
+13 the_golden_curry address mill_road_city_centre
+14 the_golden_curry cuisine indian
+15 the_golden_curry price expensive
+16 the_golden_curry location centre
+17 the_golden_curry image1 restaurant-kid-friendly/63.png
+18 the_golden_curry image2 restaurant-with-sea-view/18.png
+19 sitar_tandoori address 43_high_street_cherry_hinton_cherry_hinton
+20 sitar_tandoori cuisine indian
+21 sitar_tandoori price expensive
+22 sitar_tandoori location east
+23 sitar_tandoori image1 restaurant-rooftop-bar/31.png
+24 sitar_tandoori image2 restaurant-with-private-room/44.png
+25 pizza_express_fen_ditton address jesus_lane_fen_ditton
+26 pizza_express_fen_ditton cuisine italian
+27 pizza_express_fen_ditton price moderate
+28 pizza_express_fen_ditton location centre
+29 pizza_express_fen_ditton image1 restaurant-riverside/129.png
+30 pizza_express_fen_ditton image2 restaurant-with-dance-floor/78.png
+31 can you recommend me a nice restaurant to eat please ?	yes there is an expensive british restaurant the_cambridge_chop_house located at the center of the city	['expensive', 'the_cambridge_chop_house', 'british']
+32 can my kids enjoy themselves ? it is my kids  birthday	yes they have a nice kids zone inside	[]
+33 how about the couch seats  ?	no  they don t	[]
+
+1 panahar address 8_norfolk_street_city_centre
+2 panahar cuisine indian
+3 panahar price expensive
+4 panahar location centre
+5 panahar image1 restaurant-rooftop-bar/41.png
+6 panahar image2 restaurant-with-dance-floor/17.png
+7 mahal_of_cambridge address 3_-_5_millers_yard_mill_lane
+8 mahal_of_cambridge cuisine indian
+9 mahal_of_cambridge price cheap
+10 mahal_of_cambridge location centre
+11 mahal_of_cambridge image1 restaurant-rooftop-bar/146.png
+12 mahal_of_cambridge image2 restaurant-rooftop/29.png
+13 the_slug_and_lettuce address 34_-_35_green_street
+14 the_slug_and_lettuce cuisine gastropub
+15 the_slug_and_lettuce price expensive
+16 the_slug_and_lettuce location centre
+17 the_slug_and_lettuce image1 restaurant-rooftop/198.png
+18 the_slug_and_lettuce image2 restaurant-dining-room/234.png
+19 caffe_uno address 32_bridge_street_city_centre
+20 caffe_uno cuisine italian
+21 caffe_uno price expensive
+22 caffe_uno location centre
+23 caffe_uno image1 restaurant-with-dance-floor/85.png
+24 caffe_uno image2 restaurant-with-bar/11.png
+25 chiquito_restaurant_bar address 2g_cambridge_leisure_park_cherry_hinton_road_cherry_hinton
+26 chiquito_restaurant_bar cuisine mexican
+27 chiquito_restaurant_bar price expensive
+28 chiquito_restaurant_bar location south
+29 chiquito_restaurant_bar image1 restaurant-with-bar/57.png
+30 chiquito_restaurant_bar image2 restaurant-with-private-room/255.png
+31 i want to find a place to eat could you recommend a restaurant to me please ?	sure there’s an indian restaurant panahar with an expensive price range and it’s located on 8_norfolk_street_city_centre at the centre of the city	['panahar', 'indian', 'expensive', 'centre', '8_norfolk_street_city_centre']
+32 is there open areas to have food ?	yes they have tables on the balcony area at the rooftop	[]
+33 does the restaurant provide tables at the rooftop  ?	they don t	[]
+
+1 la_tasca address 14_-16_bridge_street
+2 la_tasca cuisine spanish
+3 la_tasca price moderate
+4 la_tasca location centre
+5 la_tasca image1 restaurant-with-couches/13.png
+6 la_tasca image2 restaurant-with-bar/116.png
+7 pipasha_restaurant address newmarket_road_fen_ditton
+8 pipasha_restaurant cuisine indian
+9 pipasha_restaurant price expensive
+10 pipasha_restaurant location east
+11 pipasha_restaurant image1 restaurant-kid-friendly/90.png
+12 pipasha_restaurant image2 restaurant-with-private-room/75.png
+13 nandos_city_centre address 33-34_saint_andrews_street
+14 nandos_city_centre cuisine portuguese
+15 nandos_city_centre price cheap
+16 nandos_city_centre location centre
+17 nandos_city_centre image1 restaurant-with-balcony/62.png
+18 nandos_city_centre image2 restaurant-dining-room/107.png
+19 pizza_hut_cherry_hinton address g4_cambridge_leisure_park_clifton_way_cherry_hinton
+20 pizza_hut_cherry_hinton cuisine italian
+21 pizza_hut_cherry_hinton price moderate
+22 pizza_hut_cherry_hinton location south
+23 pizza_hut_cherry_hinton image1 restaurant-rooftop/272.png
+24 pizza_hut_cherry_hinton image2 restaurant-with-bar/115.png
+25 the_cow_pizza_kitchen_and_bar address corn_exchange_street
+26 the_cow_pizza_kitchen_and_bar cuisine gastropub
+27 the_cow_pizza_kitchen_and_bar price moderate
+28 the_cow_pizza_kitchen_and_bar location centre
+29 the_cow_pizza_kitchen_and_bar image1 restaurant-with-private-room/62.png
+30 the_cow_pizza_kitchen_and_bar image2 restaurant-with-couches/30.png
+31 is anything new that we can expect at latasca restaurant ?	latasca restaurant serves spanish cuisine at moderate price range your gang will enjoy it for a change	['spanish', 'moderate']
+32 is there a swimming in the restaurant ?	yes there are tables and chairs beside a swimming pool	[]
+33 does the restaurant have any private cabins to have dinner  ?	no the restaurant doesn t provide private cabins to have dinner	[]
+
+1 the_river_bar_steakhouse_and_grill address quayside_off_bridge_street
+2 the_river_bar_steakhouse_and_grill cuisine modern_european
+3 the_river_bar_steakhouse_and_grill price cheap
+4 the_river_bar_steakhouse_and_grill location centre
+5 the_river_bar_steakhouse_and_grill image1 restaurant-with-couches/107.png
+6 the_river_bar_steakhouse_and_grill image2 restaurant-with-sea-view/97.png
+7 j_restaurant address 86_regent_street_city_centre
+8 j_restaurant cuisine asian_oriental
+9 j_restaurant price cheap
+10 j_restaurant location centre
+11 j_restaurant image1 restaurant-rooftop/252.png
+12 j_restaurant image2 restaurant-with-couches/124.png
+13 pizza_express_fen_ditton address jesus_lane_fen_ditton
+14 pizza_express_fen_ditton cuisine italian
+15 pizza_express_fen_ditton price moderate
+16 pizza_express_fen_ditton location centre
+17 pizza_express_fen_ditton image1 restaurant-riverside/129.png
+18 pizza_express_fen_ditton image2 restaurant-with-dance-floor/78.png
+19 the_golden_curry address mill_road_city_centre
+20 the_golden_curry cuisine indian
+21 the_golden_curry price expensive
+22 the_golden_curry location centre
+23 the_golden_curry image1 restaurant-kid-friendly/63.png
+24 the_golden_curry image2 restaurant-with-sea-view/18.png
+25 cocum address 71_castle_street_city_centre
+26 cocum cuisine indian
+27 cocum price expensive
+28 cocum location west
+29 cocum image1 restaurant-with-couches/127.png
+30 cocum image2 restaurant-riverside/120.png
+31 can you recommend me a cheap restaurant to eat please ? 	yes there is a cheap modern_european	['modern_european', 'cheap']
+32 what is the colour of the wall ?	the colour of the wall is white	[]
+33 can we have dinner at a rooftop area  ?	no there aren t any tables and chairs at the rooftop	[]
+
+1 caffe_uno address 32_bridge_street_city_centre
+2 caffe_uno cuisine italian
+3 caffe_uno price expensive
+4 caffe_uno location centre
+5 caffe_uno image1 restaurant-with-dance-floor/85.png
+6 caffe_uno image2 restaurant-with-bar/11.png
+7 the_varsity_restaurant address 35_saint_andrews_street_city_centre
+8 the_varsity_restaurant cuisine international
+9 the_varsity_restaurant price moderate
+10 the_varsity_restaurant location centre
+11 the_varsity_restaurant image1 restaurant-rooftop/2.png
+12 the_varsity_restaurant image2 restaurant-with-dance-floor/88.png
+13 maharajah_tandoori_restaurant address 41518_castle_street_city_centre
+14 maharajah_tandoori_restaurant cuisine indian
+15 maharajah_tandoori_restaurant price expensive
+16 maharajah_tandoori_restaurant location west
+17 maharajah_tandoori_restaurant image1 restaurant-with-garden/86.png
+18 maharajah_tandoori_restaurant image2 restaurant-kid-friendly/103.png
+19 charlie_chan address regent_street_city_centre
+20 charlie_chan cuisine chinese
+21 charlie_chan price cheap
+22 charlie_chan location centre
+23 charlie_chan image1 restaurant-rooftop-bar/76.png
+24 charlie_chan image2 restaurant-kid-friendly/110.png
+25 the_lucky_star address cambridge_leisure_park_clifton_way_cherry_hinton
+26 the_lucky_star cuisine chinese
+27 the_lucky_star price cheap
+28 the_lucky_star location south
+29 the_lucky_star image1 restaurant-kid-friendly/73.png
+30 the_lucky_star image2 restaurant-with-balcony/12.png
+31 i m looking for a nice italian can you recommend anything ?	caffe_uno fits perfectly it4s in the city centre would you like the address ?	['centre', 'caffe_uno']
+32 can we have drinks inside ?	yes they have bars in the restaurant	[]
+33 can it provide outside area to enjoy  ?	no  there aren t any	[]
+
+1 the_golden_curry address mill_road_city_centre
+2 the_golden_curry cuisine indian
+3 the_golden_curry price expensive
+4 the_golden_curry location centre
+5 the_golden_curry image1 restaurant-kid-friendly/63.png
+6 the_golden_curry image2 restaurant-with-sea-view/18.png
+7 j_restaurant address 86_regent_street_city_centre
+8 j_restaurant cuisine asian_oriental
+9 j_restaurant price cheap
+10 j_restaurant location centre
+11 j_restaurant image1 restaurant-rooftop/252.png
+12 j_restaurant image2 restaurant-with-couches/124.png
+13 lan_hong_house address 12_norfolk_street_city_centre
+14 lan_hong_house cuisine chinese
+15 lan_hong_house price moderate
+16 lan_hong_house location centre
+17 lan_hong_house image1 restaurant-kid-friendly/33.png
+18 lan_hong_house image2 restaurant-with-garden/32.png
+19 sala_thong address 35_newnham_road_newnham
+20 sala_thong cuisine thai
+21 sala_thong price expensive
+22 sala_thong location west
+23 sala_thong image1 restaurant-rooftop/89.png
+24 sala_thong image2 restaurant-rooftop-bar/156.png
+25 graffiti address hotel_felix_whitehouse_lane_huntingdon_road
+26 graffiti cuisine british
+27 graffiti price expensive
+28 graffiti location west
+29 graffiti image1 restaurant-with-balcony/60.png
+30 graffiti image2 restaurant-with-garden/167.png
+31 where is an expensively priced indian restaurant located ?	the_golden_curry matches what you are looking for it is an expensive indian restaurant and is located in the centre of town	['expensive', 'centre', 'indian', 'the_golden_curry']
+32 is it a kid-friendly restaurant ?	yes they have lots of toys in the kids corner	[]
+33 is there any area to dance in the restaurant  ?	no there isn t a stage in the restaurant	[]
+
+1 restaurant_two_two address 22_chesterton_road_chesterton
+2 restaurant_two_two cuisine french
+3 restaurant_two_two price expensive
+4 restaurant_two_two location north
+5 restaurant_two_two image1 restaurant-dining-room/15.png
+6 restaurant_two_two image2 restaurant-riverside/26.png
+7 cote address bridge_street_city_centre
+8 cote cuisine french
+9 cote price expensive
+10 cote location centre
+11 cote image1 restaurant-with-dance-floor/3.png
+12 cote image2 restaurant-with-balcony/31.png
+13 la_margherita address 15_magdalene_street_city_centre
+14 la_margherita cuisine italian
+15 la_margherita price cheap
+16 la_margherita location west
+17 la_margherita image1 restaurant-with-couches/120.png
+18 la_margherita image2 restaurant-riverside/101.png
+19 panahar address 8_norfolk_street_city_centre
+20 panahar cuisine indian
+21 panahar price expensive
+22 panahar location centre
+23 panahar image1 restaurant-rooftop-bar/41.png
+24 panahar image2 restaurant-with-dance-floor/17.png
+25 cocum address 71_castle_street_city_centre
+26 cocum cuisine indian
+27 cocum price expensive
+28 cocum location west
+29 cocum image1 restaurant-with-couches/127.png
+30 cocum image2 restaurant-riverside/120.png
+31 can you show me a restaurant which serves expensively priced french food please ?	totally restaurant_two_two at 22_chesterton_road_chesterton serves expensive french cuisine in the north of the city	['restaurant_two_two', 'expensive', 'french', '22_chesterton_road_chesterton', 'north']
+32 what is the colour of the wall ?	the colour of the wall is blue	[]
+33 does the restaurant have bars  ?	no the restaurant doesn t provide drinks	[]
+
+1 curry_prince address 451_newmarket_road_fen_ditton
+2 curry_prince cuisine indian
+3 curry_prince price moderate
+4 curry_prince location east
+5 curry_prince image1 restaurant-with-couches/106.png
+6 curry_prince image2 restaurant-kid-friendly/29.png
+7 clowns_cafe address 54_king_street_city_centre
+8 clowns_cafe cuisine italian
+9 clowns_cafe price expensive
+10 clowns_cafe location centre
+11 clowns_cafe image1 restaurant-with-balcony/21.png
+12 clowns_cafe image2 restaurant-rooftop/287.png
+13 cocum address 71_castle_street_city_centre
+14 cocum cuisine indian
+15 cocum price expensive
+16 cocum location west
+17 cocum image1 restaurant-with-couches/127.png
+18 cocum image2 restaurant-riverside/120.png
+19 la_mimosa address thompsons_lane_fen_ditton
+20 la_mimosa cuisine mediterranean
+21 la_mimosa price expensive
+22 la_mimosa location centre
+23 la_mimosa image1 restaurant-rooftop-bar/4.png
+24 la_mimosa image2 restaurant-dining-room/77.png
+25 curry_king address 5_jordans_yard_bridge_street_city_centre
+26 curry_king cuisine indian
+27 curry_king price expensive
+28 curry_king location centre
+29 curry_king image1 restaurant-with-bar/124.png
+30 curry_king image2 restaurant-with-garden/50.png
+31 i would like to find a place to eat that has indian cuisine  ?	ok no problem there is an indian restaurant named curry_prince located at 451 new market rd fen ditton	['curry_prince', 'indian']
+32 is it a kid-friendly restaurant ?	yes it has lots of toys there	[]
+33 is there a garden area in the restaurant  ?	no you can t eat at the garden area	[]
+
+1 stazione_restaurant_and_coffee_bar address market_hill_city_centre
+2 stazione_restaurant_and_coffee_bar cuisine italian
+3 stazione_restaurant_and_coffee_bar price expensive
+4 stazione_restaurant_and_coffee_bar location centre
+5 stazione_restaurant_and_coffee_bar image1 restaurant-with-private-room/247.png
+6 stazione_restaurant_and_coffee_bar image2 restaurant-with-bar/28.png
+7 chiquito_restaurant_bar address 2g_cambridge_leisure_park_cherry_hinton_road_cherry_hinton
+8 chiquito_restaurant_bar cuisine mexican
+9 chiquito_restaurant_bar price expensive
+10 chiquito_restaurant_bar location south
+11 chiquito_restaurant_bar image1 restaurant-with-bar/57.png
+12 chiquito_restaurant_bar image2 restaurant-with-private-room/255.png
+13 ali_baba address 59_hills_road_city_centre
+14 ali_baba cuisine lebanese
+15 ali_baba price moderate
+16 ali_baba location centre
+17 ali_baba image1 restaurant-with-sea-view/116.png
+18 ali_baba image2 restaurant-with-private-room/133.png
+19 wagamama address 36_saint_andrews_street
+20 wagamama cuisine japanese
+21 wagamama price expensive
+22 wagamama location centre
+23 wagamama image1 restaurant-with-garden/131.png
+24 wagamama image2 restaurant-with-couches/14.png
+25 eraina address free_school_lane_city_centre
+26 eraina cuisine european
+27 eraina price expensive
+28 eraina location centre
+29 eraina image1 restaurant-with-private-room/239.png
+30 eraina image2 restaurant-with-garden/63.png
+31 can you please recommend me a nice place for dinner ?	yes there is an expensive italian restaurant stazione_restaurant_and_coffee_bar located at market_hill_city_centre	['market_hill_city_centre', 'expensive', 'stazione_restaurant_and_coffee_bar', 'italian']
+32 can we have drinks ?	yes there is a bar there	[]
+33 can we enjoy balcony seats there  ?	no there isn t a balcony area to eat at	[]
+
+1 nandos_city_centre address 33-34_saint_andrews_street
+2 nandos_city_centre cuisine portuguese
+3 nandos_city_centre price cheap
+4 nandos_city_centre location centre
+5 nandos_city_centre image1 restaurant-with-balcony/62.png
+6 nandos_city_centre image2 restaurant-dining-room/107.png
+7 the_varsity_restaurant address 35_saint_andrews_street_city_centre
+8 the_varsity_restaurant cuisine international
+9 the_varsity_restaurant price moderate
+10 the_varsity_restaurant location centre
+11 the_varsity_restaurant image1 restaurant-rooftop/2.png
+12 the_varsity_restaurant image2 restaurant-with-dance-floor/88.png
+13 shanghai_family_restaurant address 39_burleigh_street_city_centre
+14 shanghai_family_restaurant cuisine chinese
+15 shanghai_family_restaurant price moderate
+16 shanghai_family_restaurant location centre
+17 shanghai_family_restaurant image1 restaurant-rooftop/45.png
+18 shanghai_family_restaurant image2 restaurant-with-bar/48.png
+19 chiquito_restaurant_bar address 2g_cambridge_leisure_park_cherry_hinton_road_cherry_hinton
+20 chiquito_restaurant_bar cuisine mexican
+21 chiquito_restaurant_bar price expensive
+22 chiquito_restaurant_bar location south
+23 chiquito_restaurant_bar image1 restaurant-with-bar/57.png
+24 chiquito_restaurant_bar image2 restaurant-with-private-room/255.png
+25 hotel_du_vin_and_bistro address 15_-_19_trumpington_street
+26 hotel_du_vin_and_bistro cuisine european
+27 hotel_du_vin_and_bistro price moderate
+28 hotel_du_vin_and_bistro location centre
+29 hotel_du_vin_and_bistro image1 restaurant-rooftop/33.png
+30 hotel_du_vin_and_bistro image2 restaurant-with-couches/140.png
+31 can you tell me about the nandos city centre restaurant ?	yes the one on saint andrews street serves cheap portuguese food	['cheap', 'portuguese']
+32 can we have a nice view  ? we want to take photos	yes you can enjoy view from the balcony	[]
+33 are there any open areas in the restaurant to have food  ?	they don t	[]
+
+1 pizza_express_fen_ditton address jesus_lane_fen_ditton
+2 pizza_express_fen_ditton cuisine italian
+3 pizza_express_fen_ditton price moderate
+4 pizza_express_fen_ditton location centre
+5 pizza_express_fen_ditton image1 restaurant-riverside/129.png
+6 pizza_express_fen_ditton image2 restaurant-with-dance-floor/78.png
+7 chiquito_restaurant_bar address 2g_cambridge_leisure_park_cherry_hinton_road_cherry_hinton
+8 chiquito_restaurant_bar cuisine mexican
+9 chiquito_restaurant_bar price expensive
+10 chiquito_restaurant_bar location south
+11 chiquito_restaurant_bar image1 restaurant-with-bar/57.png
+12 chiquito_restaurant_bar image2 restaurant-with-private-room/255.png
+13 ask_restaurant address 12_bridge_street_city_centre
+14 ask_restaurant cuisine italian
+15 ask_restaurant price cheap
+16 ask_restaurant location centre
+17 ask_restaurant image1 restaurant-with-private-room/217.png
+18 ask_restaurant image2 restaurant-kid-friendly/41.png
+19 golden_wok address 191_histon_road_chesterton
+20 golden_wok cuisine chinese
+21 golden_wok price moderate
+22 golden_wok location north
+23 golden_wok image1 restaurant-with-private-room/229.png
+24 golden_wok image2 restaurant-with-bar/79.png
+25 wagamama address 36_saint_andrews_street
+26 wagamama cuisine japanese
+27 wagamama price expensive
+28 wagamama location centre
+29 wagamama image1 restaurant-with-garden/131.png
+30 wagamama image2 restaurant-with-couches/14.png
+31 what price range is pizza express fen ditton ?	pizza_express_fen_ditton is in the moderate price range	['moderate', 'pizza_express_fen_ditton']
+32 how is the view of the restaurant ?	you can have a beautiful river view	[]
+33 what is the style of decoration of it  ?	very fair decoration	[]
+
+1 curry_garden address 106_regent_street_city_centre
+2 curry_garden cuisine indian
+3 curry_garden price expensive
+4 curry_garden location centre
+5 curry_garden image1 restaurant-with-balcony/59.png
+6 curry_garden image2 restaurant-with-garden/103.png
+7 grafton_hotel_restaurant address grafton_hotel_619_newmarket_road_fen_ditton
+8 grafton_hotel_restaurant cuisine british
+9 grafton_hotel_restaurant price expensive
+10 grafton_hotel_restaurant location east
+11 grafton_hotel_restaurant image1 restaurant-rooftop/292.png
+12 grafton_hotel_restaurant image2 restaurant-with-garden/49.png
+13 sala_thong address 35_newnham_road_newnham
+14 sala_thong cuisine thai
+15 sala_thong price expensive
+16 sala_thong location west
+17 sala_thong image1 restaurant-rooftop/89.png
+18 sala_thong image2 restaurant-rooftop-bar/156.png
+19 darrys_cookhouse_and_wine_shop address 40270_king_street_city_centre
+20 darrys_cookhouse_and_wine_shop cuisine modern_european
+21 darrys_cookhouse_and_wine_shop price expensive
+22 darrys_cookhouse_and_wine_shop location centre
+23 darrys_cookhouse_and_wine_shop image1 restaurant-kid-friendly/104.png
+24 darrys_cookhouse_and_wine_shop image2 restaurant-with-private-room/33.png
+25 la_tasca address 14_-16_bridge_street
+26 la_tasca cuisine spanish
+27 la_tasca price moderate
+28 la_tasca location centre
+29 la_tasca image1 restaurant-with-couches/13.png
+30 la_tasca image2 restaurant-with-bar/116.png
+31 hi there i am looking for an indian restaurant i heard there is one nearby a bit expensive	you are right it is on regent street go straighforward to the city centre and you will see it	['centre']
+32 is there tables and chairs outside ?	yes they provide tables outside	[]
+33 do they offer kids zone inside  ?	no  they don t have that	[]
+
+1 little_seoul address 108_regent_street_city_centre
+2 little_seoul cuisine korean
+3 little_seoul price expensive
+4 little_seoul location centre
+5 little_seoul image1 restaurant-with-private-room/141.png
+6 little_seoul image2 restaurant-kid-friendly/118.png
+7 stazione_restaurant_and_coffee_bar address market_hill_city_centre
+8 stazione_restaurant_and_coffee_bar cuisine italian
+9 stazione_restaurant_and_coffee_bar price expensive
+10 stazione_restaurant_and_coffee_bar location centre
+11 stazione_restaurant_and_coffee_bar image1 restaurant-with-private-room/247.png
+12 stazione_restaurant_and_coffee_bar image2 restaurant-with-bar/28.png
+13 rajmahal address 7_barnwell_road_fen_ditton
+14 rajmahal cuisine indian
+15 rajmahal price moderate
+16 rajmahal location east
+17 rajmahal image1 restaurant-riverside/41.png
+18 rajmahal image2 restaurant-rooftop/220.png
+19 the_cambridge_chop_house address 1_kings_parade
+20 the_cambridge_chop_house cuisine british
+21 the_cambridge_chop_house price expensive
+22 the_cambridge_chop_house location centre
+23 the_cambridge_chop_house image1 restaurant-kid-friendly/108.png
+24 the_cambridge_chop_house image2 restaurant-with-dance-floor/32.png
+25 the_copper_kettle address 4_kings_parade_city_centre
+26 the_copper_kettle cuisine british
+27 the_copper_kettle price moderate
+28 the_copper_kettle location centre
+29 the_copper_kettle image1 restaurant-with-couches/134.png
+30 the_copper_kettle image2 restaurant-with-dance-floor/48.png
+31 what is a good expensive korean restaurant in the centre area ?	try little_seoul at 108 regent street which is an excellent choice	['little_seoul']
+32 can my kids enjoy themselves inside ?	yes there are lots of toys inside	[]
+33 is there any balcony seat in it  ?	no the restaurant doesn t have a balcony area to eat at	[]
+
+1 la_raza address 4_-_6_rose_crescent
+2 la_raza cuisine spanish
+3 la_raza price cheap
+4 la_raza location centre
+5 la_raza image1 restaurant-dining-room/159.png
+6 la_raza image2 restaurant-with-sea-view/41.png
+7 la_raza address 4_-_6_rose_crescent
+8 la_raza cuisine spanish
+9 la_raza price cheap
+10 la_raza location centre
+11 la_raza image1 restaurant-dining-room/159.png
+12 la_raza image2 restaurant-with-sea-view/41.png
+13 golden_house address 12_lensfield_road_city_centre
+14 golden_house cuisine chinese
+15 golden_house price cheap
+16 golden_house location centre
+17 golden_house image1 restaurant-riverside/20.png
+18 golden_house image2 restaurant-with-couches/136.png
+19 anatolia address 30_bridge_street_city_centre
+20 anatolia cuisine turkish
+21 anatolia price moderate
+22 anatolia location centre
+23 anatolia image1 restaurant-with-bar/21.png
+24 anatolia image2 restaurant-with-garden/55.png
+25 saffron_brasserie address hills_road_city_centre
+26 saffron_brasserie cuisine indian
+27 saffron_brasserie price expensive
+28 saffron_brasserie location centre
+29 saffron_brasserie image1 restaurant-with-private-room/77.png
+30 saffron_brasserie image2 restaurant-with-couches/100.png
+31 hey can you suggest somewhere cheap for me to go and eat ?	what about la_raza ? its just down on rose crescent	['la_raza']
+32 how is the decoration of it ?	it looks nice and modern inside	[]
+33 can we eat on the bank of the river  ?	there aren t any	[]

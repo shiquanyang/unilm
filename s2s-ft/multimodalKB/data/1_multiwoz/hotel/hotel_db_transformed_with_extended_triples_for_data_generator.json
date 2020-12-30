@@ -1,0 +1,266 @@
+[
+ {
+  "name": "a_and_b_guest_house",
+  "stars": "4",
+  "price_range": "moderate",
+  "extended_neighbor": "state_library",
+  "extended_district": "carlton",
+  "extended_district_larger": "rose_bay"
+ },
+ {
+  "name": "acorn_guest_house",
+  "stars": "4",
+  "price_range": "moderate",
+  "extended_neighbor": "collins_square",
+  "extended_district": "richmond",
+  "extended_district_larger": "bondi_beach"
+ },
+ {
+  "name": "alexander_bed_and_breakfast",
+  "stars": "4",
+  "price_range": "cheap",
+  "extended_neighbor": "treasury_gardens",
+  "extended_district": "toorak",
+  "extended_district_larger": "randwich"
+ },
+ {
+  "name": "allenbell",
+  "stars": "4",
+  "price_range": "cheap",
+  "extended_neighbor": "city_park",
+  "extended_district": "hawthorn",
+  "extended_district_larger": "vaucluse"
+ },
+ {
+  "name": "alpha-milton_guest_house",
+  "stars": "3",
+  "price_range": "moderate",
+  "extended_neighbor": "fitzroy_gardens",
+  "extended_district": "prahran",
+  "extended_district_larger": "mosman"
+ },
+ {
+  "name": "arbury_lodge_guesthouse",
+  "stars": "4",
+  "price_range": "moderate",
+  "extended_neighbor": "parliament_house",
+  "extended_district": "malvern",
+  "extended_district_larger": "manly"
+ },
+ {
+  "name": "archway_house",
+  "stars": "4",
+  "price_range": "moderate",
+  "extended_neighbor": "trinity_church",
+  "extended_district": "hawthorn",
+  "extended_district_larger": "freshwater"
+ },
+ {
+  "name": "ashley_hotel",
+  "stars": "2",
+  "price_range": "moderate",
+  "extended_neighbor": "federation_square",
+  "extended_district": "camberwell",
+  "extended_district_larger": "brookvale"
+ },
+ {
+  "name": "autumn_house",
+  "stars": "4",
+  "price_range": "cheap",
+  "extended_neighbor": "flinders_railway_station",
+  "extended_district": "elwood",
+  "extended_district_larger": "seaforth"
+ },
+ {
+  "name": "avalon",
+  "stars": "4",
+  "price_range": "moderate",
+  "extended_neighbor": "southern_cross_station",
+  "extended_district": "brighton",
+  "extended_district_larger": "balgowlah"
+ },
+ {
+  "name": "aylesbray_lodge_guest_house",
+  "stars": "4",
+  "price_range": "moderate",
+  "extended_neighbor": "batman_park",
+  "extended_district": "caulfield",
+  "extended_district_larger": "surry_hills"
+ },
+ {
+  "name": "bridge_guest_house",
+  "stars": "3",
+  "price_range": "moderate",
+  "extended_neighbor": "contemporary_art_center",
+  "extended_district": "oakleigh",
+  "extended_district_larger": "newtown"
+ },
+ {
+  "name": "carolina_bed_and_breakfast",
+  "stars": "4",
+  "price_range": "moderate",
+  "extended_neighbor": "royal_botanic_gardens",
+  "extended_district": "clayton",
+  "extended_district_larger": "mascot"
+ },
+ {
+  "name": "city_centre_north_b_and_b",
+  "stars": "0",
+  "price_range": "cheap",
+  "extended_neighbor": "eastern_lawn",
+  "extended_district": "ashwood",
+  "extended_district_larger": "maroubra"
+ },
+ {
+  "name": "cityroomz",
+  "stars": "0",
+  "price_range": "moderate",
+  "extended_neighbor": "palm_lawn",
+  "extended_district": "chadstone",
+  "extended_district_larger": "leichhardt"
+ },
+ {
+  "name": "el_shaddai",
+  "stars": "0",
+  "price_range": "cheap",
+  "extended_neighbor": "southern_lawn",
+  "extended_district": "burwood",
+  "extended_district_larger": "marrickville"
+ },
+ {
+  "name": "express_by_holiday_inn_cambridge",
+  "stars": "2",
+  "price_range": "expensive",
+  "extended_neighbor": "western_lawn",
+  "extended_district": "huntingdale",
+  "extended_district_larger": "rockdale"
+ },
+ {
+  "name": "finches_bed_and_breakfast",
+  "stars": "4",
+  "price_range": "cheap",
+  "extended_neighbor": "oak_lawn",
+  "extended_district": "clarinda",
+  "extended_district_larger": "kogarah"
+ },
+ {
+  "name": "gonville_hotel",
+  "stars": "3",
+  "price_range": "expensive",
+  "extended_neighbor": "herb_garden",
+  "extended_district": "moorabbin",
+  "extended_district_larger": "drummoyne"
+ },
+ {
+  "name": "hamilton_lodge",
+  "stars": "3",
+  "price_range": "moderate",
+  "extended_neighbor": "canna_bed_rain_garden",
+  "extended_district": "highett",
+  "extended_district_larger": "artarmon"
+ },
+ {
+  "name": "hobsons_house",
+  "stars": "3",
+  "price_range": "moderate",
+  "extended_neighbor": "tropical_glasshouse",
+  "extended_district": "hampton",
+  "extended_district_larger": "st_leonards"
+ },
+ {
+  "name": "home_from_home",
+  "stars": "4",
+  "price_range": "moderate",
+  "extended_neighbor": "eastern_lawn",
+  "extended_district": "springvale",
+  "extended_district_larger": "chatswood"
+ },
+ {
+  "name": "huntingdon_marriott_hotel",
+  "stars": "4",
+  "price_range": "expensive",
+  "extended_neighbor": "eucalypt_lawn",
+  "extended_district": "braeside",
+  "extended_district_larger": "gladesville"
+ },
+ {
+  "name": "kirkwood_house",
+  "stars": "4",
+  "price_range": "moderate",
+  "extended_neighbor": "central_lawn",
+  "extended_district": "dandenong",
+  "extended_district_larger": "ryde"
+ },
+ {
+  "name": "leverton_house",
+  "stars": "4",
+  "price_range": "cheap",
+  "extended_neighbor": "tennyson_lawn",
+  "extended_district": "mordialloc",
+  "extended_district_larger": "ashfield"
+ },
+ {
+  "name": "limehouse",
+  "stars": "4",
+  "price_range": "moderate",
+  "extended_neighbor": "fawkner_park",
+  "extended_district": "braeside",
+  "extended_district_larger": "earlwood"
+ },
+ {
+  "name": "lovell_lodge",
+  "stars": "2",
+  "price_range": "moderate",
+  "extended_neighbor": "lincoln_park",
+  "extended_district": "glen_waverley",
+  "extended_district_larger": "blakehurst"
+ },
+ {
+  "name": "rosas_bed_and_breakfast",
+  "stars": "4",
+  "price_range": "cheap",
+  "extended_neighbor": "argo_reserve",
+  "extended_district": "vermont",
+  "extended_district_larger": "hurstville"
+ },
+ {
+  "name": "the_cambridge_belfry",
+  "stars": "4",
+  "price_range": "cheap",
+  "extended_neighbor": "connell_reserve",
+  "extended_district": "blackburn",
+  "extended_district_larger": "riverwood"
+ },
+ {
+  "name": "the_lensfield_hotel",
+  "stars": "3",
+  "price_range": "expensive",
+  "extended_neighbor": "wesley_college",
+  "extended_district": "box_hill",
+  "extended_district_larger": "peakhurst"
+ },
+ {
+  "name": "university_arms_hotel",
+  "stars": "4",
+  "price_range": "expensive",
+  "extended_neighbor": "grattan_gardens",
+  "extended_district": "surrey_hills",
+  "extended_district_larger": "kingsgrove"
+ },
+ {
+  "name": "warkworth_house",
+  "stars": "4",
+  "price_range": "moderate",
+  "extended_neighbor": "princes_gardens",
+  "extended_district": "nunawading",
+  "extended_district_larger": "campsie"
+ },
+ {
+  "name": "worth_house",
+  "stars": "4",
+  "price_range": "cheap",
+  "extended_neighbor": "dye_works_park",
+  "extended_district": "mitcham",
+  "extended_district_larger": "burwood"
+ }
+]

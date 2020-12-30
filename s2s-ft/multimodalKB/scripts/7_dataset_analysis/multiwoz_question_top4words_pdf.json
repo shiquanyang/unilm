@@ -1,0 +1,6531 @@
+{
+ "i": {
+  "am": {
+   "looking": {
+    "for": 313,
+    "to": 7,
+    "in": 1,
+    "a": 1,
+    "just": 1,
+    "at": 1
+   },
+   "searching": {
+    "for": 2
+   },
+   "interested": {
+    "in": 7,
+    "at": 1
+   },
+   "wanting": {
+    "an": 1
+   },
+   "going": {
+    "to": 1
+   },
+   "in": {
+    "the": 2
+   },
+   "disappointed": {
+    "but": 1
+   },
+   "not": {
+    "sure": 1,
+    "looking": 1,
+    "particular": 1
+   },
+   "starving": {
+    "!": 1
+   },
+   "also": {
+    "looking": 1
+   }
+  },
+  "need": {
+   "the": {
+    "address": 13,
+    "town": 1,
+    "restaurant": 1,
+    "phone": 3,
+    "name": 1
+   },
+   "a": {
+    "cheap": 6,
+    "south": 2,
+    "reservation": 2,
+    "table": 4,
+    "moderately": 2,
+    "different": 1,
+    "place": 4,
+    "moderate": 1,
+    "vegetarian": 1,
+    "restaurant": 8,
+    "booking": 1,
+    "really": 1
+   },
+   "help": {
+    "finding": 10
+   },
+   "to": {
+    "find": 13,
+    "get": 2
+   },
+   "an": {
+    "expensive": 4,
+    "indian": 1,
+    "east": 1
+   },
+   "their": {
+    "address": 2
+   },
+   "if": {
+    "for": 1
+   },
+   "one": {
+    "in": 2
+   },
+   "something": {
+    "that": 1,
+    "else": 1
+   },
+   "your": {
+    "help": 1
+   },
+   "for": {
+    "the": 1
+   },
+   "some": {
+    "caribbean": 1,
+    "portuguese": 1,
+    "cheap": 1
+   },
+   "assistance": {
+    "finding": 1
+   },
+   "you": {
+    "to": 1
+   },
+   "it": {
+    "to": 1
+   }
+  },
+  "don": {
+   "t": {
+    "have": 16,
+    "care": 111,
+    "want": 1,
+    "need": 1,
+    "know": 1,
+    "really": 1,
+    "think": 1,
+    "could": 1,
+    "mind": 1
+   }
+  },
+  "want": {
+   "to": {
+    "find": 59,
+    "book": 3,
+    "eat": 7,
+    "dine": 1,
+    "have": 1,
+    "know": 1,
+    "visit": 1,
+    "try": 1,
+    "make": 1
+   },
+   "a": {
+    "restaurant": 16,
+    "moderately": 5,
+    "danish": 1,
+    "place": 3,
+    "cheap": 6,
+    "jamaican": 1,
+    "moderate": 2,
+    "reservation": 1,
+    "moroccan": 1,
+    "restuarant": 1
+   },
+   "something": {
+    "in": 3,
+    "cheap": 1,
+    "that": 1
+   },
+   "chinese": {
+    "food": 1
+   },
+   "the": {
+    "indian": 1,
+    "cheap": 1,
+    "most": 1,
+    "address": 1,
+    "phone": 1,
+    "creative": 1
+   },
+   "somewhere": {
+    "that": 1,
+    "in": 1
+   },
+   "one": {
+    "in": 2,
+    "that": 1
+   },
+   "an": {
+    "expensive": 4
+   },
+   "expensive": {
+    "korean": 1
+   },
+   "some": {
+    "mexican": 1,
+    "welsh": 1
+   },
+   "turkish": {
+    "food": 1
+   },
+   "indian": {
+    "please": 1
+   },
+   "portuguese": {
+    "food": 1
+   },
+   "english": {
+    "food": 1
+   },
+   "british": {
+    "food": 2
+   },
+   "afghan": {
+    "food": 1
+   },
+   "your": {
+    "most": 1
+   },
+   "asian": {
+    "oriental": 1
+   },
+   "crossover": {
+    "food": 1
+   },
+   "it": {
+    "to": 1
+   }
+  },
+  "m": {
+   "looking": {
+    "for": 170,
+    "to": 4
+   },
+   "wanting": {
+    "indian": 1,
+    "to": 1
+   },
+   "not": {
+    "interested": 1,
+    "ready": 2,
+    "looking": 1,
+    "sure": 2,
+    "picky;": 1,
+    "a": 1
+   },
+   "trying": {
+    "to": 8
+   },
+   "actually": {
+    "looking": 1
+   },
+   "interested": {
+    "in": 4
+   },
+   "sorry": {
+    "i": 5,
+    "could": 1,
+    "to": 1
+   },
+   "needing": {
+    "a": 1
+   },
+   "going": {
+    "on": 1
+   },
+   "hoping": {
+    "to": 2
+   },
+   "really": {
+    "in": 1
+   },
+   "in": {
+    "the": 4
+   }
+  },
+  "would": {
+   "like": {
+    "a": 85,
+    "lebanese": 1,
+    "one": 3,
+    "to": 52,
+    "their": 2,
+    "north": 1,
+    "an": 20,
+    "the": 19,
+    "catalan": 1,
+    "inexpensive": 1,
+    "them": 1,
+    "vietnamese": 1,
+    "indian": 3,
+    "something": 1,
+    "it": 4,
+    "italian": 2,
+    "mexican": 1,
+    "chinese": 1,
+    "pizza": 1,
+    "japanese": 1,
+    "christmas": 1,
+    "mediterranean": 1,
+    "some": 1,
+    "for": 1,
+    "expensive": 1,
+    "moderate": 1
+   },
+   "be": {
+    "interested": 1
+   },
+   "it": {
+    "s": 1
+   },
+   "prefer": {
+    "mexican": 1,
+    "vietnamese": 1,
+    "indian": 1,
+    "the": 1,
+    "something": 1,
+    "moderate": 1,
+    "italian": 2,
+    "welsh": 1,
+    "cheap": 1,
+    "a": 1
+   },
+   "really": {
+    "like": 3
+   },
+   "settle": {
+    "for": 1
+   },
+   "actually": {
+    "prefer": 1
+   },
+   "can": {
+    "you": 1
+   },
+   "love": {
+    "to": 1
+   }
+  },
+  "d": {
+   "like": {
+    "to": 45,
+    "a": 19,
+    "their": 2,
+    "an": 4,
+    "somewhere": 1,
+    "some": 1,
+    "you": 1,
+    "the": 1,
+    "something": 4,
+    "information": 1,
+    "japanese": 1,
+    "lebanese": 1
+   },
+   "prefer": {
+    "moderately": 1,
+    "the": 1,
+    "something": 1,
+    "cantonese": 1
+   },
+   "love": {
+    "to": 2
+   },
+   "looking": {
+    "for": 1
+   }
+  },
+  "prefer": {
+   "to": {
+    "stay": 1,
+    "eat": 1
+   },
+   "the": {
+    "expensive": 1,
+    "east": 1
+   },
+   "chinese": {
+    "food": 1
+   },
+   "indian": {
+    "food": 1
+   },
+   "creative": {
+    "food": 1
+   }
+  },
+  "ll": {
+   "take": {
+    "any": 1,
+    "rice": 1,
+    "something": 2,
+    "a": 1
+   },
+   "also": {
+    "need": 1
+   },
+   "pass": {
+    "on": 1
+   },
+   "just": {
+    "take": 1
+   }
+  },
+  "do": {
+   "not": {
+    "care": 20,
+    "have": 10,
+    "want": 1,
+    "is": 1,
+    "need": 1
+   }
+  },
+  "think": {
+   "that": {
+    "s": 1,
+    "sounds": 1,
+    "is": 2,
+    "takes": 2
+   },
+   "i": {
+    "d": 3
+   },
+   "chinese": {
+    "may": 1
+   }
+  },
+  "wish": {
+   "you": {
+    "could": 1
+   }
+  },
+  "just": {
+   "need": {
+    "a": 1
+   },
+   "want": {
+    "to": 1
+   }
+  },
+  "was": {
+   "thinking": {
+    "maybe": 1,
+    "catalan": 1
+   },
+   "really": {
+    "hoping": 3,
+    "looking": 1
+   },
+   "hoping": {
+    "to": 1,
+    "for": 1
+   }
+  },
+  "like": {
+   "the": {
+    "sound": 1
+   },
+   "greek": {
+    "food": 1
+   },
+   "expensive": {
+    "restaurants": 1
+   },
+   "ethnic": {
+    "food": 1
+   }
+  },
+  "will": {
+   "try": {
+    "that": 1,
+    "the": 1
+   },
+   "choose": {
+    "anatolia": 1
+   },
+   "need": {
+    "a": 1
+   },
+   "just": {
+    "take": 1
+   },
+   "go": {
+    "to": 1
+   },
+   "get": {
+    "back": 1
+   },
+   "have": {
+    "5": 1
+   }
+  },
+  "really": {
+   "need": {
+    "something": 1,
+    "it": 1
+   },
+   "needed": {
+    "it": 1
+   },
+   "have": {
+    "no": 1
+   },
+   "don": {
+    "t": 1
+   }
+  },
+  "already": {
+   "got": {
+    "the": 1
+   }
+  },
+  "wanted": {
+   "indonesian": {
+    "food": 1
+   },
+   "the": {
+    "reservation": 1
+   }
+  },
+  "actually": {
+   "would": {
+    "just": 1,
+    "prefer": 1
+   }
+  },
+  "dont": {
+   "really": {
+    "care": 1
+   },
+   "care": {
+    "the": 1
+   },
+   "want": {
+    "it": 1
+   }
+  },
+  "have": {
+   "no": {
+    "preference": 5
+   },
+   "to": {
+    "book": 1
+   }
+  },
+  "ve": {
+   "got": {
+    "my": 1
+   },
+   "actually": {
+    "had": 1
+   },
+   "changed": {
+    "my": 1
+   }
+  },
+  "guess": {
+   "i": {
+    "could": 1,
+    "just": 1
+   },
+   "that": {
+    "would": 1
+   },
+   "we": {
+    "could": 1
+   }
+  },
+  "still": {
+   "want": {
+    "the": 1
+   }
+  },
+  "suppose": {
+   "that": {
+    "would": 1
+   },
+   "italian": {
+    "might": 1
+   }
+  },
+  "could": {
+   "eat": {
+    "at": 1
+   },
+   "really": {
+    "use": 1
+   }
+  },
+  "figured": {
+   "my": {
+    "wife": 1
+   }
+  },
+  "appreciate": {
+   "your": {
+    "help": 1
+   }
+  },
+  "did": {
+   "not": {
+    "say": 1
+   }
+  },
+  "hope": {
+   "to": {
+    "goodbye": 1
+   }
+  },
+  "believe": {
+   "that": {
+    "s": 1
+   }
+  },
+  "made": {
+   "a": {
+    "mistake": 1
+   }
+  },
+  "only": {
+   "need": {
+    "the": 1
+   }
+  },
+  "feel": {
+   "like": {
+    "having": 1
+   }
+  }
+ },
+ "that": {
+  "sounds": {
+   "like": {
+    "just": 1,
+    "something": 1,
+    "it": 1
+   },
+   "yummy": {
+    "what": 1,
+    "!": 1
+   },
+   "good": {
+    "what": 5,
+    "may": 3,
+    "thank": 2,
+    "do": 1,
+    "please": 1,
+    "can": 5,
+    "book": 1,
+    "i": 4,
+    "!": 1,
+    "as": 1,
+    "enough": 1,
+    "no": 1
+   },
+   "great": {
+    "thanks": 2,
+    "!": 5,
+    "would": 1,
+    "i": 2,
+    "thank": 1,
+    "could": 6,
+    "may": 1,
+    "can": 4
+   },
+   "amazing": {
+    "please": 1
+   },
+   "wonderful": {
+    "can": 1
+   },
+   "fine": {
+    "can": 1
+   },
+   "perfect": {
+    "!": 1,
+    "i": 2,
+    "thanks": 1
+   },
+   "lovely": {
+    "may": 1
+   },
+   "right": {
+    "could": 1
+   },
+   "interesting": {
+    "what": 1
+   },
+   "nice": {
+    "!": 1
+   }
+  },
+  "is": {
+   "all": {
+    "thank": 18,
+    "i": 7,
+    "for": 2,
+    "thanks": 4,
+    "!": 3
+   },
+   "it": {
+    "thank": 4,
+    "thanks": 1
+   },
+   "fine": {
+    "thank": 1
+   },
+   "great": {
+    "!": 1
+   },
+   "everything": {
+    "thanks": 1,
+    "still": 1
+   },
+   "perfect": {
+    "thank": 1
+   },
+   "wonderful": {
+    "thank": 1
+   }
+  },
+  "ll": {
+   "be": {
+    "all": 2
+   },
+   "do": {
+    "thank": 1
+   }
+  },
+  "will": {
+   "be": {
+    "good": 2,
+    "fine": 2,
+    "all": 16
+   },
+   "work": {
+    "i": 1
+   },
+   "do": {
+    "it": 1,
+    "thank": 1
+   }
+  },
+  "s": {
+   "unfortunate": {
+    "yes": 1
+   },
+   "all": {
+    "i": 21,
+    "thanks": 7,
+    "for": 1,
+    "thank": 6,
+    "that": 3,
+    "the": 1
+   },
+   "it": {
+    "thank": 12,
+    "goodbye": 4,
+    "thanks": 2,
+    "can": 1,
+    "i": 1,
+    "for": 1
+   },
+   "okay": {
+    "!": 1,
+    "let": 1,
+    "i": 1,
+    "are": 1
+   },
+   "great": {
+    "thank": 3,
+    "-": 1,
+    "i": 1
+   },
+   "disappointing": {
+    "is": 1,
+    "can": 2
+   },
+   "perfect": {
+    "thank": 1
+   },
+   "that": {
+    "s": 1
+   },
+   "too": {
+    "bad": 2
+   },
+   "ok": {
+    "because": 1
+   },
+   "good": {
+    "thanks": 1
+   },
+   "wonderful": {
+    "thank": 1
+   },
+   "not": {
+    "necessary": 1
+   },
+   "awesome": {
+    "thanks": 1
+   },
+   "fine": {
+    "can": 1
+   },
+   "everything": {
+    "i": 1
+   }
+  },
+  "place": {
+   "sounds": {
+    "great": 1
+   }
+  },
+  "would": {
+   "be": {
+    "great": 8,
+    "all": 1,
+    "fine": 1,
+    "good": 1,
+    "greatly": 1
+   },
+   "work": {
+    "please": 1
+   }
+  },
+  "it": {
+   "thank": {
+    "you": 1
+   }
+  },
+  "okay": {
+   "italian": {
+    "does": 1
+   }
+  },
+  "was": {
+   "very": {
+    "helpful": 1
+   },
+   "all": {
+    "thanks": 2,
+    "thank": 2,
+    "i": 3
+   }
+  },
+  "should": {
+   "do": {
+    "it": 1
+   },
+   "be": {
+    "it": 1,
+    "all": 1
+   }
+  },
+  "you": {
+   "that": {
+    "s": 1
+   }
+  },
+  "works": {
+   "same": {
+    "parameters": 1
+   }
+  },
+  "information": {
+   "is": {
+    "at": 1
+   }
+  },
+  "actually": {
+   "takes": {
+    "care": 1
+   }
+  },
+  "won": {
+   "t": {
+    "work": 1,
+    "be": 2
+   }
+  },
+  "might": {
+   "work": {
+    "what": 1
+   }
+  },
+  "one": {
+   "sounds": {
+    "good": 1
+   }
+  }
+ },
+ "ok": {
+  "sounds": {
+   "good": {
+    "thank": 1
+   }
+  },
+  "ill": {
+   "check": {
+    "latter": 1
+   }
+  },
+  "that": {
+   "would": {
+    "be": 1
+   },
+   "s": {
+    "all": 1
+   }
+  },
+  "well": {
+   "what": {
+    "do": 1
+   }
+  },
+  "thank": {
+   "you": {
+    "good": 3,
+    "that": 2,
+    "for": 1,
+    "very": 1,
+    "and": 1
+   }
+  },
+  "thanks": {
+   "that": {
+    "s": 1
+   }
+  },
+  "how": {
+   "about": {
+    "an": 2,
+    "a": 4,
+    "11:45": 1,
+    "vietnamese": 2,
+    "chinese": 1,
+    "lebanese": 1
+   }
+  },
+  "great": {
+   "thank": {
+    "you": 1
+   }
+  },
+  "book": {
+   "what": {
+    "you": 1
+   }
+  },
+  "then": {
+   "i": {
+    "ll": 1
+   },
+   "that": {
+    "s": 1
+   }
+  },
+  "can": {
+   "you": {
+    "give": 2,
+    "tell": 1,
+    "book": 1
+   }
+  },
+  "what": {
+   "are": {
+    "they": 1
+   },
+   "s": {
+    "the": 1
+   },
+   "is": {
+    "the": 1
+   }
+  },
+  "is": {
+   "there": {
+    "anything": 1
+   }
+  },
+  "and": {
+   "the": {
+    "phone": 1
+   }
+  },
+  "any": {
+   "area": {
+    "will": 1
+   }
+  },
+  "maybe": {
+   "we": {
+    "can": 1
+   }
+  },
+  "lets": {
+   "try": {
+    "there": 1
+   }
+  },
+  "i": {
+   "d": {
+    "like": 1
+   },
+   "will": {
+    "try": 1,
+    "go": 1
+   },
+   "ll": {
+    "try": 1
+   }
+  },
+  "tell": {
+   "me": {
+    "whats": 1
+   }
+  }
+ },
+ "great": {
+  "yeah": {
+   "that": {
+    "sounds": 1
+   }
+  },
+  "can": {
+   "you": {
+    "please": 2,
+    "book": 6
+   },
+   "i": {
+    "get": 3,
+    "please": 1,
+    "reserve": 1
+   }
+  },
+  "!": {
+   "thank": {
+    "you": 9
+   },
+   "i": {
+    "think": 1,
+    "would": 1,
+    "d": 1
+   },
+   "did": {
+    "you": 1
+   },
+   "can": {
+    "i": 3,
+    "you": 4
+   },
+   "da": {
+    "vinci": 1
+   },
+   "what": {
+    "is": 1
+   },
+   "where": {
+    "is": 1
+   },
+   "thanks": {
+    "for": 1,
+    "so": 1,
+    "a": 1
+   },
+   "could": {
+    "you": 1
+   },
+   "do": {
+    "you": 1
+   },
+   "please": {
+    "book": 1
+   }
+  },
+  "thank": {
+   "you": {
+    "!": 4,
+    "so": 3,
+    "for": 9,
+    "thanks": 1
+   }
+  },
+  "i": {
+   "would": {
+    "like": 1
+   },
+   "have": {
+    "everything": 1
+   },
+   "think": {
+    "that": 1
+   }
+  },
+  "thanks": {
+   "for": {
+    "that": 1,
+    "all": 2,
+    "your": 3
+   },
+   "that": {
+    "is": 1
+   },
+   "i": {
+    "m": 1
+   },
+   "a": {
+    "lot": 1
+   },
+   "so": {
+    "much": 3
+   },
+   "!": {
+    "that": 2
+   },
+   "very": {
+    "much": 1
+   }
+  },
+  "yes": {
+   "it": {
+    "is": 1
+   },
+   "please": {
+    "book": 1,
+    "do": 1
+   }
+  },
+  "that": {
+   "s": {
+    "all": 4
+   },
+   "would": {
+    "be": 1
+   },
+   "ll": {
+    "be": 1
+   },
+   "is": {
+    "all": 2
+   },
+   "was": {
+    "all": 1
+   }
+  },
+  "could": {
+   "you": {
+    "please": 1
+   }
+  },
+  "what": {
+   "is": {
+    "thier": 1,
+    "the": 2
+   }
+  },
+  "towninfo": {
+   "service": {
+    "goodbye": 1
+   }
+  },
+  "would": {
+   "you": {
+    "book": 1
+   }
+  },
+  "and": {
+   "what": {
+    "is": 1
+   }
+  },
+  "to": {
+   "hear": {
+    "that": 1
+   }
+  }
+ },
+ "how": {
+  "about": {
+   "10:30": {
+    "on": 1
+   },
+   "north": {
+    "american": 2
+   },
+   "indian": {
+    "food": 11,
+    "or": 1
+   },
+   "portuguese": {
+    "food": 4
+   },
+   "one": {
+    "serving": 1,
+    "with": 1,
+    "that": 7
+   },
+   "any": {
+    "restaurants": 1,
+    "korean": 1,
+    "area": 1,
+    "restaurant": 1
+   },
+   "a": {
+    "cheap": 3,
+    "restaurant": 8,
+    "different": 6,
+    "chinese": 4,
+    "moderately": 2,
+    "portuguese": 1,
+    "place": 2,
+    "turkish": 1,
+    "french": 1,
+    "moderate": 1,
+    "european": 1
+   },
+   "spanish": {
+    "or": 1,
+    "food": 2
+   },
+   "asian": {
+    "oriental": 11
+   },
+   "mediterranean": {
+    "food": 2,
+    "?": 1
+   },
+   "11:15": {
+    "?": 1,
+    "on": 1
+   },
+   "british": {
+    "food": 5,
+    "?": 2
+   },
+   "at": {
+    "14:45": 1,
+    "13:00": 1,
+    "11:00": 1
+   },
+   "korean": {
+    "food": 5
+   },
+   "thai": {
+    "food": 4,
+    "?": 2
+   },
+   "chinese": {
+    "food": 11,
+    "type": 2,
+    "?": 3
+   },
+   "italian": {
+    "?": 6,
+    "food": 8,
+    "type": 1
+   },
+   "gastropub": {
+    "?": 3,
+    "food": 1
+   },
+   "moderately": {
+    "priced": 1
+   },
+   "15:00": {
+    "instead": 1,
+    "for": 1
+   },
+   "16:00": {
+    "?": 2
+   },
+   "portugese": {
+    "?": 1
+   },
+   "an": {
+    "italian": 3,
+    "indian": 3,
+    "expensive": 2,
+    "international": 1
+   },
+   "modern": {
+    "european": 3
+   },
+   "vietnamese": {
+    "food": 5
+   },
+   "turkish": {
+    "food": 3
+   },
+   "either": {
+    "of": 1
+   },
+   "on": {
+    "one": 1
+   },
+   "international": {
+    "food": 2,
+    "type": 1
+   },
+   "the": {
+    "west": 3,
+    "center": 5,
+    "moderate": 1
+   },
+   "something": {
+    "in": 3
+   },
+   "!0:00": {
+    "instead": 1
+   },
+   "17:00": {
+    "?": 1
+   },
+   "european": {
+    "food": 4
+   },
+   "west": {
+    "area": 1
+   },
+   "for": {
+    "10:15": 1,
+    "11:15": 1
+   },
+   "another": {
+    "restaurant": 1
+   },
+   "french": {
+    "food": 2,
+    "type": 1,
+    "?": 1
+   },
+   "14:00": {
+    "then": 1
+   },
+   "17:15": {
+    "?": 1
+   },
+   "11:00": {
+    "on": 1
+   },
+   "latin": {
+    "american": 1
+   },
+   "ones": {
+    "that": 1
+   },
+   "some": {
+    "indian": 1
+   },
+   "10:15": {
+    "?": 1
+   },
+   "in": {
+    "the": 2
+   },
+   "find": {
+    "me": 1
+   },
+   "sunday": {
+    "at": 1
+   },
+   "18:00": {
+    "?": 1
+   },
+   "african": {
+    "?": 1
+   },
+   "that": {
+    "italian": 1
+   },
+   "their": {
+    "postcode": 1
+   },
+   "13:15": {
+    "?": 1
+   },
+   "monday": {
+    "at": 1
+   },
+   "tuesday": {
+    "same": 1
+   },
+   "12:30": {
+    "?": 1
+   },
+   "13:00": {
+    "then": 1
+   },
+   "15:15": {
+    "then": 1
+   }
+  },
+  "abou": {
+   "asian": {
+    "oriental": 1
+   }
+  },
+  "much": {
+   "is": {
+    "the": 1
+   }
+  }
+ },
+ "no": {
+  "that": {
+   "is": {
+    "all": 33,
+    "it": 4,
+    "everything": 3,
+    "ok": 1
+   },
+   "s": {
+    "it": 14,
+    "all": 45,
+    "everything": 6,
+    "fine": 3,
+    "okay": 1,
+    "perfect": 1,
+    "ok": 2
+   },
+   "does": {
+    "it": 2
+   },
+   "was": {
+    "all": 7,
+    "everything": 3,
+    "it": 3
+   },
+   "won": {
+    "t": 3
+   },
+   "will": {
+    "be": 24,
+    "take": 1,
+    "do": 6
+   },
+   "ll": {
+    "be": 2,
+    "do": 1
+   },
+   "would": {
+    "be": 3
+   },
+   "takes": {
+    "care": 1
+   },
+   "should": {
+    "be": 3,
+    "do": 2
+   },
+   "doesn": {
+    "t": 1
+   }
+  },
+  "thank": {
+   "you": {
+    "bye": 1,
+    "that": 31,
+    "good": 11,
+    "very": 1,
+    "goodbye": 28,
+    "is": 1,
+    "i": 10,
+    "but": 1,
+    "can": 3,
+    "!": 6,
+    "have": 4,
+    "so": 2,
+    "you": 2,
+    "it": 1,
+    "goobye": 1,
+    "for": 2,
+    "thank": 1,
+    "no": 1,
+    "not": 1,
+    "and": 1,
+    "we": 1
+   },
+   "you,i": {
+    "will": 1
+   }
+  },
+  "i": {
+   "think": {
+    "that": 11,
+    "i": 4
+   },
+   "can": {
+    "do": 1
+   },
+   "m": {
+    "good": 1,
+    "not": 2,
+    "all": 3,
+    "the": 1
+   },
+   "do": {
+    "not": 5
+   },
+   "don": {
+    "t": 15
+   },
+   "just": {
+    "need": 8,
+    "needed": 2,
+    "realized": 1
+   },
+   "would": {
+    "like": 3
+   },
+   "am": {
+    "only": 1,
+    "all": 1,
+    "not": 2,
+    "looking": 1
+   },
+   "really": {
+    "need": 2,
+    "prefer": 1,
+    "don": 1
+   },
+   "have": {
+    "all": 1,
+    "everything": 1
+   },
+   "need": {
+    "a": 1,
+    "17:15": 1
+   },
+   "will": {
+    "call": 1
+   },
+   "believe": {
+    "that": 1
+   },
+   "dont": {
+    "care": 1
+   },
+   "look": {
+    "forward": 1
+   },
+   "wanted": {
+    "to": 1
+   },
+   "ll": {
+    "have": 1
+   }
+  },
+  "thanks": {
+   "thank": {
+    "you": 1
+   },
+   "that": {
+    "did": 1,
+    "is": 3,
+    "s": 4,
+    "will": 1,
+    "would": 1
+   },
+   "for": {
+    "all": 2,
+    "your": 2
+   },
+   "but": {
+    "could": 2
+   },
+   "i": {
+    "ll": 2,
+    "have": 1,
+    "d": 1,
+    "just": 1
+   },
+   "you": {
+    "ve": 2
+   },
+   "instead": {
+    "could": 1
+   },
+   "can": {
+    "i": 1
+   }
+  },
+  "it": {
+   "doesn": {
+    "t": 4
+   },
+   "needs": {
+    "to": 1
+   }
+  },
+  "just": {
+   "book": {
+    "at": 1
+   },
+   "the": {
+    "address": 1
+   },
+   "pick": {
+    "me": 1
+   }
+  },
+  "you": {
+   "were": {
+    "extremely": 1,
+    "super": 1,
+    "great": 1
+   },
+   "have": {
+    "been": 5
+   },
+   "ve": {
+    "been": 3,
+    "covered": 1
+   }
+  },
+  "and": {
+   "thank": {
+    "you": 1
+   }
+  },
+  "particular": {
+   "area": {
+    "but": 1
+   }
+  },
+  "any": {
+   "price": {
+    "range": 3
+   },
+   "part": {
+    "of": 2
+   }
+  },
+  "reservation": {
+   "right": {
+    "now": 1
+   }
+  },
+  "if": {
+   "you": {
+    "could": 1
+   }
+  },
+  "preference": {
+   "you": {
+    "choose": 1
+   },
+   "can": {
+    "you": 2
+   },
+   "for": {
+    "food": 1
+   },
+   "would": {
+    "you": 1
+   },
+   "about": {
+    "price": 1
+   },
+   "please": {
+    "recommend": 1
+   },
+   "on": {
+    "type": 1
+   }
+  },
+  "further": {
+   "assistance": {
+    "needed": 1
+   }
+  },
+  "not": {
+   "yet": {
+    "thanks": 1,
+    "i": 1
+   },
+   "that": {
+    "one": 1
+   },
+   "at": {
+    "this": 1
+   }
+  },
+  "let": {
+   "s": {
+    "try": 1
+   }
+  },
+  "the": {
+   "reference": {
+    "number": 1
+   },
+   "restaurant": {
+    "should": 1
+   },
+   "west": {
+    "part": 1
+   },
+   "area": {
+    "does": 1
+   },
+   "type": {
+    "of": 1
+   },
+   "reservation": {
+    "is": 1
+   }
+  },
+  "but": {
+   "i": {
+    "would": 1,
+    "will": 1
+   },
+   "could": {
+    "you": 1
+   },
+   "thank": {
+    "you": 1
+   }
+  },
+  "in": {
+   "that": {
+    "case": 1
+   }
+  },
+  "could": {
+   "you": {
+    "just": 1,
+    "recommend": 1,
+    "double": 1
+   }
+  },
+  "how": {
+   "about": {
+    "a": 1,
+    "gastropub": 1,
+    "finding": 1
+   }
+  },
+  "what": {
+   "is": {
+    "the": 2
+   }
+  },
+  "type": {
+   "of": {
+    "food": 1
+   }
+  },
+  "14:45": {
+   "is": {
+    "the": 1
+   }
+  },
+  "price": {
+   "range": {
+    "does": 1
+   }
+  },
+  "choose": {
+   "one": {
+    "for": 1
+   }
+  },
+  "preferred": {
+   "area": {
+    "but": 1
+   }
+  },
+  "actually": {
+   "can": {
+    "you": 1
+   }
+  },
+  "maybe": {
+   "you": {
+    "could": 1
+   }
+  },
+  "lets": {
+   "keep": {
+    "the": 1
+   }
+  },
+  "this": {
+   "is": {
+    "it": 2
+   }
+  },
+  "no": {
+   "preference": {
+    "please": 1
+   }
+  },
+  "try": {
+   "looking": {
+    "for": 1
+   }
+  },
+  "can": {
+   "you": {
+    "choose": 1
+   }
+  },
+  "really": {
+   "i": {
+    "don": 1
+   }
+  }
+ },
+ "yes": {
+  "please": {
+   "give": {
+    "me": 11
+   },
+   "book": {
+    "it": 3,
+    "me": 3,
+    "a": 6,
+    "that": 1,
+    "for": 3,
+    "the": 1,
+    "5": 1,
+    "ask": 1,
+    "one": 1
+   },
+   "could": {
+    "you": 4,
+    "i": 2
+   },
+   "find": {
+    "me": 2
+   },
+   "can": {
+    "you": 2,
+    "i": 5
+   },
+   "for": {
+    "a": 2,
+    "one": 1,
+    "7": 1,
+    "6": 1,
+    "3": 1,
+    "4": 1,
+    "1": 1
+   },
+   "look": {
+    "for": 3
+   },
+   "are": {
+    "you": 1
+   },
+   "try": {
+    "booking": 2,
+    "a": 1,
+    "j": 1,
+    "another": 3,
+    "for": 1,
+    "the": 2,
+    "to": 1,
+    "17:00": 1
+   },
+   "and": {
+    "can": 1,
+    "also": 1,
+    "the": 4,
+    "i": 1
+   },
+   "i": {
+    "would": 9,
+    "d": 2,
+    "need": 6,
+    "will": 2,
+    "want": 1,
+    "prefer": 1
+   },
+   "there": {
+    "are": 1,
+    "will": 1
+   },
+   "same": {
+    "people": 1,
+    "price": 1
+   },
+   "what": {
+    "is": 2,
+    "are": 1
+   },
+   "1": {
+    "person": 1
+   },
+   "!": {
+    "can": 1,
+    "i": 3,
+    "there": 1
+   },
+   "do": {
+    "!": 1,
+    "they": 1
+   },
+   "thank": {
+    "you": 1
+   },
+   "may": {
+    "i": 1
+   },
+   "is": {
+    "there": 2
+   },
+   "if": {
+    "you": 1
+   },
+   "make": {
+    "a": 2,
+    "it": 1,
+    "me": 1
+   },
+   "in": {
+    "the": 3
+   },
+   "we": {
+    "would": 1
+   },
+   "like": {
+    "to": 1
+   },
+   "phone": {
+    "number": 1
+   },
+   "2": {
+    "people": 1
+   },
+   "7": {
+    "people": 1
+   },
+   "check": {
+    "to": 1
+   },
+   "that": {
+    "would": 1
+   },
+   "as": {
+    "well": 1
+   },
+   "go": {
+    "through": 1
+   },
+   "reserve": {
+    "a": 2
+   },
+   "choose": {
+    "one": 1
+   },
+   "4": {
+    "people": 1
+   },
+   "along": {
+    "with": 1
+   },
+   "help": {
+    "me": 1
+   },
+   "6": {
+    "people": 1
+   },
+   "3": {
+    "people": 1
+   },
+   "also": {
+    "what": 1
+   }
+  },
+  "can": {
+   "you": {
+    "please": 2,
+    "tell": 2,
+    "book": 2,
+    "see": 1,
+    "try": 2,
+    "find": 4,
+    "give": 1,
+    "look": 1,
+    "lookup": 1,
+    "help": 1
+   },
+   "i": {
+    "make": 2,
+    "get": 3,
+    "please": 4,
+    "have": 1
+   },
+   "we": {
+    "try": 1
+   }
+  },
+  "i": {
+   "am": {
+    "looking": 14,
+    "willing": 1
+   },
+   "want": {
+    "a": 1,
+    "to": 4
+   },
+   "would": {
+    "like": 45,
+    "prefer": 2,
+    "really": 1,
+    "be": 2,
+    "please": 1,
+    "for": 1
+   },
+   "need": {
+    "some": 2,
+    "a": 9,
+    "the": 3,
+    "to": 2,
+    "table": 1,
+    "help": 1
+   },
+   "m": {
+    "looking": 7
+   },
+   "d": {
+    "like": 18,
+    "prefer": 1,
+    "love": 1
+   },
+   "will": {
+    "need": 2
+   },
+   "reserve": {
+    "to": 1
+   },
+   "actually": {
+    "need": 1
+   },
+   "ll": {
+    "also": 1,
+    "need": 1,
+    "try": 1
+   },
+   "needed": {
+    "information": 1
+   },
+   "could": {
+    "eat": 1
+   },
+   "hope": {
+    "so": 1
+   }
+  },
+  "what": {
+   "is": {
+    "their": 5,
+    "the": 5,
+    "there": 1
+   },
+   "other": {
+    "restaurants": 2
+   },
+   "about": {
+    "european": 1,
+    "turkish": 1
+   },
+   "kind": {
+    "of": 1
+   },
+   "restaurants": {
+    "are": 1
+   }
+  },
+  "an": {
+   "expensive": {
+    "thai": 1
+   }
+  },
+  "could": {
+   "you": {
+    "book": 6,
+    "please": 3,
+    "look": 2,
+    "try": 1,
+    "make": 2,
+    "give": 1,
+    "just": 1
+   },
+   "i": {
+    "have": 1,
+    "get": 1
+   }
+  },
+  "look": {
+   "it": {
+    "up": 1
+   }
+  },
+  "in": {
+   "the": {
+    "west": 1,
+    "east": 1,
+    "same": 1
+   }
+  },
+  "how": {
+   "about": {
+    "indian": 1,
+    "turkish": 1,
+    "european": 1,
+    "a": 4,
+    "portuguese": 1,
+    "north": 1,
+    "one": 1,
+    "another": 1,
+    "modern": 1,
+    "10:15": 1,
+    "expensive": 1,
+    "gastropubs": 1,
+    "asian": 1
+   }
+  },
+  "and": {
+   "i": {
+    "need": 1
+   },
+   "their": {
+    "address": 2
+   },
+   "can": {
+    "you": 1
+   },
+   "book": {
+    "one": 1
+   },
+   "the": {
+    "address": 2,
+    "postcode": 1
+   },
+   "could": {
+    "you": 1
+   },
+   "then": {
+    "some": 1
+   },
+   "lets": {
+    "book": 1
+   }
+  },
+  "give": {
+   "me": {
+    "the": 2
+   }
+  },
+  "book": {
+   "me": {
+    "the": 1
+   },
+   "for": {
+    "7": 1
+   },
+   "a": {
+    "table": 2
+   },
+   "one": {
+    "of": 1
+   }
+  },
+  "if": {
+   "one": {
+    "is": 1
+   }
+  },
+  "do": {
+   "you": {
+    "have": 1
+   },
+   "any": {
+    "serve": 1
+   }
+  },
+  "are": {
+   "there": {
+    "are": 1,
+    "any": 1
+   },
+   "any": {
+    "of": 1
+   }
+  },
+  "see": {
+   "if": {
+    "there": 2
+   }
+  },
+  "is": {
+   "there": {
+    "another": 2,
+    "a": 1,
+    "any": 1,
+    "anything": 1
+   }
+  },
+  "may": {
+   "i": {
+    "have": 4
+   }
+  },
+  "please.book": {
+   "for": {
+    "five": 1
+   }
+  },
+  "but": {
+   "just": {
+    "for": 1
+   }
+  },
+  "thank": {
+   "you": {
+    "i": 1,
+    "for": 1,
+    "that": 1,
+    "could": 1
+   }
+  },
+  "that": {
+   "works": {
+    "please": 1
+   },
+   "is": {
+    "all": 1
+   },
+   "sounds": {
+    "good": 2,
+    "great": 1
+   },
+   "would": {
+    "be": 7
+   },
+   "s": {
+    "correct": 1
+   },
+   "will": {
+    "be": 4
+   }
+  },
+  "a": {
+   "different": {
+    "restaurant": 1
+   },
+   "restaurant": {
+    "serving": 1
+   },
+   "table": {
+    "for": 1
+   }
+  },
+  "for": {
+   "2": {
+    "people": 1
+   },
+   "8": {
+    "people": 1
+   },
+   "five": {
+    "people": 1
+   },
+   "4": {
+    "people": 1
+   },
+   "6": {
+    "people": 1
+   }
+  },
+  "surprise": {
+   "me": {
+    "please": 1
+   }
+  },
+  "as": {
+   "i": {
+    "already": 1
+   },
+   "long": {
+    "as": 1
+   }
+  },
+  "any": {
+   "one": {
+    "of": 1
+   }
+  },
+  "under": {
+   "$25.00": {
+    "per": 1
+   }
+  },
+  "the": {
+   "one": {
+    "in": 2
+   },
+   "address": {
+    "postcode": 1,
+    "and": 1,
+    "phone": 1
+   },
+   "dojo": {
+    "noodle": 1
+   },
+   "next": {
+    "one": 1
+   }
+  },
+  "try": {
+   "the": {
+    "same": 1
+   },
+   "to": {
+    "book": 1
+   },
+   "that": {
+    "please": 1
+   },
+   "19:00": {
+    "and": 1
+   }
+  },
+  "another": {
+   "chinese": {
+    "restaurant": 1
+   }
+  },
+  "just": {
+   "make": {
+    "sure": 1
+   }
+  },
+  "it": {
+   "s": {
+    "for": 1
+   },
+   "will": {
+    "do": 1
+   }
+  },
+  "also": {
+   "i": {
+    "will": 1
+   }
+  },
+  "there": {
+   "are": {
+    "five": 1
+   }
+  },
+  "let": {
+   "s": {
+    "try": 2,
+    "shoot": 1
+   }
+  },
+  "will": {
+   "you": {
+    "see": 1
+   }
+  },
+  "phone": {
+   "number": {
+    "please": 1,
+    "and": 1
+   }
+  },
+  "something": {
+   "in": {
+    "the": 2
+   }
+  },
+  "please,for": {
+   "tonight": {
+    "at": 1
+   }
+  },
+  "we": {
+   "can": {
+    "stick": 1
+   }
+  },
+  "where": {
+   "area": {
+    "is": 1
+   }
+  },
+  "which": {
+   "of": {
+    "them": 1
+   }
+  },
+  "address": {
+   "and": {
+    "phone": 1
+   }
+  },
+  "expensive": {
+   "restaurant": {
+    "please": 1
+   }
+  },
+  "go": {
+   "ahead": {
+    "how": 1,
+    "and": 1
+   }
+  },
+  "or": {
+   "any": {
+    "in": 1
+   }
+  },
+  "one": {
+   "in": {
+    "the": 1
+   }
+  },
+  "get": {
+   "me": {
+    "a": 1
+   }
+  },
+  "monday": {
+   "12:15": {
+    "for": 1
+   }
+  },
+  "sounds": {
+   "good": {
+    "please": 1
+   }
+  },
+  "actually": {
+   "i": {
+    "d": 1
+   },
+   "can": {
+    "we": 1
+   }
+  },
+  "indian": {
+   "sounds": {
+    "good": 1
+   }
+  },
+  "portuguese": {
+   "food": {
+    "would": 1
+   }
+  },
+  "5": {
+   "people": {
+    "friday": 1
+   }
+  }
+ },
+ "hi": {
+  "i": {
+   "want": {
+    "an": 1,
+    "a": 4,
+    "to": 1
+   },
+   "m": {
+    "looking": 24,
+    "trying": 5
+   },
+   "need": {
+    "a": 2,
+    "to": 1
+   },
+   "am": {
+    "looking": 16,
+    "hoping": 1,
+    "trying": 2
+   },
+   "would": {
+    "like": 2
+   },
+   "d": {
+    "like": 2
+   },
+   "was": {
+    "wondering": 1
+   }
+  },
+  "can": {
+   "you": {
+    "help": 4,
+    "please": 2,
+    "look": 1,
+    "tell": 1,
+    "recommend": 1
+   }
+  },
+  "!": {
+   "i": {
+    "d": 2,
+    "m": 3,
+    "need": 3
+   },
+   "can": {
+    "you": 4
+   },
+   "do": {
+    "you": 1
+   },
+   "are": {
+    "there": 3
+   }
+  },
+  "this": {
+   "might": {
+    "be": 1
+   }
+  },
+  "there": {
+   "can": {
+    "you": 1
+   },
+   "i": {
+    "am": 1,
+    "heard": 1,
+    "m": 2
+   }
+  },
+  "have": {
+   "you": {
+    "heard": 2
+   }
+  },
+  "could": {
+   "you": {
+    "help": 2,
+    "tell": 1
+   }
+  },
+  "is": {
+   "there": {
+    "a": 1
+   }
+  },
+  "-": {
+   "i": {
+    "m": 1
+   }
+  },
+  "are": {
+   "there": {
+    "any": 1
+   }
+  }
+ },
+ "is": {
+  "there": {
+   "any": {
+    "other": 4,
+    "morrocan": 1,
+    "restaurants": 5,
+    "chinese": 2,
+    "place": 4,
+    "indian": 1,
+    "thing": 1,
+    "restaurant": 2,
+    "cheap": 1,
+    "expensive": 1
+   },
+   "anything": {
+    "else": 46,
+    "in": 1,
+    "cheap": 2,
+    "an": 1,
+    "available": 1,
+    "british": 1
+   },
+   "a": {
+    "restaurant": 6,
+    "cheap": 6,
+    "moderately": 1,
+    "chinese": 1,
+    "yelp": 1,
+    "third": 1,
+    "portuguese": 1,
+    "similar": 1,
+    "moderate": 2,
+    "latin": 1,
+    "asian": 1,
+    "thai": 1,
+    "welsh": 1,
+    "lebanese": 1
+   },
+   "another": {
+    "restaurant": 7,
+    "venue": 1,
+    "chinese": 1,
+    "one": 2
+   },
+   "an": {
+    "expensive": 6,
+    "italian": 1,
+    "indian": 1,
+    "international": 1
+   },
+   "anywhere": {
+    "that": 2,
+    "in": 1
+   },
+   "chinese": {
+    "available": 1
+   },
+   "something": {
+    "else": 2,
+    "available": 1
+   },
+   "one": {
+    "with": 1,
+    "available": 1
+   }
+  },
+  "it": {
+   "possible": {
+    "to": 1
+   },
+   "an": {
+    "expensive": 1
+   },
+   "in": {
+    "the": 6
+   },
+   "a": {
+    "cheap": 1
+   },
+   "cheap": {
+    "and": 1
+   },
+   "expensive": {
+    "?": 1
+   },
+   "located": {
+    "in": 1
+   }
+  },
+  "the": {
+   "restaurant": {
+    "in": 1
+   },
+   "yippee": {
+    "noodle": 1
+   },
+   "meze": {
+    "bar": 1
+   }
+  },
+  "that": {
+   "expensive": {
+    "?": 1
+   },
+   "in": {
+    "the": 3
+   },
+   "a": {
+    "gastropub": 2
+   },
+   "restaurant": {
+    "in": 1,
+    "cheap": 1
+   },
+   "italian": {
+    "?": 1
+   }
+  },
+  "curry": {
+   "garden": {
+    "in": 1
+   }
+  },
+  "bloomsbury": {
+   "restaurant": {
+    "in": 1
+   }
+  },
+  "cocum": {
+   "located": {
+    "in": 1
+   }
+  },
+  "this": {
+   "in": {
+    "the": 1
+   },
+   "restaurant": {
+    "in": 2
+   }
+  },
+  "one": {
+   "of": {
+    "them": 1
+   }
+  },
+  "dojo": {
+   "noodle": {
+    "bar": 1
+   }
+  },
+  "11:15": {
+   "on": {
+    "saturday": 1
+   }
+  }
+ },
+ "it": {
+  "doesn": {
+   "t": {
+    "matter": 18
+   }
+  },
+  "does": {
+   "not": {
+    "matter": 1
+   }
+  },
+  "really": {
+   "doesn": {
+    "t": 1
+   }
+  },
+  "s": {
+   "for": {
+    "my": 1,
+    "5": 1
+   },
+   "one": {
+    "of": 1
+   }
+  },
+  "should": {
+   "be": {
+    "in": 3
+   },
+   "serve": {
+    "portuguese": 1
+   }
+  },
+  "is": {
+   "a": {
+    "special": 1
+   }
+  },
+  "will": {
+   "be": {
+    "a": 1
+   }
+  }
+ },
+ "may": {
+  "i": {
+   "have": {
+    "the": 27,
+    "information": 1,
+    "their": 5
+   },
+   "ask": {
+    "what": 1
+   },
+   "also": {
+    "get": 1
+   },
+   "get": {
+    "the": 2
+   },
+   "please": {
+    "have": 1
+   }
+  },
+  "have": {
+   "the": {
+    "name": 1
+   }
+  }
+ },
+ "are": {
+  "there": {
+   "any": {
+    "chinese": 4,
+    "other": 16,
+    "different": 1,
+    "moderately": 3,
+    "italian": 3,
+    "caribbean": 1,
+    "eritrean": 1,
+    "in": 3,
+    "expensive": 5,
+    "cheap": 6,
+    "mid-range": 1,
+    "others": 2,
+    "indian": 2,
+    "british": 2,
+    "restaurants": 8,
+    "kosher": 1,
+    "international": 2,
+    "spanish": 2,
+    "that": 2,
+    "casual": 1,
+    "mexican": 1,
+    "australian": 1,
+    "swedish": 1,
+    "lebanese": 1,
+    "asian": 1,
+    "indonesian": 1,
+    "gastropub": 1,
+    "panasian": 1,
+    "portuguese": 1
+   },
+   "ant": {
+    "jamaican": 1
+   },
+   "european": {
+    "types": 1
+   },
+   "cheap": {
+    "places": 1
+   },
+   "chinese": {
+    "restaurants": 1
+   }
+  },
+  "you": {
+   "able": {
+    "to": 3
+   },
+   "sure": {
+    "?": 2
+   }
+  },
+  "they": {
+   "expensive": {
+    "?": 1
+   },
+   "all": {
+    "listed": 1
+   },
+   "located": {
+    "in": 1
+   }
+  },
+  "any": {
+   "of": {
+    "them": 2
+   }
+  }
+ },
+ "actually": {
+  "scratch": {
+   "that": {
+    "i": 1
+   }
+  },
+  "i": {
+   "ve": {
+    "changed": 1
+   },
+   "d": {
+    "like": 1,
+    "prefer": 1
+   },
+   "don": {
+    "t": 3
+   },
+   "m": {
+    "looking": 1
+   },
+   "just": {
+    "found": 1,
+    "need": 1
+   },
+   "need": {
+    "a": 1
+   },
+   "change": {
+    "my": 1
+   },
+   "won": {
+    "t": 1
+   }
+  },
+  "could": {
+   "you": {
+    "look": 1
+   },
+   "i": {
+    "have": 1
+   }
+  },
+  "a": {
+   "chinese": {
+    "restaurant": 1
+   }
+  },
+  "do": {
+   "you": {
+    "have": 1
+   }
+  },
+  "can": {
+   "i": {
+    "just": 1
+   },
+   "you": {
+    "suggest": 1
+   }
+  }
+ },
+ "can": {
+  "you": {
+   "give": {
+    "me": 18
+   },
+   "find": {
+    "a": 4,
+    "me": 17,
+    "an": 1,
+    "the": 1,
+    "out": 1,
+    "another": 1
+   },
+   "book": {
+    "me": 5,
+    "a": 4,
+    "that": 1,
+    "2": 1,
+    "at": 1
+   },
+   "check": {
+    "to": 3,
+    "again": 1,
+    "for": 2
+   },
+   "help": {
+    "me": 28
+   },
+   "see": {
+    "if": 3,
+    "which": 1
+   },
+   "please": {
+    "give": 5,
+    "help": 1,
+    "recommend": 2,
+    "see": 1,
+    "let": 2,
+    "try": 1,
+    "tell": 1,
+    "get": 1
+   },
+   "tell": {
+    "me": 10
+   },
+   "recommend": {
+    "a": 5,
+    "me": 4,
+    "another": 1
+   },
+   "suggest": {
+    "me": 1
+   },
+   "just": {
+    "give": 1
+   },
+   "look": {
+    "for": 4
+   },
+   "try": {
+    "a": 1,
+    "booking": 1,
+    "the": 2,
+    "10:30": 1,
+    "to": 2,
+    "for": 1,
+    "on": 1
+   },
+   "make": {
+    "sure": 1,
+    "a": 3,
+    "reservations": 1
+   },
+   "locate": {
+    "an": 1
+   },
+   "send": {
+    "me": 1
+   },
+   "direct": {
+    "me": 1
+   }
+  },
+  "i": {
+   "have": {
+    "an": 1,
+    "the": 27,
+    "a": 4,
+    "something": 1,
+    "their": 4,
+    "its": 1
+   },
+   "get": {
+    "the": 27,
+    "a": 5,
+    "their": 1,
+    "another": 1,
+    "an": 1
+   },
+   "please": {
+    "have": 3
+   },
+   "just": {
+    "get": 1
+   },
+   "make": {
+    "a": 1
+   },
+   "book": {
+    "at": 1,
+    "de": 1
+   }
+  },
+  "we": {
+   "book": {
+    "the": 1
+   },
+   "do": {
+    "the": 1,
+    "saturday": 1
+   },
+   "try": {
+    "the": 1
+   },
+   "make": {
+    "it": 1
+   }
+  }
+ },
+ "what": {
+  "is": {
+   "their": {
+    "phone": 6,
+    "postcode": 1,
+    "address": 19
+   },
+   "the": {
+    "address": 92,
+    "price": 13,
+    "postcode": 15,
+    "phone": 52,
+    "food": 12,
+    "area": 4,
+    "name": 2,
+    "address,please": 1,
+    "other": 1,
+    "reference": 1
+   },
+   "there": {
+    "phone": 2,
+    "address": 1
+   },
+   "good": {
+    "in": 1
+   },
+   "anatolia": {
+    "s": 1
+   },
+   "its": {
+    "phone": 1
+   },
+   "a": {
+    "cheap": 1
+   },
+   "that": {
+    "european": 1
+   },
+   "price": {
+    "range": 1
+   }
+  },
+  "about": {
+   "modern": {
+    "european": 1
+   },
+   "chinese": {
+    "food": 1,
+    "?": 2
+   },
+   "the": {
+    "postcode": 1
+   },
+   "mexican": {
+    "restaurants": 1
+   },
+   "international": {
+    "food": 1
+   },
+   "mediterranean": {
+    "in": 1
+   },
+   "italian": {
+    "food": 2
+   },
+   "european": {
+    "?": 1
+   },
+   "one": {
+    "that": 1
+   },
+   "an": {
+    "indian": 2
+   },
+   "another": {
+    "restaurant": 1
+   },
+   "a": {
+    "restaurant": 2
+   },
+   "british": {
+    "food": 2
+   },
+   "we": {
+    "try": 1
+   },
+   "any": {
+    "expensive": 1
+   },
+   "indian": {
+    "restaurants": 1
+   }
+  },
+  "type": {
+   "of": {
+    "food": 12,
+    "cuisine": 1
+   }
+  },
+  "price": {
+   "range": {
+    "is": 3
+   }
+  },
+  "are": {
+   "the": {
+    "address": 2,
+    "price": 1,
+    "different": 1,
+    "other": 1
+   },
+   "their": {
+    "phone": 1
+   },
+   "they": {
+    "?": 1
+   }
+  },
+  "s": {
+   "a": {
+    "good": 1
+   },
+   "the": {
+    "address": 2,
+    "price": 1,
+    "post": 2
+   },
+   "available": {
+    "in": 1
+   },
+   "your": {
+    "favorite": 1
+   }
+  },
+  "do": {
+   "we": {
+    "have": 1
+   },
+   "you": {
+    "recommend": 1
+   }
+  },
+  "kind": {
+   "of": {
+    "food": 4,
+    "restaurants": 1,
+    "foods": 1
+   }
+  },
+  "part": {
+   "of": {
+    "town": 2
+   }
+  },
+  "its": {
+   "phone": {
+    "number": 1
+   }
+  },
+  "restaurants": {
+   "are": {
+    "on": 1,
+    "cheap": 1
+   },
+   "in": {
+    "the": 1
+   }
+  },
+  "other": {
+   "restaurants": {
+    "are": 1,
+    "in": 1
+   },
+   "options": {
+    "are": 1
+   }
+  },
+  "fancy": {
+   "restaurants": {
+    "are": 1
+   }
+  },
+  "ids": {
+   "the": {
+    "address": 1
+   }
+  },
+  "area": {
+   "is": {
+    "this": 1,
+    "that": 1
+   }
+  },
+  "expensive": {
+   "restaurants": {
+    "are": 1
+   }
+  }
+ },
+ "could": {
+  "you": {
+   "give": {
+    "me": 11
+   },
+   "book": {
+    "me": 3,
+    "one": 1,
+    "a": 1
+   },
+   "help": {
+    "me": 5
+   },
+   "tell": {
+    "me": 4
+   },
+   "find": {
+    "me": 3
+   },
+   "recommend": {
+    "an": 3,
+    "one": 2,
+    "a": 2
+   },
+   "please": {
+    "give": 5,
+    "find": 1,
+    "check": 1,
+    "help": 1
+   },
+   "get": {
+    "me": 2
+   },
+   "check": {
+    "if": 1,
+    "either": 1
+   },
+   "repeat": {
+    "the": 1
+   },
+   "reserve": {
+    "a": 1
+   },
+   "see": {
+    "if": 1
+   },
+   "try": {
+    "booking": 1,
+    "18:45": 1,
+    "chinese": 1,
+    "another": 1
+   },
+   "look": {
+    "for": 2
+   }
+  },
+  "i": {
+   "have": {
+    "the": 11,
+    "their": 3
+   },
+   "get": {
+    "the": 4,
+    "a": 1,
+    "that": 1
+   },
+   "book": {
+    "through": 1
+   }
+  },
+  "really": {
+   "use": {
+    "some": 1
+   }
+  }
+ },
+ "thank": {
+  "you": {
+   "good": {
+    "bye": 60
+   },
+   "that": {
+    "is": 16,
+    "s": 12,
+    "sounds": 2,
+    "will": 2,
+    "ll": 1,
+    "was": 1
+   },
+   "this": {
+    "is": 1
+   },
+   "for": {
+    "your": 31,
+    "booking": 1,
+    "all": 6,
+    "the": 7,
+    "using": 1,
+    "reserving": 1,
+    "helping": 1,
+    "you": 1,
+    "giving": 1,
+    "help": 1
+   },
+   "i": {
+    "d": 1,
+    "would": 1,
+    "ll": 1,
+    "have": 1,
+    "will": 1,
+    "think": 2,
+    "need": 1
+   },
+   "goodbye": {
+    "!": 12
+   },
+   "very": {
+    "much": 23
+   },
+   "so": {
+    "much": 34
+   },
+   "and": {
+    "goodbye": 6,
+    "good": 1
+   },
+   "can": {
+    "you": 4,
+    "i": 3
+   },
+   "!": {
+    "you": 2,
+    "goodbye": 6,
+    "have": 2,
+    "that": 2,
+    "good": 1,
+    "there": 1,
+    "can": 1
+   },
+   "bye": {
+    "bye": 2
+   },
+   "you": {
+    "too": 2
+   },
+   "no": {
+    "that": 1
+   },
+   "also": {
+    "could": 1
+   },
+   "may": {
+    "i": 2
+   },
+   "have": {
+    "a": 2
+   },
+   "nirala": {
+    "sounds": 1
+   }
+  }
+ },
+ "sorry": {
+  "what": {
+   "is": {
+    "the": 2
+   },
+   "type": {
+    "of": 4
+   }
+  },
+  "yes": {
+   "the": {
+    "restaurant": 1
+   }
+  },
+  "actually": {
+   "i": {
+    "need": 1
+   }
+  }
+ },
+ "book": {
+  "a": {
+   "table": {
+    "for": 3
+   }
+  },
+  "it": {
+   "for": {
+    "xxxx": 1,
+    "15:30": 1
+   }
+  },
+  "either": {
+   "for": {
+    "me": 1
+   }
+  }
+ },
+ "thanks": {
+  "that": {
+   "s": {
+    "all": 19,
+    "everything": 2
+   },
+   "is": {
+    "all": 2
+   },
+   "covers": {
+    "it": 1
+   }
+  },
+  "!": {
+   "now": {
+    "could": 1
+   },
+   "can": {
+    "i": 1
+   },
+   "you": {
+    "too": 1
+   },
+   "that": {
+    "will": 1,
+    "s": 3
+   }
+  },
+  "please": {
+   "make": {
+    "a": 1
+   }
+  },
+  "much": {
+   "!": {
+    "bye": 1
+   }
+  },
+  "so": {
+   "much": {
+    "!": 7,
+    "for": 2,
+    "bye": 1,
+    "that": 8,
+    "i": 2,
+    "have": 3
+   }
+  },
+  "for": {
+   "your": {
+    "help": 5
+   },
+   "all": {
+    "your": 1,
+    "of": 1
+   },
+   "the": {
+    "help": 1,
+    "info": 1,
+    "information": 1
+   },
+   "you": {
+    "help": 2
+   }
+  },
+  "all": {
+   "i": {
+    "need": 2
+   }
+  },
+  "will": {
+   "you": {
+    "please": 3
+   }
+  },
+  "again": {
+   "for": {
+    "helping": 1,
+    "all": 1,
+    "the": 1,
+    "your": 1
+   },
+   "goodbye": {
+    "!": 1
+   }
+  },
+  "i": {
+   "hope": {
+    "it": 1
+   },
+   "m": {
+    "all": 1
+   },
+   "will": {
+    "bye": 1,
+    "check": 1
+   },
+   "appreciate": {
+    "it": 1
+   },
+   "just": {
+    "need": 1
+   }
+  },
+  "see": {
+   "ya": {
+    "!": 1
+   }
+  },
+  "could": {
+   "i": {
+    "get": 1
+   },
+   "you": {
+    "book": 1
+   }
+  },
+  "what": {
+   "s": {
+    "the": 1
+   },
+   "is": {
+    "the": 1
+   }
+  },
+  "a": {
+   "lot": {
+    "that": 2
+   },
+   "bunch": {
+    "!": 1
+   }
+  },
+  "you": {
+   "very": {
+    "much": 1
+   },
+   "too": {
+    "goodbye": 1
+   }
+  },
+  "can": {
+   "i": {
+    "get": 1
+   }
+  },
+  "looking": {
+   "forward": {
+    "to": 1
+   }
+  },
+  "very": {
+   "much": {
+    "!": 1
+   }
+  }
+ },
+ "south": {
+  "part": {
+   "of": {
+    "town": 1
+   }
+  }
+ },
+ "excellent": {
+  "thanks": {
+   "a": {
+    "lot": 1
+   }
+  },
+  "thank": {
+   "you": {
+    "goodbye": 1,
+    "!": 1
+   }
+  },
+  "lets": {
+   "try": {
+    "hk": 1
+   }
+  },
+  "i": {
+   "ll": {
+    "need": 1
+   }
+  },
+  "that": {
+   "is": {
+    "everything": 2,
+    "all": 1
+   },
+   "s": {
+    "all": 1
+   },
+   "will": {
+    "be": 1
+   }
+  },
+  "what": {
+   "is": {
+    "their": 1
+   }
+  },
+  "!": {
+   "i": {
+    "don": 1
+   }
+  }
+ },
+ "awesome": {
+  "thank": {
+   "you": {
+    "!": 3
+   }
+  },
+  "thanks": {
+   "for": {
+    "your": 1
+   }
+  },
+  "!": {
+   "thanks": {
+    "so": 1
+   },
+   "can": {
+    "you": 1
+   }
+  },
+  "but": {
+   "can": {
+    "you": 1
+   }
+  },
+  "can": {
+   "i": {
+    "also": 1
+   }
+  }
+ },
+ "do": {
+  "they": {
+   "have": {
+    "booking": 2,
+    "availability": 1,
+    "a": 2,
+    "an": 1
+   },
+   "serve": {
+    "chinese": 1
+   }
+  },
+  "you": {
+   "have": {
+    "brazilian": 1,
+    "a": 4,
+    "one": 1,
+    "an": 2,
+    "any": 11,
+    "the": 1,
+    "anything": 1,
+    "some": 1,
+    "anyplace": 1,
+    "their": 1
+   },
+   "know": {
+    "of": 1
+   },
+   "recommend": {
+    "a": 1
+   }
+  },
+  "any": {
+   "serve": {
+    "spanish": 1
+   },
+   "of": {
+    "them": 3,
+    "those": 1
+   }
+  },
+  "anything": {
+   "of": {
+    "them": 1
+   }
+  },
+  "the": {
+   "serve": {
+    "mediterranean": 1
+   }
+  },
+  "either": {
+   "have": {
+    "a": 1
+   }
+  }
+ },
+ "hello": {
+  "i": {
+   "am": {
+    "looking": 53
+   },
+   "need": {
+    "some": 1
+   },
+   "would": {
+    "like": 3
+   },
+   "want": {
+    "a": 1
+   },
+   "m": {
+    "looking": 8,
+    "trying": 3,
+    "seeking": 1
+   }
+  },
+  "could": {
+   "you": {
+    "please": 1,
+    "help": 1
+   }
+  },
+  "can": {
+   "you": {
+    "please": 2,
+    "help": 1,
+    "suggest": 1
+   },
+   "i": {
+    "find": 1
+   }
+  },
+  "please": {
+   "find": {
+    "me": 1
+   }
+  },
+  "!": {
+   "i": {
+    "m": 3,
+    "am": 1,
+    "would": 1
+   },
+   "can": {
+    "you": 1
+   }
+  },
+  "there": {
+   "!": {
+    "i": 1
+   },
+   "any": {
+    "suggestions": 1
+   }
+  }
+ },
+ "moderate": {
+  "price": {
+   "range": {
+    "please": 2,
+    "would": 1
+   }
+  },
+  "sounds": {
+   "good": {
+    "can": 1
+   }
+  },
+  "is": {
+   "fine": {
+    "can": 1
+   }
+  }
+ },
+ "the": {
+  "restaurant": {
+   "should": {
+    "serve": 5,
+    "be": 6
+   },
+   "sounds": {
+    "good": 1
+   }
+  },
+  "type": {
+   "of": {
+    "food": 4
+   }
+  },
+  "price": {
+   "range": {
+    "does": 1,
+    "doesn": 2
+   }
+  },
+  "reservation": {
+   "is": {
+    "just": 1
+   },
+   "needs": {
+    "to": 1
+   }
+  },
+  "south": {
+   "part": {
+    "of": 1
+   }
+  },
+  "area": {
+   "doesn": {
+    "t": 2
+   },
+   "does": {
+    "not": 1
+   }
+  },
+  "mahal": {
+   "sounds": {
+    "expensive": 1
+   }
+  },
+  "centre": {
+   "of": {
+    "the": 1
+   }
+  },
+  "african": {
+   "restaurant": {
+    "sounds": 1
+   }
+  },
+  "center": {
+   "of": {
+    "town": 1
+   }
+  },
+  "one": {
+   "in": {
+    "the": 1
+   }
+  },
+  "bedouin": {
+   "serves": {
+    "catalan": 1
+   }
+  },
+  "cambridge": {
+   "chop": {
+    "house": 1
+   }
+  },
+  "italian": {
+   "place": {
+    "and": 1
+   },
+   "restaurant": {
+    "prezzo": 1
+   }
+  },
+  "gardenia": {
+   "sounds": {
+    "good": 1
+   }
+  },
+  "golden": {
+   "wok": {
+    "is": 1
+   }
+  },
+  "oak": {
+   "bistro": {
+    "sounds": 1
+   }
+  },
+  "kohinoor": {
+   "sounds": {
+    "good": 1
+   }
+  }
+ },
+ "my": {
+  "boyfriend": {
+   "really": {
+    "likes": 1
+   }
+  }
+ },
+ "oh": {
+  "wow": {
+   "that": {
+    "s": 1
+   }
+  },
+  "yes": {
+   "!": {
+    "italian": 1
+   },
+   "actually": {
+    "i": 1
+   }
+  },
+  "okay": {
+   "well": {
+    "i": 1
+   },
+   "what": {
+    "are": 1
+   },
+   "i": {
+    "must": 1
+   }
+  },
+  "well": {
+   "how": {
+    "about": 1
+   }
+  },
+  "no": {
+   "well": {
+    "i": 1
+   },
+   "can": {
+    "you": 1
+   },
+   "but": {
+    "i": 1
+   }
+  },
+  "yeah": {
+   "sure": {
+    "-": 1
+   }
+  }
+ },
+ "please": {
+  "recommend": {
+   "me": {
+    "a": 1,
+    "an": 1
+   }
+  },
+  "book": {
+   "any": {
+    "indian": 1
+   },
+   "a": {
+    "table": 4,
+    "different": 1
+   },
+   "the": {
+    "one": 1
+   },
+   "this": {
+    "for": 1
+   },
+   "it": {
+    "them": 1
+   },
+   "for": {
+    "1": 1
+   }
+  },
+  "try": {
+   "booking": {
+    "anytime": 1,
+    "a": 2,
+    "at": 1,
+    "any": 1
+   },
+   "friday": {
+    "at": 1
+   },
+   "one": {
+    "that": 1
+   }
+  },
+  "give": {
+   "me": {
+    "the": 3,
+    "la": 1,
+    "yu": 1,
+    "their": 2,
+    "a": 1
+   }
+  },
+  "just": {
+   "book": {
+    "a": 1
+   }
+  },
+  "look": {
+   "for": {
+    "something": 1
+   }
+  },
+  "provide": {
+   "me": {
+    "with": 1,
+    "information": 1
+   },
+   "postcode": {
+    "and": 1
+   },
+   "address": {
+    "and": 1
+   },
+   "a": {
+    "phone": 1
+   }
+  },
+  "search": {
+   "for": {
+    "french": 1
+   }
+  },
+  "find": {
+   "a": {
+    "cheap": 1
+   },
+   "moderately": {
+    "price": 1
+   },
+   "me": {
+    "a": 2
+   }
+  },
+  "check": {
+   "for": {
+    "italian": 1
+   }
+  },
+  "help": {
+   "me": {
+    "find": 2
+   }
+  },
+  "suggest": {
+   "me": {
+    "some": 1,
+    "a": 1
+   }
+  },
+  "tell": {
+   "me": {
+    "the": 1
+   }
+  },
+  "get": {
+   "me": {
+    "the": 1
+   }
+  }
+ },
+ "perfect": {
+  "yes": {
+   "please": {
+    "book": 1
+   }
+  },
+  "i": {
+   "m": {
+    "all": 1
+   },
+   "need": {
+    "a": 1
+   }
+  },
+  "thank": {
+   "you": {
+    "very": 3,
+    "!": 1,
+    "for": 1
+   }
+  },
+  "could": {
+   "you": {
+    "make": 1
+   }
+  },
+  "!": {
+   "i": {
+    "would": 1
+   },
+   "thank": {
+    "you": 3
+   },
+   "thanks": {
+    "good-bye": 1
+   }
+  },
+  "may": {
+   "i": {
+    "have": 1
+   }
+  },
+  "thanks": {
+   "for": {
+    "the": 1
+   }
+  },
+  "how": {
+   "about": {
+    "the": 1
+   }
+  }
+ },
+ "sounds": {
+  "good": {
+   "book": {
+    "it": 1
+   },
+   "please": {
+    "make": 1
+   },
+   "what": {
+    "is": 2
+   },
+   "lets": {
+    "book": 1
+   },
+   "can": {
+    "i": 1
+   },
+   "could": {
+    "you": 1
+   }
+  },
+  "great": {
+   "what": {
+    "is": 4
+   },
+   "make": {
+    "a": 1
+   },
+   "!": {
+    "can": 1
+   },
+   "can": {
+    "you": 2,
+    "i": 1
+   },
+   "please": {
+    "book": 1
+   },
+   "could": {
+    "you": 1
+   }
+  },
+  "perfect": {
+   "can": {
+    "you": 1
+   }
+  },
+  "wonderful": {
+   "thank": {
+    "you": 1
+   }
+  }
+ },
+ "and": {
+  "also": {
+   "postcode": {
+    "please": 3
+   }
+  },
+  "that": {
+   "s": {
+    "a": 1
+   }
+  },
+  "what": {
+   "is": {
+    "the": 1
+   }
+  },
+  "serves": {
+   "irish": {
+    "style": 1
+   }
+  }
+ },
+ "if": {
+  "you": {
+   "could": {
+    "find": 1,
+    "give": 1
+   },
+   "find": {
+    "a": 1
+   }
+  },
+  "there": {
+   "is": {
+    "one": 1
+   },
+   "are": {
+    "not": 1,
+    "no": 1
+   }
+  },
+  "the": {
+   "booking": {
+    "fails": 1
+   }
+  },
+  "travellers": {
+   "rest": {
+    "is": 1
+   }
+  },
+  "they": {
+   "are": {
+    "all": 1
+   }
+  },
+  "one": {
+   "of": {
+    "them": 1
+   }
+  }
+ },
+ "sure": {
+  "please": {
+   "book": {
+    "for": 1,
+    "me": 1,
+    "a": 1
+   },
+   "i": {
+    "need": 1
+   },
+   "try": {
+    "for": 1
+   }
+  },
+  "as": {
+   "long": {
+    "as": 2
+   }
+  },
+  "a": {
+   "turkish": {
+    "restaurant": 1
+   }
+  },
+  "and": {
+   "can": {
+    "you": 1
+   },
+   "give": {
+    "me": 1
+   }
+  },
+  "thing": {
+   "i": {
+    "ll": 1
+   }
+  },
+  "i": {
+   "would": {
+    "like": 1,
+    "be": 1
+   },
+   "also": {
+    "need": 1
+   },
+   "like": {
+    "indian": 1
+   }
+  },
+  "how": {
+   "about": {
+    "about": 1,
+    "italian": 1,
+    "10:00": 1
+   }
+  },
+  "either": {
+   "as": {
+    "long": 1
+   }
+  },
+  "!": {
+   "what": {
+    "s": 1
+   },
+   "can": {
+    "you": 2
+   }
+  },
+  "may": {
+   "i": {
+    "have": 1
+   }
+  },
+  "do": {
+   "they": {
+    "have": 1
+   }
+  },
+  "can": {
+   "you": {
+    "try": 2,
+    "please": 1,
+    "find": 1,
+    "book": 1,
+    "make": 1
+   },
+   "i": {
+    "get": 1
+   }
+  },
+  "let": {
+   "s": {
+    "try": 4,
+    "do": 1
+   }
+  },
+  "that": {
+   "would": {
+    "work": 1,
+    "be": 1
+   },
+   "s": {
+    "fine": 1
+   },
+   "sounds": {
+    "like": 1
+   }
+  },
+  "when": {
+   "you": {
+    "find": 1
+   }
+  },
+  "but": {
+   "let": {
+    "s": 1
+   }
+  },
+  "find": {
+   "me": {
+    "something": 1
+   }
+  },
+  "any": {
+   "other": {
+    "restaurant": 1
+   }
+  },
+  "what": {
+   "else": {
+    "is": 1
+   },
+   "s": {
+    "cocum": 1
+   },
+   "is": {
+    "their": 1
+   }
+  },
+  "try": {
+   "booking": {
+    "that": 1
+   }
+  },
+  "pick": {
+   "your": {
+    "favorite": 1
+   }
+  }
+ },
+ "nope": {
+  "i": {
+   "think": {
+    "that": 2
+   },
+   "m": {
+    "good": 1,
+    "all": 1
+   }
+  },
+  "that": {
+   "s": {
+    "all": 6,
+    "what": 1,
+    "it": 2
+   },
+   "sounds": {
+    "great": 1
+   },
+   "should": {
+    "do": 1,
+    "be": 1
+   },
+   "was": {
+    "all": 2
+   },
+   "ll": {
+    "do": 3
+   },
+   "is": {
+    "all": 1
+   },
+   "covers": {
+    "all": 1
+   },
+   "would": {
+    "be": 1
+   },
+   "will": {
+    "do": 1
+   }
+  },
+  "!": {
+   "could": {
+    "you": 1
+   },
+   "thank": {
+    "you": 1
+   }
+  },
+  "thats": {
+   "it": {
+    "thanks": 1
+   }
+  },
+  "got": {
+   "everything": {
+    "i": 1
+   }
+  },
+  "you": {
+   "gave": {
+    "me": 1
+   }
+  },
+  "as": {
+   "i": {
+    "said": 1
+   }
+  }
+ },
+ "reference": {
+  "number": {
+   "zmzlmlr9": {
+    "got": 1
+   }
+  }
+ },
+ "12:45": {
+  "on": {
+   "wednesday": {
+    "for": 1
+   }
+  }
+ },
+ "a": {
+  "moderately": {
+   "priced": {
+    "restaurant": 7
+   }
+  },
+  "restaurant": {
+   "that": {
+    "serves": 1
+   },
+   "in": {
+    "the": 1
+   }
+  },
+  "french": {
+   "restaurant": {
+    "in": 1
+   }
+  },
+  "cheap": {
+   "jamaican": {
+    "restaurant": 1
+   },
+   "restaurant": {
+    "in": 1
+   }
+  },
+  "moderate": {
+   "price": {
+    "range": 1
+   },
+   "priced": {
+    "irish": 1
+   }
+  },
+  "portuguese": {
+   "restaurant": {
+    "might": 1
+   }
+  },
+  "north": {
+   "part": {
+    "of": 1
+   }
+  }
+ },
+ "address": {
+  "and": {
+   "phone": {
+    "number": 8
+   },
+   "postcode": {
+    "please": 1
+   }
+  },
+  "for": {
+   "anatolia": {
+    "please": 1
+   }
+  },
+  "phone": {
+   "number": {
+    "and": 1
+   }
+  }
+ },
+ "iam": {
+  "looking": {
+   "for": {
+    "something": 1
+   }
+  }
+ },
+ "la": {
+  "mimosa": {
+   "sounds": {
+    "good": 1
+   }
+  },
+  "raza": {
+   "sounds": {
+    "lovely": 1
+   }
+  }
+ },
+ "looking": {
+  "for": {
+   "a": {
+    "cheap": 1,
+    "place": 1,
+    "restaurant": 7
+   },
+   "mediterranean": {
+    "food": 1
+   },
+   "an": {
+    "expensive": 1
+   },
+   "someone": {
+    "that": 1
+   },
+   "barbeque": {
+    "food": 1
+   }
+  }
+ },
+ "darn": {
+  "will": {
+   "you": {
+    "look": 1
+   }
+  },
+  "i": {
+   "was": {
+    "really": 1
+   }
+  },
+  "alright": {
+   "can": {
+    "we": 1
+   }
+  }
+ },
+ "okay": {
+  "wonderful": {
+   "thank": {
+    "you": 1
+   }
+  },
+  "i": {
+   "guess": {
+    "try": 1
+   },
+   "want": {
+    "to": 2
+   },
+   "will": {
+    "thanks": 1
+   },
+   "think": {
+    "that": 1
+   }
+  },
+  "can": {
+   "you": {
+    "book": 1,
+    "search": 1
+   },
+   "i": {
+    "get": 1
+   }
+  },
+  "thank": {
+   "you": {
+    "for": 5,
+    "very": 3,
+    "can": 1,
+    "goodbye": 1,
+    "that": 1
+   }
+  },
+  "as": {
+   "long": {
+    "as": 1
+   }
+  },
+  "so": {
+   "may": {
+    "i": 1
+   }
+  },
+  "great": {
+   "no": {
+    "that": 1
+   },
+   "that": {
+    "is": 3
+   },
+   "!": {
+    "thank": 1
+   }
+  },
+  "that": {
+   "s": {
+    "fine": 1,
+    "all": 1
+   },
+   "sounds": {
+    "good": 4
+   },
+   "is": {
+    "wonderful": 1,
+    "all": 2
+   }
+  },
+  "thanks": {
+   "that": {
+    "will": 1,
+    "s": 1
+   },
+   "and": {
+    "what": 1
+   }
+  },
+  "would": {
+   "it": {
+    "help": 1
+   }
+  },
+  "what": {
+   "is": {
+    "the": 2,
+    "their": 1
+   },
+   "about": {
+    "a": 1
+   }
+  },
+  "how": {
+   "about": {
+    "the": 2,
+    "one": 1,
+    "another": 1
+   }
+  },
+  "then": {
+   "how": {
+    "about": 1
+   },
+   "i": {
+    "m": 1
+   }
+  },
+  "let": {
+   "s": {
+    "book": 1,
+    "try": 2
+   }
+  },
+  "perfect": {
+   "thank": {
+    "you": 1
+   }
+  },
+  "may": {
+   "i": {
+    "have": 2
+   }
+  },
+  "yes": {
+   "pick": {
+    "one": 1
+   }
+  },
+  "until": {
+   "then": {
+    "have": 1
+   }
+  },
+  "again": {
+   "for": {
+    "6": 1
+   }
+  },
+  "try": {
+   "18:00": {
+    "instead": 1
+   }
+  },
+  "will": {
+   "you": {
+    "try": 1
+   }
+  },
+  "when": {
+   "you": {
+    "find": 1
+   }
+  }
+ },
+ "north": {
+  "part": {
+   "of": {
+    "town": 2
+   }
+  },
+  "american": {
+   "please": {
+    "give": 1
+   }
+  }
+ },
+ "sound": {
+  "perfect": {
+   "!": {
+    "what": 1
+   }
+  }
+ },
+ "not": {
+  "right": {
+   "now": {
+    "thank": 1
+   }
+  },
+  "at": {
+   "this": {
+    "time": 1
+   },
+   "the": {
+    "moment": 1
+   }
+  },
+  "sure": {
+   "of": {
+    "that": 1
+   }
+  },
+  "really": {
+   "wanting": {
+    "indian": 1
+   },
+   "which": {
+    "is": 1
+   },
+   "if": {
+    "you": 1
+   }
+  },
+  "really...but": {
+   "i": {
+    "do": 1
+   }
+  },
+  "actually": {
+   "i": {
+    "won": 1
+   }
+  },
+  "now": {
+   "thanks": {
+    "for": 1
+   }
+  },
+  "the": {
+   "phone": {
+    "number": 1
+   }
+  },
+  "in": {
+   "any": {
+    "specific": 1
+   }
+  }
+ },
+ "any": {
+  "would": {
+   "be": {
+    "fine": 1
+   }
+  },
+  "other": {
+   "place": {
+    "in": 1
+   }
+  },
+  "area": {
+   "is": {
+    "fine": 2
+   },
+   "will": {
+    "be": 1
+   },
+   "would": {
+    "be": 1
+   },
+   "of": {
+    "town": 1
+   }
+  },
+  "price": {
+   "range": {
+    "will": 5,
+    "is": 1,
+    "would": 1
+   }
+  },
+  "type": {
+   "of": {
+    "food": 5,
+    "restaurant": 1
+   },
+   "is": {
+    "fine": 1
+   }
+  },
+  "one": {
+   "will": {
+    "be": 1
+   },
+   "of": {
+    "them": 1
+   }
+  },
+  "restaurants": {
+   "in": {
+    "the": 1
+   }
+  },
+  "kind": {
+   "of": {
+    "food": 1
+   },
+   "i": {
+    "don": 1
+   }
+  },
+  "place": {
+   "i": {
+    "can": 1
+   }
+  },
+  "of": {
+   "them": {
+    "will": 1,
+    "would": 1
+   }
+  },
+  "european": {
+   "restaurants": {
+    "?": 1
+   }
+  },
+  "in": {
+   "the": {
+    "same": 1
+   }
+  },
+  "part": {
+   "of": {
+    "town": 1
+   }
+  }
+ },
+ "nothing": {
+  "in": {
+   "the": {
+    "south": 1
+   }
+  },
+  "else": {
+   "thank": {
+    "you": 1
+   },
+   "thanks": {
+    "for": 1
+   },
+   "i": {
+    "look": 1
+   }
+  }
+ },
+ "hey": {
+  "i": {
+   "m": {
+    "up": 1,
+    "trying": 1
+   }
+  },
+  "could": {
+   "you": {
+    "tell": 1
+   }
+  },
+  "are": {
+   "there": {
+    "any": 1
+   }
+  },
+  "do": {
+   "you": {
+    "know": 1
+   }
+  }
+ },
+ "royal": {
+  "spice": {
+   "sounds": {
+    "good": 1
+   },
+   "give": {
+    "me": 1
+   }
+  }
+ },
+ "hmm": {
+  "let": {
+   "me": {
+    "think": 1
+   }
+  },
+  "how": {
+   "about": {
+    "italian": 1,
+    "somewhere": 1
+   }
+  },
+  "are": {
+   "there": {
+    "any": 1
+   }
+  },
+  "i": {
+   "m": {
+    "not": 1
+   },
+   "don": {
+    "t": 2
+   },
+   "guess": {
+    "i": 1
+   },
+   "feel": {
+    "like": 1
+   }
+  },
+  "well": {
+   "ok": {
+    "how": 1
+   }
+  },
+  "okay": {
+   "can": {
+    "you": 1
+   },
+   "how": {
+    "about": 1
+   }
+  },
+  "can": {
+   "you": {
+    "try": 1
+   }
+  },
+  "find": {
+   "me": {
+    "something": 1
+   }
+  }
+ },
+ "which": {
+  "of": {
+   "those": {
+    "nine": 1
+   }
+  },
+  "part": {
+   "of": {
+    "town": 6
+   }
+  },
+  "ever": {
+   "is": {
+    "open": 1
+   }
+  },
+  "one": {
+   "of": {
+    "these": 1
+   },
+   "would": {
+    "you": 1
+   }
+  },
+  "is": {
+   "closest": {
+    "to": 1
+   }
+  },
+  "restaurant": {
+   "were": {
+    "you": 1
+   }
+  },
+  "area": {
+   "is": {
+    "it": 1
+   }
+  }
+ },
+ "let": {
+  "s": {
+   "try": {
+    "the": 5,
+    "a": 2,
+    "indian": 1,
+    "another": 1,
+    "to": 1,
+    "expensive": 1,
+    "an": 1,
+    "italian": 1
+   },
+   "go": {
+    "with": 5
+   }
+  }
+ },
+ "4": {
+  "people": {
+   "at": {
+    "13:45": 1
+   },
+   "friday": {
+    "15:45": 1
+   }
+  }
+ },
+ "does": {
+  "eraina": {
+   "serve": {
+    "european": 1
+   }
+  },
+  "it": {
+   "serve": {
+    "bistro": 1,
+    "chinese": 1
+   }
+  },
+  "the": {
+   "hk": {
+    "fusion": 1
+   }
+  },
+  "this": {
+   "restaurant": {
+    "serve": 1
+   }
+  },
+  "that": {
+   "serve": {
+    "modern": 1
+   }
+  }
+ },
+ "we": {
+  "will": {
+   "have": {
+    "7": 1
+   }
+  },
+  "can": {
+   "go": {
+    "earlier": 1
+   }
+  }
+ },
+ "good": {
+  "morning": {
+   "i": {
+    "need": 1
+   },
+   "can": {
+    "you": 1
+   },
+   "are": {
+    "there": 1
+   }
+  },
+  "i": {
+   "like": {
+    "chinese": 1
+   }
+  },
+  "afternoon": {
+   "i": {
+    "am": 1
+   }
+  }
+ },
+ "wonderful": {
+  "thank": {
+   "you": {
+    "that": 1,
+    "so": 1,
+    "for": 1
+   }
+  },
+  "thanks": {
+   "that": {
+    "s": 1
+   },
+   "for": {
+    "your": 1
+   }
+  },
+  "that": {
+   "s": {
+    "all": 2
+   }
+  }
+ },
+ "nah": {
+  "whatever": {
+   "you": {
+    "can": 1
+   }
+  },
+  "either": {
+   "one": {
+    "is": 1
+   }
+  }
+ },
+ "for": {
+  "now": {
+   "can": {
+    "i": 1
+   }
+  },
+  "4": {
+   "people": {
+    "at": 2
+   }
+  },
+  "four": {
+   "thursday": {
+    "11:45": 1
+   }
+  }
+ },
+ "yes,i": {
+  "need": {
+   "to": {
+    "book": 1
+   }
+  }
+ },
+ "something": {
+  "in": {
+   "the": {
+    "same": 1,
+    "south": 1
+   }
+  },
+  "moderately": {
+   "priced": {
+    "would": 1
+   }
+  }
+ },
+ "cotto": {
+  "is": {
+   "fine": {
+    "i": 1
+   }
+  }
+ },
+ "then": {
+  "how": {
+   "about": {
+    "one": 2,
+    "somewhere": 1
+   }
+  },
+  "that": {
+   "will": {
+    "be": 1
+   }
+  },
+  "go": {
+   "ahead": {
+    "and": 1
+   }
+  },
+  "find": {
+   "a": {
+    "european": 1
+   }
+  },
+  "could": {
+   "you": {
+    "recommend": 1
+   }
+  }
+ },
+ "their": {
+  "phone": {
+   "number": {
+    "please": 1
+   }
+  }
+ },
+ "help": {
+  "me": {
+   "find": {
+    "a": 1
+   }
+  }
+ },
+ "of": {
+  "course": {
+   "!": {
+    "thanks": 1
+   },
+   "i": {
+    "ll": 1
+   }
+  }
+ },
+ "am": {
+  "looking": {
+   "for": {
+    "a": 4
+   }
+  },
+  "asking": {
+   "for": {
+    "the": 1
+   }
+  }
+ },
+ "there": {
+  "will": {
+   "be": {
+    "7": 1,
+    "3": 1,
+    "4": 1
+   }
+  },
+  "seems": {
+   "to": {
+    "be": 1
+   }
+  },
+  "are": {
+   "six": {
+    "of": 1
+   },
+   "6": {
+    "of": 1
+   }
+  },
+  "is": {
+   "nothing": {
+    "else": 1
+   }
+  }
+ },
+ "moderately": {
+  "priced": {
+   "restaurant": {
+    "in": 1
+   },
+   "european": {
+    "food": 1
+   }
+  }
+ },
+ "portuguese": {
+  "food": {
+   "in": {
+    "any": 1
+   }
+  }
+ },
+ "so": {
+  "many": {
+   "choices": {
+    "can": 1
+   }
+  }
+ },
+ "phone": {
+  "number": {
+   "and": {
+    "postcode": 4,
+    "address": 2
+   }
+  }
+ },
+ "im": {
+  "up": {
+   "north": {
+    "whats": 1
+   }
+  },
+  "looking": {
+   "for": {
+    "a": 2
+   }
+  }
+ },
+ "price": {
+  "doesn": {
+   "t": {
+    "matter": 2
+   }
+  },
+  "range": {
+   "isn": {
+    "t": 1
+   },
+   "doesn": {
+    "t": 1
+   }
+  }
+ },
+ "since": {
+  "i": {
+   "like": {
+    "chinese": 1
+   }
+  }
+ },
+ "lets": {
+  "go": {
+   "with": {
+    "chinese": 1,
+    "the": 1
+   }
+  },
+  "change": {
+   "it": {
+    "to": 1
+   }
+  },
+  "try": {
+   "for": {
+    "asian": 1
+   },
+   "a": {
+    "table": 1
+   }
+  }
+ },
+ "maybe": {
+  "some": {
+   "indian": {
+    "food": 1
+   }
+  },
+  "take": {
+   "another": {
+    "look": 1
+   }
+  },
+  "something": {
+   "in": {
+    "the": 1
+   }
+  },
+  "try": {
+   "one": {
+    "more": 1
+   }
+  }
+ },
+ "lucky": {
+  "star": {
+   "sure": {
+    "why": 1
+   }
+  }
+ },
+ "will": {
+  "you": {
+   "book": {
+    "me": 1
+   },
+   "look": {
+    "for": 1
+   },
+   "check": {
+    "16:15": 1
+   },
+   "please": {
+    "book": 2
+   },
+   "give": {
+    "me": 1
+   }
+  },
+  "try": {
+   "another": {
+    "one": 1
+   }
+  },
+  "do": {
+   "!": {
+    "thank": 1
+   }
+  }
+ },
+ "located": {
+  "in": {
+   "the": {
+    "east": 1
+   }
+  }
+ },
+ "an": {
+  "expensive": {
+   "restaurant": {
+    "please": 1
+   }
+  }
+ },
+ "tell": {
+  "me": {
+   "the": {
+    "address": 2
+   },
+   "about": {
+    "the": 1
+   }
+  }
+ },
+ "west": {
+  "part": {
+   "of": {
+    "town": 2
+   }
+  },
+  "side": {
+   "of": {
+    "town": 1
+   }
+  }
+ },
+ "just": {
+  "the": {
+   "phone": {
+    "number": 1
+   }
+  },
+  "please": {
+   "book": {
+    "a": 1
+   }
+  },
+  "one": {
+   "and": {
+    "can": 1
+   },
+   "person": {
+    "on": 1
+   }
+  },
+  "book": {
+   "a": {
+    "table": 1
+   }
+  },
+  "to": {
+   "be": {
+    "certain": 1
+   }
+  },
+  "1": {
+   "person": {
+    "at": 1
+   }
+  },
+  "their": {
+   "address": {
+    "please": 1
+   }
+  },
+  "two": {
+   "it": {
+    "s": 1
+   }
+  }
+ },
+ "why": {
+  "don": {
+   "t": {
+    "you": 1,
+    "we": 2
+   }
+  }
+ },
+ "bummer": {
+  "could": {
+   "you": {
+    "help": 1
+   }
+  },
+  "how": {
+   "about": {
+    "some": 1
+   }
+  }
+ },
+ "european": {
+  "food": {
+   "that": {
+    "is": 1
+   }
+  }
+ },
+ "type": {
+  "of": {
+   "food": {
+    "doesn": 1,
+    "does": 1
+   }
+  }
+ },
+ "need": {
+  "a": {
+   "restaurant": {
+    "serving": 1
+   }
+  }
+ },
+ "get": {
+  "me": {
+   "a": {
+    "restaurant": 1
+   }
+  }
+ },
+ "anywhere": {
+  "i": {
+   "would": {
+    "just": 1
+   }
+  }
+ },
+ "yes,please": {
+  "and": {
+   "one": {
+    "that": 1
+   }
+  }
+ },
+ "you": {
+  "too": {
+   "!": {
+    "thank": 1
+   },
+   "thank": {
+    "you": 1
+   }
+  },
+  "ve": {
+   "been": {
+    "more": 1
+   }
+  },
+  "re": {
+   "certain": {
+    "that": 1
+   },
+   "welcome": {
+    "and": 1,
+    "!": 1
+   }
+  },
+  "have": {
+   "been": {
+    "very": 1
+   },
+   "a": {
+    "nice": 1
+   }
+  },
+  "know": {
+   "i": {
+    "d": 1
+   }
+  }
+ },
+ "caribbean": {
+  "food": {
+   "in": {
+    "the": 1
+   }
+  }
+ },
+ "in": {
+  "the": {
+   "centre": {
+    "of": 1
+   },
+   "moderate": {
+    "price": 1
+   },
+   "west": {
+    "part": 1
+   }
+  },
+  "that": {
+   "case": {
+    "could": 1
+   }
+  }
+ },
+ "all": {
+  "right": {
+   "i": {
+    "ll": 1
+   }
+  }
+ },
+ "12:30": {
+  "on": {
+   "sunday": {
+    "there": 1
+   }
+  }
+ },
+ "don": {
+  "t": {
+   "care": {
+    "about": 1
+   }
+  }
+ },
+ "surprise": {
+  "me": {
+   "i": {
+    "just": 3
+   },
+   "what": {
+    "food": 1
+   }
+  }
+ },
+ "area": {
+  "does": {
+   "not": {
+    "matter": 2
+   }
+  },
+  "doesn": {
+   "t": {
+    "matter": 1
+   }
+  }
+ },
+ "got": {
+  "everything": {
+   "thanks": {
+    "goodbye": 1
+   }
+  }
+ },
+ "yep": {
+  "!": {
+   "thanks": {
+    "-": 1
+   }
+  }
+ },
+ "well": {
+  "i": {
+   "need": {
+    "it": 1
+   }
+  },
+  "is": {
+   "there": {
+    "perhaps": 1
+   }
+  },
+  "the": {
+   "restaurant": {
+    "should": 1
+   }
+  },
+  "can": {
+   "i": {
+    "get": 1
+   },
+   "you": {
+    "recommend": 1
+   }
+  }
+ },
+ "chinese": {
+  "sounds": {
+   "good": {
+    "can": 1
+   }
+  },
+  "would": {
+   "be": {
+    "great": 1
+   }
+  },
+  "food": {
+   "sound": {
+    "good": 1
+   }
+  },
+  "what": {
+   "is": {
+    "the": 1
+   }
+  }
+ },
+ "italian": {
+  "sounds": {
+   "good": {
+    "i": 1,
+    "can": 1
+   }
+  },
+  "food": {
+   "cheap": {
+    "and": 1
+   },
+   "please": {
+    "phone": 1
+   }
+  },
+  "would": {
+   "you": {
+    "reserve": 1
+   }
+  },
+  "please": {
+   "can": {
+    "you": 1
+   },
+   "!": {
+    "can": 1
+   }
+  }
+ },
+ "as": {
+  "long": {
+   "as": {
+    "they": 2,
+    "it": 1,
+    "its": 1
+   }
+  }
+ },
+ "where": {
+  "else": {
+   "could": {
+    "ypou": 1
+   }
+  },
+  "can": {
+   "i": {
+    "find": 1,
+    "get": 1
+   }
+  },
+  "a": {
+   "a": {
+    "restaurant": 1
+   }
+  },
+  "is": {
+   "saint": {
+    "johns": 1
+   }
+  },
+  "in": {
+   "the": {
+    "east": 1
+   }
+  }
+ },
+ "another": {
+  "same": {
+   "area": {
+    "and": 1
+   }
+  },
+  "in": {
+   "the": {
+    "same": 1
+   }
+  },
+  "place": {
+   "to": {
+    "eat": 1
+   }
+  }
+ },
+ "make": {
+  "it": {
+   "for": {
+    "11:15": 1
+   }
+  },
+  "the": {
+   "reservation": {
+    "for": 1
+   }
+  }
+ },
+ "give": {
+  "me": {
+   "the": {
+    "address": 1
+   }
+  }
+ },
+ "one": {
+  "that": {
+   "serves": {
+    "italian": 1
+   }
+  },
+  "in": {
+   "the": {
+    "east": 2,
+    "moderate": 1
+   }
+  },
+  "more": {
+   "thing": {
+    "what": 1
+   }
+  }
+ },
+ "da": {
+  "vinci": {
+   "pizzeria": {
+    "serves": 1
+   }
+  }
+ },
+ "british": {
+  "sounds": {
+   "good": {
+    "what": 1
+   }
+  }
+ },
+ "certainly": {
+  "sounds": {
+   "good": {
+    "could": 1
+   }
+  }
+ },
+ "expensive": {
+  "mediterranean": {
+   "restaurant": {
+    "please": 1
+   }
+  },
+  "restaurant": {
+   "in": {
+    "the": 1
+   }
+  }
+ },
+ "indian": {
+  "food": {
+   "of": {
+    "course": 1
+   },
+   "in": {
+    "the": 2
+   },
+   "please": {
+    "what": 1
+   }
+  },
+  "in": {
+   "the": {
+    "north": 1
+   }
+  },
+  "would": {
+   "be": {
+    "good": 1
+   }
+  }
+ },
+ "caffe": {
+  "uno": {
+   "sounds": {
+    "good": 1,
+    "great": 1
+   }
+  }
+ },
+ "16:15": {
+  "please": {
+   "thank": {
+    "you": 1
+   }
+  },
+  "seems": {
+   "like": {
+    "a": 1
+   }
+  }
+ },
+ "know": {
+  "any": {
+   "good": {
+    "bites": 1
+   }
+  },
+  "anywhere": {
+   "that": {
+    "has": 1
+   }
+  }
+ },
+ "alright": {
+  "can": {
+   "you": {
+    "find": 1
+   }
+  },
+  "thank": {
+   "you": {
+    "very": 1
+   }
+  },
+  "then": {
+   "how": {
+    "about": 1
+   }
+  }
+ },
+ "east": {
+  "part": {
+   "of": {
+    "town": 1
+   }
+  }
+ },
+ "pizza": {
+  "hut": {
+   "cherry": {
+    "hinton": 1
+   }
+  }
+ },
+ "yeah": {
+  "i": {
+   "need": {
+    "a": 1
+   }
+  },
+  "that": {
+   "sounds": {
+    "great": 1
+   }
+  },
+  "actually": {
+   "let": {
+    "s": 1
+   }
+  }
+ },
+ "would": {
+  "15:00": {
+   "on": {
+    "the": 1
+   }
+  },
+  "you": {
+   "have": {
+    "something": 1
+   },
+   "confirm": {
+    "this": 1
+   },
+   "please": {
+    "book": 1
+   },
+   "happen": {
+    "to": 1
+   },
+   "see": {
+    "if": 1
+   },
+   "be": {
+    "able": 1
+   }
+  }
+ },
+ "have": {
+  "you": {
+   "eaten": {
+    "there": 1
+   }
+  },
+  "a": {
+   "nice": {
+    "day": 1
+   },
+   "good": {
+    "evening": 1,
+    "day": 1
+   }
+  }
+ },
+ "aww": {
+  "that": {
+   "s": {
+    "too": 1
+   }
+  }
+ },
+ "um": {
+  "i": {
+   "think": {
+    "i": 1
+   }
+  },
+  "ok": {
+   "?": {
+    "well": 1
+   }
+  }
+ },
+ "nevermind": {
+  "i": {
+   "m": {
+    "sorry": 1
+   }
+  }
+ },
+ "cheap": {
+  "restaurant": {
+   "in": {
+    "the": 1
+   }
+  }
+ },
+ "modern": {
+  "european": {
+   "sounds": {
+    "wonderful": 1
+   }
+  }
+ },
+ "vietnamese": {
+  "please": {
+   "give": {
+    "me": 1
+   }
+  },
+  "sounds": {
+   "good": {
+    "could": 1
+   }
+  }
+ },
+ "heya": {
+  "can": {
+   "you": {
+    "find": 1
+   }
+  }
+ },
+ "kymmoy": {
+  "in": {
+   "the": {
+    "centre": 1
+   }
+  }
+ },
+ "centre": {
+  "part": {
+   "of": {
+    "town": 1
+   }
+  }
+ },
+ "either": {
+  "would": {
+   "be": {
+    "fine": 2
+   }
+  },
+  "is": {
+   "fine": {
+    "could": 1,
+    "can": 1
+   }
+  },
+  "one": {
+   "is": {
+    "fine": 1
+   }
+  }
+ },
+ "malaysian": {
+  "food": {
+   "in": {
+    "the": 1
+   }
+  }
+ },
+ "try": {
+  "17:00": {
+   "on": {
+    "sunday": 1
+   }
+  },
+  "17:30": {
+   "okay": {
+    "?": 1
+   }
+  },
+  "a": {
+   "different": {
+    "cuisine": 1
+   }
+  }
+ },
+ "cool": {
+  "thank": {
+   "you": {
+    "i": 1
+   }
+  }
+ },
+ "korean": {
+  "might": {
+   "work": {
+    "are": 1
+   }
+  }
+ },
+ "same": {
+  "to": {
+   "you": {
+    "!": 1
+   }
+  }
+ },
+ "l": {
+  "am": {
+   "looking": {
+    "for": 1
+   }
+  }
+ },
+ "on": {
+  "second": {
+   "thought": {
+    "could": 1
+   }
+  },
+  "the": {
+   "east": {
+    "side": 1
+   }
+  }
+ },
+ "were": {
+  "you": {
+   "able": {
+    "to": 1
+   }
+  }
+ },
+ "find": {
+  "a": {
+   "moderately": {
+    "priced": 1
+   }
+  },
+  "me": {
+   "expensive": {
+    "restaurant": 1
+   }
+  }
+ },
+ "13:45": {
+  "on": {
+   "monday": {
+    "and": 1
+   }
+  }
+ },
+ "pardon": {
+  "?": {
+   "is": {
+    "that": 1
+   }
+  }
+ },
+ "very": {
+  "well": {
+   "i": {
+    "really": 1
+   }
+  }
+ },
+ "wait": {
+  "i": {
+   "might": {
+    "want": 1
+   }
+  }
+ },
+ "honestly": {
+  "i": {
+   "am": {
+    "not": 1
+   }
+  }
+ },
+ "he": {
+  "restaurant": {
+   "should": {
+    "be": 1
+   }
+  }
+ },
+ "restaurant": {
+  "on": {
+   "the": {
+    "south": 1
+   }
+  }
+ },
+ "ii": {
+  "d": {
+   "like": {
+    "a": 1
+   }
+  }
+ },
+ "first": {
+  "what": {
+   "is": {
+    "the": 1
+   }
+  }
+ },
+ "id": {
+  "like": {
+   "to": {
+    "eat": 1
+   }
+  }
+ },
+ "nandos": {
+  "sounds": {
+   "great": {
+    "thank": 1
+   }
+  }
+ },
+ "none": {
+  "of": {
+   "those": {
+    "really": 1
+   }
+  }
+ },
+ "mexican": {
+  "will": {
+   "be": {
+    "fine": 1
+   }
+  }
+ },
+ "bloomsbury": {
+  "sounds": {
+   "nice": {
+    "can": 1
+   }
+  }
+ },
+ "perhaps": {
+  "you": {
+   "could": {
+    "try": 1
+   }
+  }
+ },
+ "yea": {
+  "is": {
+   "there": {
+    "another": 1
+   }
+  }
+ },
+ "19:00": {
+  "for": {
+   "6": {
+    "people": 1
+   }
+  }
+ },
+ "yes,and": {
+  "book": {
+   "it": {
+    "for": 1
+   }
+  }
+ },
+ "anything": {
+  "in": {
+   "the": {
+    "area": 1
+   }
+  }
+ },
+ "thats": {
+  "all": {
+   "-": {
+    "thanks": 1
+   }
+  }
+ },
+ "wednesday": {
+  "like": {
+   "the": {
+    "girl": 1
+   }
+  }
+ },
+ "saint": {
+  "johns": {
+   "chop": {
+    "house": 1
+   }
+  }
+ },
+ "dont": {
+  "care": {
+   "but": {
+    "i": 1
+   }
+  }
+ },
+ "belgian": {
+  "please": {
+   "i": {
+    "m": 1
+   }
+  }
+ },
+ "graffiti": {
+  "sounds": {
+   "good": {
+    "i": 1
+   }
+  }
+ },
+ "fantastic": {
+  "that": {
+   "s": {
+    "all": 1
+   }
+  }
+ },
+ "shucks": {
+  "no": {
+   "polish": {
+    "?": 1
+   }
+  }
+ },
+ "charlie": {
+  "chan": {
+   "sounds": {
+    "good": 1
+   }
+  }
+ },
+ "thursday": {
+  "at": {
+   "12:45": {
+    "for": 1
+   }
+  }
+ },
+ "ok.book": {
+  "for": {
+   "seven": {
+    "people": 1
+   }
+  }
+ },
+ "only": {
+  "the": {
+   "best": {
+    "for": 1
+   }
+  }
+ },
+ "terrific": {
+  "!": {
+   "you": {
+    "are": 1
+   }
+  }
+ },
+ "absolutely": {
+  "!": {
+   "thank": {
+    "you": 1
+   }
+  }
+ },
+ "5": {
+  "people": {
+   "on": {
+    "a": 1
+   }
+  }
+ },
+ "never": {
+  "mind": {
+   "i": {
+    "m": 1,
+    "ll": 1
+   }
+  }
+ },
+ "somewhere": {
+  "in": {
+   "the": {
+    "centre": 1
+   }
+  }
+ },
+ "ah": {
+  "well": {
+   "too": {
+    "bad": 1
+   }
+  }
+ },
+ "doesn": {
+  "t": {
+   "really": {
+    "matter": 1
+   }
+  }
+ }
+}
