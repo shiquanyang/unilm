@@ -10,6 +10,7 @@ from models.GraphMemory import GraphMemory
 from models.VisualMemory import VisualMemory
 from utils.config import *
 import numpy as np
+import pdb
 
 
 class LocalSemanticsExtractor(nn.Module):
@@ -156,6 +157,7 @@ class LocalSemanticsExtractor(nn.Module):
         for turn in range(int(max_turn)):
             kb_readout = self.graph_memory(query_vectors[:, turn, :])  # kb_readout: (batch_size*max_len) * embed_dim.
             vis_readout = self.visual_memory(query_vectors[:, turn, :])  # vis_readout: (batch_size*max_len) * embed_dim.
+            pdb.set_trace()
             knowledge_vecs[turn, :, :] = torch.cat([query_vectors[:, turn, :], kb_readout, vis_readout], dim=1)
         knowledge_vecs_t = knowledge_vecs.transpose(0, 1)
         knowledge_vecs_linear = self.Linear(knowledge_vecs_t)
