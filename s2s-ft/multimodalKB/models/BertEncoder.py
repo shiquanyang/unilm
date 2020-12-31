@@ -27,7 +27,7 @@ class BertEncoder(nn.Module):
 
     def forward(self, input_seqs, input_lengths, hidden=None):
         # pdb.set_trace()
-        print(input_seqs.device)
+        # print(input_seqs.device)
         max_len = input_seqs.shape[0]
         mask = self.gen_input_mask(input_seqs.shape[1], input_seqs.shape[0], input_lengths)
         if USE_CUDA:
