@@ -275,8 +275,7 @@ def batch_list_to_batch_tensors(data):
         if isinstance(x[0], torch.Tensor):
             batch_tensors.append(torch.stack(x))
         else:
-            batch_tensors.append(torch.tensor(x, dtype=torch.long))
-    _cuda(batch_tensors)
+            batch_tensors.append(_cuda(torch.tensor(x, dtype=torch.long)))
     data_info['unilm_info'] = batch_tensors
     return data_info
 
