@@ -3,6 +3,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import logging
 import math
 import os
+import pdb
 
 import torch
 from torch import nn
@@ -553,6 +554,7 @@ class BertForSequenceToSequence(BertPreTrainedForSeq2SeqModel):
         assert source_len > 0 and target_len > 0
         split_lengths = (source_len, target_len, pseudo_len)
 
+        pdb.set_trace()
         input_ids = torch.cat((source_ids, target_ids, pseudo_ids), dim=1)
 
         token_type_ids = torch.cat(
