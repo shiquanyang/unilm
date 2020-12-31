@@ -17,6 +17,7 @@ class BertEncoder(nn.Module):
         self.embedding = nn.Embedding(input_size, hidden_size, padding_idx=PAD_token)
         self.bert = BertModel.from_pretrained('bert-base-uncased')
         self.W1 = nn.Linear(768, hidden_size)
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     def gen_input_mask(self, batch_size, max_len, lengths):
         input_mask = np.zeros([batch_size, max_len], dtype=np.float32)
@@ -30,7 +31,7 @@ class BertEncoder(nn.Module):
         max_len = input_seqs.shape[0]
         mask = self.gen_input_mask(input_seqs.shape[1], input_seqs.shape[0], input_lengths)
         if USE_CUDA:
-            mask.cuda()
+            mask = mask.to(self.device)
         outputs = self.bert(input_seqs.transpose(0, 1).type(torch.LongTensor), attention_mask=mask)
         last_hidden_states = outputs[0]
         hidden = torch.sum(last_hidden_states, dim=1) / max_len
