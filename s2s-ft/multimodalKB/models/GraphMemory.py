@@ -96,7 +96,7 @@ class GraphMemory(nn.Module):
             if (len(list(u[-1].size())) == 1):
                 u[-1] = u[-1].unsqueeze(0)  ## used for bsz = 1.
             u_temp = u[-1].unsqueeze(1).expand_as(m_A)
-            pdb.set_trace()
+            # pdb.set_trace()
             if USE_CUDA:
                 u_temp = u_temp.cuda()
             prob_logits = torch.sum(m_A * u_temp, 2)
