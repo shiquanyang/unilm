@@ -4,6 +4,7 @@ import logging
 import math
 import os
 import pdb
+from utils.config import *
 
 import torch
 from torch import nn
@@ -554,7 +555,6 @@ class BertForSequenceToSequence(BertPreTrainedForSeq2SeqModel):
         assert source_len > 0 and target_len > 0
         split_lengths = (source_len, target_len, pseudo_len)
 
-        pdb.set_trace()
         input_ids = torch.cat((source_ids, target_ids, pseudo_ids), dim=1)
 
         token_type_ids = torch.cat(
@@ -564,7 +564,11 @@ class BertForSequenceToSequence(BertPreTrainedForSeq2SeqModel):
 
         # source_mask, source_position_ids = \
         #     self.create_mask_and_position_ids(num_source_tokens, source_len)
-        lengths = torch.LongTensor(lengths)
+        if USE_CUDA:
+            lengths = torch.LongTensor(lengths).cuda()
+        else:
+            lengths = torch.LongTensor(lengths)
+        pdb.set_trace()
         source_mask, source_position_ids = \
             self.create_mask_and_position_ids(lengths, source_len)
         # target_mask, target_position_ids = \
