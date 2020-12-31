@@ -105,11 +105,15 @@ class VisualMemory(nn.Module):
             if (len(list(u[-1].size())) == 1):
                 u[-1] = u[-1].unsqueeze(0)  ## used for bsz = 1.
             u_temp = u[-1].unsqueeze(1).expand_as(m_A)
+            if USE_CUDA:
+                u_temp = u_temp.cuda()
             prob_logits = torch.sum(m_A * u_temp, 2)
             prob_soft = self.softmax(prob_logits)
             m_C = self.m_image[hop + 1]
             prob = prob_soft.unsqueeze(2).expand_as(m_C)
             o_k = torch.sum(m_C * prob, 1)
+            if USE_CUDA:
+                u[-1] = u[-1].cuda()
             u_k = u[-1] + o_k
             u.append(u_k)
         return u[-1]
