@@ -97,6 +97,8 @@ class Seq2seqDatasetForBert(torch.utils.data.Dataset):
             return ids
 
     def __getitem__(self, idx):
+        idx = (self.offset + idx) % len(self.features)
+
         # Combine multimodal dataset __getitem__ instructions
         context_arr = self.data_info['context_arr'][idx]
         context_arr = self.preprocess(context_arr, self.src_word2id, trg=False)
@@ -126,7 +128,7 @@ class Seq2seqDatasetForBert(torch.utils.data.Dataset):
         data_info['response_plain'] = self.data_info['response'][idx]
         data_info['kb_arr_plain'] = self.data_info['kb_arr'][idx]
 
-        idx = (self.offset + idx) % len(self.features)
+        # idx = (self.offset + idx) % len(self.features)
         feature = self.features[idx]
         source_ids = self.__trunk([self.cls_id] + feature["source_ids"], self.max_source_len)
         target_ids = self.__trunk(feature["target_ids"], self.max_target_len)
