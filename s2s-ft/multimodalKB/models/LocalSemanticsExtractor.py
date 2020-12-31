@@ -150,15 +150,19 @@ class LocalSemanticsExtractor(nn.Module):
 
         # attend external knowledge
         query_vectors = torch.zeros([dh_hidden.size()[1], int(max_turn), dh_hidden.size()[2]])
+        if USE_CUDA:
+            query_vectors = query_vectors.cuda()
         for idx, ele in enumerate(cls_ids):
             for pos, val in enumerate(ele):
                 query_vectors[idx, pos, :] = dh_outputs[idx, val, :]
         knowledge_vecs = torch.zeros([int(max_turn), dh_hidden.size()[1], 3 * dh_hidden.size()[2]])
+        if USE_CUDA:
+            knowledge_vecs = knowledge_vecs.cuda()
         for turn in range(int(max_turn)):
             kb_readout = self.graph_memory(query_vectors[:, turn, :])  # kb_readout: (batch_size*max_len) * embed_dim.
             vis_readout = self.visual_memory(query_vectors[:, turn, :])  # vis_readout: (batch_size*max_len) * embed_dim.
-            pdb.set_trace()
             knowledge_vecs[turn, :, :] = torch.cat([query_vectors[:, turn, :], kb_readout, vis_readout], dim=1)
+        pdb.set_trace()
         knowledge_vecs_t = knowledge_vecs.transpose(0, 1)
         knowledge_vecs_linear = self.Linear(knowledge_vecs_t)
 
