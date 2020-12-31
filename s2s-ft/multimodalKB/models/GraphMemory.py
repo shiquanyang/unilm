@@ -104,6 +104,8 @@ class GraphMemory(nn.Module):
             m_C = self.m_story[hop + 1]
             prob = prob_soft.unsqueeze(2).expand_as(m_C)
             o_k = torch.sum(m_C * prob, 1)
+            if USE_CUDA:
+                u[-1] = u[-1].cuda()
             u_k = u[-1] + o_k
             u.append(u_k)
         return u[-1]
