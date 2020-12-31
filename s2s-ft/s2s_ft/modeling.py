@@ -571,7 +571,7 @@ class BertForSequenceToSequence(BertPreTrainedForSeq2SeqModel):
             lengths = torch.LongTensor(lengths).cuda()
         else:
             lengths = torch.LongTensor(lengths)
-        pdb.set_trace()
+        # pdb.set_trace()
         source_mask, source_position_ids = \
             self.create_mask_and_position_ids(lengths, source_len)
         # target_mask, target_position_ids = \
