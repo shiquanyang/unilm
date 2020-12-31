@@ -11,7 +11,7 @@ if (os.cpu_count() > 2):
     USE_CUDA = True
     # USE_CUDA = False
 else:
-    USE_CUDA = False
+    USE_CUDA = True
 MAX_LENGTH = 10
 DEFAULT_INPUT_CHANNELS = 1024
 DEFAULT_OUTPUT_CHANNELS = 256
