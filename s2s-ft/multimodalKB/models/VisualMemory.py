@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+from utils.config import *
 from utils.utils_temp import AttrProxy
 
 
