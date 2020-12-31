@@ -162,7 +162,6 @@ class LocalSemanticsExtractor(nn.Module):
             kb_readout = self.graph_memory(query_vectors[:, turn, :])  # kb_readout: (batch_size*max_len) * embed_dim.
             vis_readout = self.visual_memory(query_vectors[:, turn, :])  # vis_readout: (batch_size*max_len) * embed_dim.
             knowledge_vecs[turn, :, :] = torch.cat([query_vectors[:, turn, :], kb_readout, vis_readout], dim=1)
-        pdb.set_trace()
         knowledge_vecs_t = knowledge_vecs.transpose(0, 1)
         knowledge_vecs_linear = self.Linear(knowledge_vecs_t)
 
@@ -176,7 +175,9 @@ class LocalSemanticsExtractor(nn.Module):
         if attention_mask.dim() == 3:
             extended_attention_mask = attention_mask[:, None, :, :]
         extended_attention_mask = (1.0 - extended_attention_mask) * -10000.0
-
+        if USE_CUDA:
+            extended_attention_mask = extended_attention_mask.cuda()
+        pdb.set_trace()
         outputs = self.bert_layer(knowledge_vecs_linear, extended_attention_mask)
 
         return outputs[0], output_turns  # outputs: batch_size * max_turns * 768, turns: batch_size.
