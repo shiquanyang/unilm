@@ -177,7 +177,7 @@ class LocalSemanticsExtractor(nn.Module):
         extended_attention_mask = (1.0 - extended_attention_mask) * -10000.0
         if USE_CUDA:
             extended_attention_mask = extended_attention_mask.cuda()
-        pdb.set_trace()
+        # pdb.set_trace()
         outputs = self.bert_layer(knowledge_vecs_linear, extended_attention_mask)
 
         return outputs[0], output_turns  # outputs: batch_size * max_turns * 768, turns: batch_size.
