@@ -32,9 +32,9 @@ class BertEncoder(nn.Module):
         mask = self.gen_input_mask(input_seqs.shape[1], input_seqs.shape[0], input_lengths)
         if USE_CUDA:
             mask = mask.to(self.device)
-        t1 = input_seqs.transpose(0, 1).type(torch.LongTensor)
+        t1 = input_seqs.transpose(0, 1).type(torch.LongTensor).cuda()
         print(t1.device)
-        outputs = self.bert(input_seqs.transpose(0, 1).type(torch.LongTensor), attention_mask=mask)
+        outputs = self.bert(input_seqs.transpose(0, 1).type(torch.LongTensor).cuda(), attention_mask=mask)
         last_hidden_states = outputs[0]
         hidden = torch.sum(last_hidden_states, dim=1) / max_len
         hidden = self.W1(hidden.unsqueeze(0))
