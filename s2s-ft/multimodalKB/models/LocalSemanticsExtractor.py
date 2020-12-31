@@ -1,6 +1,10 @@
 import torch
 import torch.nn as nn
 from models.BertEncoder import BertEncoder
+import os
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '../'))
+from s2s_ft.modeling import BertLayer
 from models.ContextRNN import ContextRNN
 from models.GraphMemory import GraphMemory
 from models.VisualMemory import VisualMemory
@@ -21,7 +25,8 @@ class LocalSemanticsExtractor(nn.Module):
                  output_channels,
                  conv_kernel_size,
                  pool_kernel_size,
-                 visual_hop):
+                 visual_hop,
+                 config):
         super(LocalSemanticsExtractor, self).__init__()
         self.input_size = input_size
         self.hidden_size = hidden_size
@@ -35,8 +40,9 @@ class LocalSemanticsExtractor(nn.Module):
         self.conv_kernel_size = conv_kernel_size
         self.pool_kernel_size = pool_kernel_size
         self.visual_hop = visual_hop
-        # self.bert_encoder = BertEncoder(input_size, hidden_size, dropout)
-        self.context_rnn = ContextRNN(input_size, hidden_size, dropout)
+        self.bert_encoder = BertEncoder(input_size, hidden_size, dropout)
+        self.bert_layer = BertLayer(config)
+        # self.context_rnn = ContextRNN(input_size, hidden_size, dropout)
         self.graph_memory = GraphMemory(vocab, embedding_dim, graph_hop, dropout)
         self.visual_memory = VisualMemory(input_channels, output_channels, conv_kernel_size,
                                           pool_kernel_size, embedding_dim, visual_hop, dropout)
@@ -122,53 +128,49 @@ class LocalSemanticsExtractor(nn.Module):
                 ret[idx, :] = encoded_hidden[idx, :]
         return ret
 
-    def forward(self, story, input_turns, kb_arr, img_arr):
+    def gen_input_mask(self, batch_size, max_len, lengths):
+        input_mask = np.zeros([batch_size, max_len], dtype=np.float32)
+        for id, len in enumerate(lengths):
+            input_mask[id, :int(lengths[id])] = np.ones([1, int(lengths[id])], dtype=np.float32)
+        return torch.tensor(input_mask)
+
+    def forward(self, story, conv_lens, cls_ids, input_turns, kb_arr, img_arr):
         turns = [turn.item() for turn in input_turns]
         output_turns = [turn.item() + 1 for turn in input_turns]
         max_turn = max(turns) + 1
         batch_size = story.size()[1]
-        # parse local dialogue data and padding.
-        local_dialogues, lengths, pseudo_lengths = self.generate_local_dialogues(story, max_turn)  #  lengths: turns * batch_size.
-        padded_local_dialogues = self.pad_local_dialogues(local_dialogues, lengths)
-        # initialize graph memory and visual memory.
+
+        # BERT encoding
+        dh_outputs, dh_hidden = self.bert_encoder(story, conv_lens)  # dh_outputs: batch_size * max_len * emb_dim.
+
+        # initialize graph memory and visual memory
         self.graph_memory.load_graph(kb_arr)
         self.visual_memory.load_images(img_arr)
-        # iteratively compute local semantic vectors.
-        # local_semantic_vectors = []
-        # local_semantic_vectors = torch.zeros(int(max_turn), batch_size, 2 * self.embedding_dim)
-        local_semantic_vectors = torch.zeros(int(max_turn), batch_size, 3 * self.embedding_dim)
+
+        # attend external knowledge
+        query_vectors = torch.zeros([dh_hidden.size()[1], int(max_turn), dh_hidden.size()[2]])
+        for idx, ele in enumerate(cls_ids):
+            for pos, val in enumerate(ele):
+                query_vectors[idx, pos, :] = dh_outputs[idx, val, :]
+        knowledge_vecs = torch.zeros([int(max_turn), dh_hidden.size()[1], 3 * dh_hidden.size()[2]])
         for turn in range(int(max_turn)):
-            input_seqs = padded_local_dialogues[turn]
-            # use pseudo lengths for context_rnn.
-            input_lengths = lengths[turn]
-            pseudo_input_lengths = pseudo_lengths[turn]
-            # index of samples within a batch in decreasing-order according to pseudo_lengths.
-            sorted_lengths = np.argsort(pseudo_input_lengths)[::-1]
-            # sort input_seqs according to the index.
-            sorted_input_seqs = self.sort_input(input_seqs, sorted_lengths)
-            # sort input_lengths according to the index.
-            sorted_input_lengths = np.sort(pseudo_input_lengths).tolist()[::-1]
-            dh_outputs, dh_hidden = self.context_rnn(sorted_input_seqs.transpose(0, 1), sorted_input_lengths)
-            encoded_hidden = self.desort_output(dh_hidden.squeeze(0), sorted_lengths)
-            kb_readout = self.graph_memory(encoded_hidden)
-            vis_readout = self.visual_memory(encoded_hidden)
-            encoded_hidden = torch.cat((encoded_hidden, kb_readout, vis_readout), dim=1)
-            # encoded_hidden = torch.cat((encoded_hidden, vis_readout), dim=1)
-            # mask pure-padded samples according to actual lengths.
-            encoded_hidden = self.mask_results(encoded_hidden, input_lengths)
-            local_semantic_vectors[turn, :, :] = encoded_hidden   # local_semantic_vectors: turns * batch_size * (3*embedding_dim).
-            # local_semantic_vectors.append(encoded_hidden)
-        # # use simple average to merge different-turns local_semantic_vectors instead of GlobalSemanticsAggregator.
-        # final_local_semantic_vectors = torch.zeros(batch_size, 3 * self.embedding_dim)
-        # for idx, turn in enumerate(turns):
-        #     temp = torch.zeros((int(turn) + 1), 3 * self.embedding_dim)
-        #     for i in range(int(turn) + 1):
-        #         temp[i, :] = local_semantic_vectors[i, idx, :]
-        #     final_local_semantic_vectors[idx, :] = temp.mean(0)
-        # extract final-turn vectors for simulate baseline
-        # final_local_semantic_vectors = torch.zeros(batch_size, 3 * self.embedding_dim).float()
-        # for idx, turn in enumerate(turns):
-        #     final_local_semantic_vectors[idx, :] = local_semantic_vectors[int(turn), idx, :]
-        # return final_local_semantic_vectors, lengths  # local_semantic_vectors: max_turns * batch_size * (3 * embedding_dim), lengths: max_turns * batch_size.
-        local_semantic_vectors = self.Linear(local_semantic_vectors.transpose(0, 1))
-        return local_semantic_vectors, output_turns  # local_semantic_vectors: max_turns * batch_size * (3 * embedding_dim), turns: batch_size.
+            kb_readout = self.graph_memory(query_vectors[:, turn, :])  # kb_readout: (batch_size*max_len) * embed_dim.
+            vis_readout = self.visual_memory(query_vectors[:, turn, :])  # vis_readout: (batch_size*max_len) * embed_dim.
+            knowledge_vecs[turn, :, :] = torch.cat([query_vectors[:, turn, :], kb_readout, vis_readout], dim=1)
+        knowledge_vecs_t = knowledge_vecs.transpose(0, 1)
+        knowledge_vecs_linear = self.Linear(knowledge_vecs_t)
+
+        # inter-turn Transformer layer
+        weight = self.gen_input_mask(batch_size, int(max_turn), output_turns)
+        from_weight = weight.unsqueeze(-1)
+        to_weight = weight.unsqueeze(1)
+        from_weight_expand = from_weight.expand([from_weight.size()[0], from_weight.size()[1], from_weight.size()[1]])
+        to_weight_expand = to_weight.expand([to_weight.size()[0], to_weight.size()[2], to_weight.size()[2]])
+        attention_mask = from_weight_expand * to_weight_expand
+        if attention_mask.dim() == 3:
+            extended_attention_mask = attention_mask[:, None, :, :]
+        extended_attention_mask = (1.0 - extended_attention_mask) * -10000.0
+
+        outputs = self.bert_layer(knowledge_vecs_linear, extended_attention_mask)
+
+        return outputs[0], output_turns  # outputs: batch_size * max_turns * 768, turns: batch_size.

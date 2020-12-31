@@ -104,13 +104,14 @@ class Seq2seqDatasetForBert(torch.utils.data.Dataset):
         response = self.preprocess(response, self.trg_word2id)
         ptr_index = torch.Tensor(self.data_info['ptr_index'][idx])
         conv_arr = self.data_info['conv_arr'][idx]
-        # conv_arr = self.preprocess_conv_arr(conv_arr)
-        conv_arr = self.preprocess(conv_arr, self.src_word2id, trg=False)
+        conv_arr = self.preprocess_conv_arr(conv_arr)
+        # conv_arr = self.preprocess(conv_arr, self.src_word2id, trg=False)
         kb_arr = self.data_info['kb_arr'][idx]
         kb_arr = self.preprocess(kb_arr, self.src_word2id, trg=False)
         img_arr = torch.Tensor(self.data_info['img_arr'][idx])
         calibration_vocab = torch.Tensor(self.data_info['calibration_vocab'][idx])
         turns = torch.Tensor(self.data_info['turns'][idx])
+        # cls_ids = torch.Tensor(self.data_info['cls_ids'][idx])
 
         # processed information
         data_info = {}
@@ -237,8 +238,8 @@ def batch_list_to_batch_tensors(data):
     context_arr, context_arr_lengths = merge(item_info['context_arr'], True)
     response, response_lengths = merge(item_info['response'], False)
     ptr_index, _ = merge(item_info['ptr_index'], False)
-    # conv_arr, conv_arr_lengths = merge(item_info['conv_arr'], False)
-    conv_arr, conv_arr_lengths = merge(item_info['conv_arr'], True)
+    conv_arr, conv_arr_lengths = merge(item_info['conv_arr'], False)
+    # conv_arr, conv_arr_lengths = merge(item_info['conv_arr'], True)
     kb_arr, kb_arr_lengths = merge(item_info['kb_arr'], True)
     img_arr, _ = merge_image(item_info['img_arr'])
     calibration_vocab, _ = merge_index(item_info['calibration_vocab'])
@@ -293,7 +294,7 @@ def get_max_epoch_model(output_dir):
 
 def read_langs(file_name, global_entity, type_dict, img_path, max_line=None):
     print("Reading lines from {}".format(file_name))
-    data, context_arr, conv_arr, kb_arr, img_arr = [], [], [], [], []
+    data, context_arr, conv_arr, kb_arr, img_arr, cls_ids = [], [], [], [], [], []
     max_res_len, sample_counter, turn = 0, 0, 0
     src_tokens = ''
     image_feas = load_img_fea(img_path)
@@ -314,9 +315,13 @@ def read_langs(file_name, global_entity, type_dict, img_path, max_line=None):
                         print(gen_u)
                         print(u, r)
                     context_arr += gen_u
-                    conv_arr += gen_u
-                    # u_token = u.split(' ')
-                    # conv_arr += u_token
+                    # conv_arr += gen_u
+                    u_token = u.split(' ')
+                    u_token.insert(0, "[CLS]")
+                    u_token.append("[SEP]")
+                    len_conv_arr = len(conv_arr)
+                    cls_ids.append(len_conv_arr)
+                    conv_arr += u_token
                     if src_tokens == '':
                         src_tokens = src_tokens + u
                     else:
@@ -345,7 +350,8 @@ def read_langs(file_name, global_entity, type_dict, img_path, max_line=None):
                         'ID':int(cnt_lin),
                         'domain':"",
                         'turns':[turn],
-                        'src_tokens': src_tokens}
+                        'src_tokens': src_tokens,
+                        'cls_ids': list(cls_ids)}
                     data.append(data_detail)
 
                     gen_r = generate_memory(r, "$s", str(turn), image_feas)
@@ -353,9 +359,11 @@ def read_langs(file_name, global_entity, type_dict, img_path, max_line=None):
                         print(gen_r)
                         print(u, r)
                     context_arr += gen_r
-                    conv_arr += gen_r
-                    # r_token = r.split(' ')
-                    # conv_arr += r_token
+                    # conv_arr += gen_r
+                    r_token = r.split(' ')
+                    r_token.append("[SEP]")
+                    conv_arr = conv_arr[:-1]
+                    conv_arr += r_token
                     src_tokens = src_tokens + ' ' + r
                     if max_res_len < len(r.split()):
                         max_res_len = len(r.split())
@@ -376,7 +384,7 @@ def read_langs(file_name, global_entity, type_dict, img_path, max_line=None):
             else:
                 cnt_lin += 1
                 turn = 0
-                context_arr, conv_arr, kb_arr, img_arr = [], [], [], []
+                context_arr, conv_arr, kb_arr, img_arr, cls_ids = [], [], [], [], []
                 src_tokens = ''
                 if(max_line and cnt_lin>max_line):
                     break
@@ -445,8 +453,9 @@ def load_and_cache_examples(
         example_file, tokenizer, local_rank, cached_features_file, shuffle=True):
     # Combine multimodal dataset loader
     data_path_babi = '/home/shiquan/Projects/unilm_joint_learning/unilm/s2s-ft/multimodalKB/data/0_synthetic/dialog-babi'
-    data_path = '/home/shiquan/Projects/unilm_joint_learning/unilm/s2s-ft/multimodalKB/data/2_20K_multimodal_dataset/all_instances_extended_kb_lowercase_gold.txt'
-    # data_path = '/Users/shiquan/PycharmProjects/MultiModalKB/s2s-ft/multimodalKB/data/2_20K_multimodal_dataset/for_debug.txt'
+    # data_path = '/Users/shiquan/PycharmProjects/MultiModalKB/s2s-ft/multimodalKB/data/2_20K_multimodal_dataset/all_instances_extended_kb_lowercase_gold.txt'
+    # data_path = '/home/shiquan/Projects/unilm_joint_learning/unilm/s2s-ft/multimodalKB/data/2_20K_multimodal_dataset/all_instances_extended_kb_lowercase_gold.txt'
+    data_path = '/home/shiquan/Projects/unilm_joint_learning/unilm/s2s-ft/multimodalKB/data/2_20K_multimodal_dataset/for_debug.txt'
     img_path = '/home/shiquan/Projects/unilm_joint_learning/unilm/s2s-ft/multimodalKB/images/restaurant'
     file_train = '{}'.format(data_path)
     # file_train = '{}-trn-multimodal-phase1-version-lowercase.txt'.format(data_path)

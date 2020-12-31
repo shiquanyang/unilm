@@ -24,7 +24,7 @@ import pdb
 
 
 class MultimodalKBLocal(nn.Module):
-    def __init__(self, hidden_size, lang, max_response_len, path, task, lr, n_layers, dropout, input_channels, output_channels, conv_kernel_size, pool_kernel_size):
+    def __init__(self, hidden_size, lang, max_response_len, path, task, lr, n_layers, dropout, input_channels, output_channels, conv_kernel_size, pool_kernel_size, config):
         super(MultimodalKBLocal, self).__init__()
         self.name = "MultimodalKBLocal"
         self.task = task
@@ -41,6 +41,7 @@ class MultimodalKBLocal(nn.Module):
         self.pool_kernel_size = pool_kernel_size
         self.max_resp_len = max_response_len
         self.decoder_hop = n_layers
+        self.config = config
 
         if path:
             if USE_CUDA:
@@ -50,7 +51,7 @@ class MultimodalKBLocal(nn.Module):
                 print("MODEL {} LOADED".format(str(path)))
                 self.local_semantics_extractor = torch.load(str(path)+'/local_semantics_extractor.th',lambda storage, loc:storage)
         else:
-            self.local_semantics_extractor = LocalSemanticsExtractor(lang.n_words, hidden_size, dropout, lang, lang.n_words, hidden_size, n_layers, input_channels, output_channels, conv_kernel_size, pool_kernel_size, n_layers)
+            self.local_semantics_extractor = LocalSemanticsExtractor(lang.n_words, hidden_size, dropout, lang, lang.n_words, hidden_size, n_layers, input_channels, output_channels, conv_kernel_size, pool_kernel_size, n_layers, config)
 
         # Initialize optimizers and criterion
         self.local_semantics_extractor_optimizer = optim.Adam(self.local_semantics_extractor.parameters(), lr=lr)
@@ -90,10 +91,12 @@ class MultimodalKBLocal(nn.Module):
         self.local_semantics_extractor_optimizer.zero_grad()
 
         conv_story = data['conv_arr']
+        conv_arr_lengths = data['conv_arr_lengths']
         input_turns = data['turns']
+        cls_ids = data['cls_ids']
 
         # Encode dialog history and KB to vectors
-        local_semantic_vectors, lengths = self.local_semantics_extractor(conv_story, input_turns, data['kb_arr'], data['img_arr'])
+        local_semantic_vectors, lengths = self.local_semantics_extractor(conv_story, conv_arr_lengths, cls_ids, input_turns, data['kb_arr'], data['img_arr'])
 
         return local_semantic_vectors, lengths
 

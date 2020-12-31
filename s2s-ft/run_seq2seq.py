@@ -449,7 +449,7 @@ def get_model_and_tokenizer(args):
         reuse_position_embedding=True,
         cache_dir=args.cache_dir if args.cache_dir else None)
 
-    return model, tokenizer
+    return model, tokenizer, config
 
 
 def main():
@@ -460,7 +460,7 @@ def main():
         torch.distributed.barrier()
         # Make sure only the first process in distributed training will download model & vocab
     # Load pretrained model and tokenizer
-    model, tokenizer = get_model_and_tokenizer(args)
+    model, tokenizer, config = get_model_and_tokenizer(args)
 
     if args.local_rank == 0:
         torch.distributed.barrier()
@@ -485,7 +485,8 @@ def main():
         input_channels=int(args.inchannels),
         output_channels=int(args.outchannels),
         conv_kernel_size=int(args.convkernelsize),
-        pool_kernel_size=int(args.poolkernelsize))
+        pool_kernel_size=int(args.poolkernelsize),
+        config=config)
 
     train(args, training_features, model, tokenizer, multimodalKB_model, train_data_info, lang)
 
