@@ -297,7 +297,7 @@ def get_max_epoch_model(output_dir):
 def read_langs(file_name, global_entity, type_dict, img_path, max_line=None):
     print("Reading lines from {}".format(file_name))
     data, context_arr, conv_arr, kb_arr, img_arr, cls_ids = [], [], [], [], [], []
-    max_res_len, sample_counter, turn = 0, 0, 0
+    max_res_len, sample_counter, turn, kb_rec_cnt = 0, 0, 0, 0
     src_tokens = ''
     image_feas = load_img_fea(img_path)
     with open(file_name) as fin:
@@ -307,6 +307,8 @@ def read_langs(file_name, global_entity, type_dict, img_path, max_line=None):
             if line:
                 nid, line = line.split(' ', 1)
                 if '\t' in line:
+                    if kb_rec_cnt < 30:
+                        continue
                     try:
                         u, r, gold_ent = line.split('\t')
                     except:
@@ -372,6 +374,7 @@ def read_langs(file_name, global_entity, type_dict, img_path, max_line=None):
                     sample_counter += 1
                     turn += 1
                 else:
+                    kb_rec_cnt += 1
                     r = line
                     if "image" not in r:
                         kb_info = generate_memory(r, "", str(nid), image_feas)
@@ -385,7 +388,7 @@ def read_langs(file_name, global_entity, type_dict, img_path, max_line=None):
                         img_arr += image_info
             else:
                 cnt_lin += 1
-                turn = 0
+                turn, kb_rec_cnt = 0, 0
                 context_arr, conv_arr, kb_arr, img_arr, cls_ids = [], [], [], [], []
                 src_tokens = ''
                 if(max_line and cnt_lin>max_line):
