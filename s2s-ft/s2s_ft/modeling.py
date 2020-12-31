@@ -4,6 +4,9 @@ import logging
 import math
 import os
 import pdb
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '../multimodalKB'))
 from utils.config import *
 
 import torch
