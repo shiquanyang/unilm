@@ -22,7 +22,7 @@ import tempfile
 import shutil
 
 # pip install pyrouge
-from evaluations.bs_pyrouge import Rouge155
+from bs_pyrouge import Rouge155
 
 
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
