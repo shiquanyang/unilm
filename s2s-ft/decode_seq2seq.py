@@ -288,6 +288,13 @@ def main():
         test_data_info['turns'] = turns_re_ordered
         test_data_info['cls_ids'] = cls_ids_re_ordered
 
+        # save tgt_response data to file for evaluation.
+        gold_path = model_recover_path+'.'+args.split+'.gold'
+        tgt_responses = test_data_info['response']
+        with open(gold_path, "w") as fout:
+            for l in tgt_responses:
+                fout.write(l + "\n")
+
         output_lines = [""] * len(input_lines)
         score_trace_list = [None] * len(input_lines)
         total_batch = math.ceil(len(input_lines) / args.batch_size)
@@ -323,7 +330,7 @@ def main():
                 data_info["img_arr"] = img_arr
                 data_info["turns"] = turns
                 data_info["cls_ids"] = cls_ids
-                data_info['conv_arr_lengths'] = conv_arr_lengths
+                data_info["conv_arr_lengths"] = conv_arr_lengths
 
                 buf_id = [x[0] for x in _chunk]
                 buf = [x[1] for x in _chunk]
