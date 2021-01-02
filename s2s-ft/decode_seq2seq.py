@@ -166,11 +166,11 @@ def main():
     if args.max_tgt_length >= args.max_seq_length - 2:
         raise ValueError("Maximum tgt length exceeds max seq length - 2.")
 
-    # device = torch.device(
-    #     "cuda" if torch.cuda.is_available() else "cpu")
-    # n_gpu = torch.cuda.device_count()
-    device = "cpu"
-    n_gpu = 0
+    device = torch.device(
+        "cuda" if torch.cuda.is_available() else "cpu")
+    n_gpu = torch.cuda.device_count()
+    # device = "cpu"
+    # n_gpu = 0
     print(device)
 
     if args.seed > 0:
