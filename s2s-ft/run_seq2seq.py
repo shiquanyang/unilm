@@ -233,7 +233,7 @@ def train(args, training_features, model, tokenizer, multimodalKB_model, train_d
                     # save MultimodalKBLocal model
                     name_data = "MULTIWOZ/"
                     layer_info = str(multimodalKB_model.n_layers)
-                    directory = 'save/MultimodalKBLocal-' + str(args.addName) + name_data + str(multimodalKB_model.task) + 'HDD' + str(
+                    directory = 'save/MultimodalKBLocal-' + str(args.addName) + name_data + 'ckpt-%d' % global_step + 'HDD' + str(
                         multimodalKB_model.hidden_size) + 'BSZ' + str(args.batch) + 'DR' + str(
                         multimodalKB_model.dropout) + 'L' + layer_info + 'lr' + str(multimodalKB_model.lr) + 'IC' + str(
                         multimodalKB_model.input_channels) + 'OC' + str(multimodalKB_model.output_channels) + 'CK' + str(

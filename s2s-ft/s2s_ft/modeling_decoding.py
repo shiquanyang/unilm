@@ -281,7 +281,7 @@ class BertEmbeddings(nn.Module):
         self.LayerNorm = BertLayerNorm(config.hidden_size, eps=1e-5)
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
 
-    def forward(self, input_ids, token_type_ids=None, position_ids=None, task_idx=None):
+    def forward(self, input_ids, local_semantic_vectors, src_len, first_step, token_type_ids=None, position_ids=None, task_idx=None):
         seq_length = input_ids.size(1)
         if position_ids is None:
             position_ids = torch.arange(
@@ -291,6 +291,14 @@ class BertEmbeddings(nn.Module):
             token_type_ids = torch.zeros_like(input_ids)
 
         words_embeddings = self.word_embeddings(input_ids)
+
+        if first_step:
+            batch_size = local_semantic_vectors.shape[0]
+            embed_dim = local_semantic_vectors.shape[2]
+            max_turn = local_semantic_vectors.shape[1]
+            words_embeddings[:, :src_len, :] = torch.zeros(batch_size, src_len, embed_dim)
+            words_embeddings[:, :max_turn, :] = words_embeddings[:, :max_turn, :] + local_semantic_vectors
+
         position_embeddings = self.position_embeddings(position_ids)
 
         if self.num_pos_emb > 1:
@@ -923,13 +931,13 @@ class BertModelIncr(BertModel):
     def __init__(self, config):
         super(BertModelIncr, self).__init__(config)
 
-    def forward(self, input_ids, token_type_ids, position_ids, attention_mask, output_all_encoded_layers=True,
+    def forward(self, input_ids, token_type_ids, position_ids, attention_mask, local_semantic_vectors, src_len, first_step, output_all_encoded_layers=True,
                 prev_embedding=None, prev_encoded_layers=None, mask_qkv=None, task_idx=None):
         extended_attention_mask = self.get_extended_attention_mask(
             input_ids, token_type_ids, attention_mask)
 
         embedding_output = self.embeddings(
-            input_ids, token_type_ids, position_ids, task_idx=task_idx)
+            input_ids, local_semantic_vectors, src_len, first_step, token_type_ids, position_ids, task_idx=task_idx)
         encoded_layers = self.encoder(embedding_output,
                                       extended_attention_mask,
                                       output_all_encoded_layers=output_all_encoded_layers,
@@ -1380,9 +1388,9 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
         self.mode = mode
         self.pos_shift = pos_shift
 
-    def forward(self, input_ids, token_type_ids, position_ids, attention_mask, task_idx=None, mask_qkv=None):
+    def forward(self, input_ids, token_type_ids, position_ids, attention_mask, local_semantic_vectors, lengths, task_idx=None, mask_qkv=None):
         if self.search_beam_size > 1:
-            return self.beam_search(input_ids, token_type_ids, position_ids, attention_mask, task_idx=task_idx, mask_qkv=mask_qkv)
+            return self.beam_search(input_ids, token_type_ids, position_ids, attention_mask, local_semantic_vectors, lengths, task_idx=task_idx, mask_qkv=mask_qkv)
 
         input_shape = list(input_ids.size())
         batch_size = input_shape[0]
@@ -1455,7 +1463,7 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
 
         return torch.cat(output_ids, dim=1)
 
-    def beam_search(self, input_ids, token_type_ids, position_ids, attention_mask, task_idx=None, mask_qkv=None):
+    def beam_search(self, input_ids, token_type_ids, position_ids, attention_mask, local_semantic_vectors, lengths, task_idx=None, mask_qkv=None):
         input_shape = list(input_ids.size())
         batch_size = input_shape[0]
         input_length = input_shape[1]
@@ -1481,6 +1489,8 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
         forbid_word_mask = None
         buf_matrix = None
 
+        first_step = True
+        src_len = curr_ids.shape[1]
         while next_pos < output_length:
             curr_length = list(curr_ids.size())[1]
 
@@ -1500,9 +1510,11 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
                                   start_pos:next_pos + 1, :next_pos + 1]
             curr_position_ids = position_ids[:, start_pos:next_pos + 1]
             new_embedding, new_encoded_layers, _ = \
-                self.bert(x_input_ids, curr_token_type_ids, curr_position_ids, curr_attention_mask,
+                self.bert(x_input_ids, curr_token_type_ids, curr_position_ids, curr_attention_mask, local_semantic_vectors, src_len, first_step,
                           output_all_encoded_layers=True, prev_embedding=prev_embedding,
                           prev_encoded_layers=prev_encoded_layers, mask_qkv=mask_qkv)
+
+            first_step = False
 
             last_hidden = new_encoded_layers[-1][:, -1:, :]
             prediction_scores, _ = self.cls(
@@ -1526,7 +1538,8 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
                 kk_scores += last_eos * (-10000.0) + last_seq_scores
                 kk_scores = torch.reshape(kk_scores, [batch_size, K * K])
                 k_scores, k_ids = torch.topk(kk_scores, k=K)
-                back_ptrs = torch.div(k_ids, K)
+                # back_ptrs = torch.div(k_ids, K)
+                back_ptrs = k_ids // K
                 kk_ids = torch.reshape(kk_ids, [batch_size, K * K])
                 k_ids = torch.gather(kk_ids, 1, k_ids)
             step_back_ptrs.append(back_ptrs)
