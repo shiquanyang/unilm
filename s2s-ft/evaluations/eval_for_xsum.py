@@ -23,6 +23,7 @@ import shutil
 
 # pip install pyrouge
 from bs_pyrouge import Rouge155
+import pdb
 
 
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
@@ -262,6 +263,7 @@ def main():
 
     logger.info("***** Evaluation: %s *****", ','.join(eval_fn_list))
     num_pool = min(args.processes, len(eval_fn_list))
+    pdb.set_trace()
     p = Pool(num_pool)
     r_list = p.imap_unordered(process_eval, eval_fn_list)
     r_list = sorted([(fn, scores)
