@@ -292,6 +292,7 @@ def main():
         score_trace_list = [None] * len(input_lines)
         total_batch = math.ceil(len(input_lines) / args.batch_size)
 
+        tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
         with tqdm(total=total_batch) as pbar:
             batch_count = 0
             first_batch = True
@@ -302,7 +303,7 @@ def main():
                 # - sample data_info for multimodalKB model inputs and convert to ids
                 data_info = {}
                 conv_arr = test_data_info['conv_arr'][next_i:next_i + args.batch_size]
-                conv_arr = preprocess_conv_arr(conv_arr)
+                conv_arr = preprocess_conv_arr(conv_arr, tokenizer)
                 kb_arr = test_data_info['kb_arr'][next_i:next_i + args.batch_size]
                 kb_arr = preprocess(kb_arr, lang.word2index, trg=False)
                 img_arr = torch.Tensor(test_data_info['img_arr'][next_i:next_i + args.batch_size])
@@ -398,11 +399,10 @@ def main():
         logger.info("Not found the model checkpoint file!")
 
 
-def preprocess_conv_arr(sequence):
+def preprocess_conv_arr(sequence, tokenizer):
     ret = []
     for seq in sequence:
         story = []
-        tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
         for i, word in enumerate(seq):
             temp = tokenizer._convert_token_to_id(word)
             story.append(temp)
