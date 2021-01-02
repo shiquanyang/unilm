@@ -459,8 +459,8 @@ def load_and_cache_examples(
     # Combine multimodal dataset loader
     data_path_babi = '/home/shiquan/Projects/unilm_joint_learning/unilm/s2s-ft/multimodalKB/data/0_synthetic/dialog-babi'
     # data_path_babi = '/Users/shiquan/PycharmProjects/MultiModalKB/s2s-ft/multimodalKB/data/0_synthetic/dialog-babi'
-    # data_path = '/Users/shiquan/PycharmProjects/MultiModalKB/s2s-ft/multimodalKB/data/2_20K_multimodal_dataset/all_instances_extended_kb_lowercase_gold.txt'
-    data_path = '/home/shiquan/Projects/unilm_joint_learning/unilm/s2s-ft/multimodalKB/data/2_20K_multimodal_dataset/test_split.txt'
+    data_path = '/Users/shiquan/PycharmProjects/MultiModalKB/s2s-ft/multimodalKB/data/2_20K_multimodal_dataset/train_split.txt'
+    # data_path = '/home/shiquan/Projects/unilm_joint_learning/unilm/s2s-ft/multimodalKB/data/2_20K_multimodal_dataset/test_split.txt'
     # data_path = '/Users/shiquan/PycharmProjects/MultiModalKB/s2s-ft/multimodalKB/data/2_20K_multimodal_dataset/for_debug.txt'
     # img_path = '/Users/shiquan/PycharmProjects/MultiModalKB/s2s-ft/multimodalKB/images/restaurant'
     img_path = '/home/shiquan/Projects/unilm_joint_learning/unilm/s2s-ft/multimodalKB/images/restaurant'
