@@ -1388,9 +1388,9 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
         self.mode = mode
         self.pos_shift = pos_shift
 
-    def forward(self, input_ids, token_type_ids, position_ids, attention_mask, local_semantic_vectors, lengths, task_idx=None, mask_qkv=None):
+    def forward(self, input_ids, token_type_ids, position_ids, attention_mask, local_semantic_vectors, lengths, padded_tgt_tokens, tgt_len, tgt_mask, task_idx=None, mask_qkv=None):
         if self.search_beam_size > 1:
-            return self.beam_search(input_ids, token_type_ids, position_ids, attention_mask, local_semantic_vectors, lengths, task_idx=task_idx, mask_qkv=mask_qkv)
+            return self.beam_search(input_ids, token_type_ids, position_ids, attention_mask, local_semantic_vectors, lengths, padded_tgt_tokens, tgt_len, tgt_mask, task_idx=task_idx, mask_qkv=mask_qkv)
 
         input_shape = list(input_ids.size())
         batch_size = input_shape[0]
@@ -1463,7 +1463,7 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
 
         return torch.cat(output_ids, dim=1)
 
-    def beam_search(self, input_ids, token_type_ids, position_ids, attention_mask, local_semantic_vectors, lengths, task_idx=None, mask_qkv=None):
+    def beam_search(self, input_ids, token_type_ids, position_ids, attention_mask, local_semantic_vectors, lengths, padded_tgt_tokens, tgt_len, tgt_mask, task_idx=None, mask_qkv=None):
         input_shape = list(input_ids.size())
         batch_size = input_shape[0]
         input_length = input_shape[1]
@@ -1491,6 +1491,8 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
 
         first_step = True
         src_len = curr_ids.shape[1]
+        curr_timestep = 0
+        losses4ppl = torch.zeros(batch_size, 1).float()
         while next_pos < output_length:
             curr_length = list(curr_ids.size())[1]
 
@@ -1521,6 +1523,15 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
                 last_hidden, None, task_idx=task_idx)
             log_scores = torch.nn.functional.log_softmax(
                 prediction_scores, dim=-1)
+
+            # Compute ppl here.
+            curr_tgt_ids = padded_tgt_tokens[:, curr_timestep]
+            log_scores_t = log_scores.squeeze(1)
+            curr_tgt_ids_t = curr_tgt_ids.unsqueeze(1)
+            losses_flat = -torch.gather(log_scores_t, dim=1, index=curr_tgt_ids_t)
+            losses = losses_flat * tgt_mask[:, curr_timestep].unsqueeze(1)
+            losses4ppl = losses4ppl + losses
+
             if forbid_word_mask is not None:
                 log_scores += (forbid_word_mask * -10000.0)
             if self.min_len and (next_pos - input_length + 1 <= self.min_len):
@@ -1673,6 +1684,11 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
                     else:
                         forbid_word_mask = None
             next_pos += 1
+            curr_timestep += 1
+
+        # Compute ppl here.
+        losses4ppl = torch.div(losses4ppl, tgt_len.unsqueeze(1))
+        ppl = torch.pow(2, losses4ppl)
 
         # [(batch, beam)]
         total_scores = [x.tolist() for x in total_scores]
@@ -1740,4 +1756,4 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
             traces[k] = _pad_sequence(
                 ts_list, output_length, padding_value=0).to(input_ids.device)
 
-        return traces
+        return traces, ppl

@@ -99,7 +99,7 @@ class Preprocess4Seq2seqDecoder(Pipeline):
         self.cc = 0
 
     def __call__(self, instance):
-        tokens_a, max_a_len = instance
+        tokens_a, max_a_len, tgt_tokens = instance
 
         padded_tokens_a = [self.cls_token] + tokens_a + [self.sep_token]
         assert len(padded_tokens_a) <= max_a_len + 2
@@ -112,6 +112,12 @@ class Preprocess4Seq2seqDecoder(Pipeline):
         tokens = padded_tokens_a
         segment_ids = [self.source_type_id] * (len(padded_tokens_a)) \
                 + [self.target_type_id] * (max_len_in_batch - len(padded_tokens_a))
+
+        max_tgt_len_in_batch = min(self.max_len - max_a_len - 2, self.max_tgt_length)
+        if len(tgt_tokens) < max_tgt_len_in_batch:
+            padded_tgt_tokens = tgt_tokens + [0] * (max_tgt_len_in_batch - len(tgt_tokens))
+        tgt_len = len(tgt_tokens)
+        tgt_mask = [1] * tgt_len + [0] * (max_tgt_len_in_batch - len(tgt_tokens))
 
         mask_qkv = None
 
@@ -145,4 +151,4 @@ class Preprocess4Seq2seqDecoder(Pipeline):
         input_mask[second_st:second_end, second_st:second_end].copy_(
             self._tril_matrix[:second_end-second_st, :second_end-second_st])
 
-        return (input_ids, segment_ids, position_ids, input_mask, mask_qkv, self.task_idx)
+        return (input_ids, segment_ids, position_ids, input_mask, mask_qkv, self.task_idx, padded_tgt_tokens, tgt_len, tgt_mask)

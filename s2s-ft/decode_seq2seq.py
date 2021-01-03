@@ -265,10 +265,11 @@ def main():
         next_i = 0
         max_src_length = args.max_seq_length - 2 - args.max_tgt_length
 
-        input_lines = []
+        input_lines, tgt_lines = [], []
         for line in to_pred:
             # convert to ids and truncate by max_src_length
             input_lines.append(line["source_ids"][:max_src_length])
+            tgt_lines.append(line["target_ids"][:args.max_tgt_length])
         if args.subset > 0:
             logger.info("Decoding subset: %d", args.subset)
             input_lines = input_lines[:args.subset]
@@ -277,16 +278,22 @@ def main():
                              key=lambda x: -len(x[1]))
         # sort test_data_info by the same orders.
         indexes = [ele[0] for ele in input_lines]
+        tgt_lines_re_ordered = [tgt_lines[ele] for ele in indexes]
         conv_arr_re_ordered = [test_data_info['conv_arr'][ele] for ele in indexes]
         kb_arr_re_ordered = [test_data_info['kb_arr'][ele] for ele in indexes]
         img_arr_re_ordered = [test_data_info['img_arr'][ele] for ele in indexes]
         turns_re_ordered = [test_data_info['turns'][ele] for ele in indexes]
         cls_ids_re_ordered = [test_data_info['cls_ids'][ele] for ele in indexes]
+        ent_index_re_ordered = [test_data_info['ent_index'][ele] for ele in indexes]
+        kb_arr_plain_re_ordered = [test_data_info['kb_arr'][ele] for ele in indexes]
         test_data_info['conv_arr'] = conv_arr_re_ordered
         test_data_info['kb_arr'] = kb_arr_re_ordered
         test_data_info['img_arr'] = img_arr_re_ordered
         test_data_info['turns'] = turns_re_ordered
         test_data_info['cls_ids'] = cls_ids_re_ordered
+        test_data_info['ent_index'] = ent_index_re_ordered
+        # add additional information for evaluation.
+        test_data_info['kb_arr_plain'] = kb_arr_plain_re_ordered
 
         # save tgt_response data to file for evaluation.
         gold_path = model_recover_path+'.'+args.split+'.gold'
@@ -301,12 +308,14 @@ def main():
 
         tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
         with tqdm(total=total_batch) as pbar:
-            batch_count = 0
+            batch_count, F1_pred, F1_count = 0, 0, 0
+            acc_ppl = 0.0
             first_batch = True
             while next_i < len(input_lines):
                 # sample a batch of instances from instance pool
                 # - sample source_tokens
                 _chunk = input_lines[next_i:next_i + args.batch_size]
+                _tgt_chunk = tgt_lines_re_ordered[next_i:next_i + args.batch_size]
                 # - sample data_info for multimodalKB model inputs and convert to ids
                 data_info = {}
                 conv_arr = test_data_info['conv_arr'][next_i:next_i + args.batch_size]
@@ -316,6 +325,8 @@ def main():
                 img_arr = torch.Tensor(test_data_info['img_arr'][next_i:next_i + args.batch_size])
                 turns = torch.Tensor(test_data_info['turns'][next_i:next_i + args.batch_size])
                 cls_ids = test_data_info['cls_ids'][next_i:next_i + args.batch_size]
+                ent_index = test_data_info['ent_index'][next_i:next_i + args.batch_size]
+                kb_arr_plain = test_data_info['kb_arr_plain'][next_i:next_i + args.batch_size]
                 # cls_ids = torch.Tensor(test_data_info['cls_ids'][next_i:next_i + args.batch_size])
                 # - pad sampled data_info
                 conv_arr, conv_arr_lengths = merge(conv_arr, False)
@@ -348,7 +359,12 @@ def main():
                     # make pseudo input_ids according to lengths information
                     pseudo_buf = [[0] * int(len) for len in lengths]
                     # for instance in [(x, max_a_len) for x in buf]:
-                    for instance in [(x, max_a_len) for x in pseudo_buf]:
+                    tmp = []
+                    for idx, x in enumerate(pseudo_buf):
+                        tgt_t = _tgt_chunk[idx]
+                        tmp.append((x, max_a_len, tgt_t))
+                    # for instance in [(x, max_a_len) for x in pseudo_buf]:
+                    for instance in tmp:
                         for proc in bi_uni_pipeline:
                             instances.append(proc(instance))
                     batch = seq2seq_loader.batch_list_to_batch_tensors(
@@ -356,9 +372,10 @@ def main():
                     batch = [
                         t.to(device) if t is not None else None for t in batch]
 
-                    input_ids, token_type_ids, position_ids, input_mask, mask_qkv, task_idx = batch
-                    traces = model(input_ids, token_type_ids,
-                                   position_ids, input_mask, local_semantic_vectors, lengths, task_idx=task_idx, mask_qkv=mask_qkv)
+                    input_ids, token_type_ids, position_ids, input_mask, mask_qkv, task_idx, padded_tgt_tokens, tgt_len, tgt_mask = batch
+                    traces, ppl = model(input_ids, token_type_ids,
+                                   position_ids, input_mask, local_semantic_vectors, lengths, padded_tgt_tokens, tgt_len, tgt_mask, task_idx=task_idx, mask_qkv=mask_qkv)
+                    acc_ppl += ppl.squeeze(1).sum(0).item()
                     if args.beam_size > 1:
                         traces = {k: v.tolist() for k, v in traces.items()}
                         output_ids = traces['pred_seq']
@@ -378,6 +395,13 @@ def main():
                             output_sequence = ' '.join(detokenize(output_tokens))
                         if '\n' in output_sequence:
                             output_sequence = " [X_SEP] ".join(output_sequence.split('\n'))
+
+                        # Compute Entity F1 here using output_sequence.
+                        pred, gold_ent, kb_arr_plain, gold_entity_list = output_sequence, ent_index[i], kb_arr_plain[i], []
+                        single_f1, count = compute_prf(gold_ent, pred, gold_entity_list, kb_arr_plain)
+                        F1_pred += single_f1
+                        F1_count += count
+
                         output_lines[buf_id[i]] = output_sequence
                         if first_batch or batch_count % 50 == 0:
                             logger.info("{} = {}".format(buf_id[i], output_sequence))
@@ -386,6 +410,9 @@ def main():
                                 'scores': traces['scores'][i], 'wids': traces['wids'][i], 'ptrs': traces['ptrs'][i]}
                 pbar.update(1)
                 first_batch = False
+            ppl = acc_ppl / (batch_count * args.batch_size)
+            print("PPL SCORE: {:.4f}".format(ppl))
+            print("F1 SCORE: {:.4f}".format(F1_pred / float(F1_count)))
         if args.output_file:
             fn_out = args.output_file
         else:
@@ -404,6 +431,28 @@ def main():
 
     if not found_checkpoint_flag:
         logger.info("Not found the model checkpoint file!")
+
+
+def compute_prf(gold, pred, global_entity_list, kb_plain):
+    local_kb_word = [k[0] for k in kb_plain]
+    TP, FP, FN = 0, 0, 0
+    if len(gold) != 0:
+        count = 1
+        for g in gold:
+            if g in pred:
+                TP += 1
+            else:
+                FN += 1
+        for p in set(pred):
+            if p in global_entity_list or p in local_kb_word:
+                if p not in gold:
+                    FP += 1
+        precision = TP / float(TP + FP) if (TP + FP) != 0 else 0
+        recall = TP / float(TP + FN) if (TP + FN) != 0 else 0
+        F1 = 2 * precision * recall / float(precision + recall) if (precision + recall) != 0 else 0
+    else:
+        precision, recall, F1, count = 0, 0, 0, 0
+    return F1, count
 
 
 def preprocess_conv_arr(sequence, tokenizer):
