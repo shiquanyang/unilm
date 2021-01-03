@@ -2,8 +2,8 @@ from measures import wer, moses_multi_bleu
 import numpy as np
 
 
-hyp_fn = "a"
-ref_fn = "a"
+hyp_fn = "/home/shiquan/Projects/unilm_joint_learning/unilm/s2s-ft/tmp/finetuned_models/ckpt-13500.test"
+ref_fn = "/home/shiquan/Projects/unilm_joint_learning/unilm/s2s-ft/tmp/finetuned_models/ckpt-13500.test.gold"
 
 
 with open(hyp_fn, "r") as f_hyp, open(ref_fn, "r") as f_ref:
