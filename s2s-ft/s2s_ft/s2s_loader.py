@@ -116,6 +116,8 @@ class Preprocess4Seq2seqDecoder(Pipeline):
         max_tgt_len_in_batch = min(self.max_len - max_a_len - 2, self.max_tgt_length)
         if len(tgt_tokens) < max_tgt_len_in_batch:
             padded_tgt_tokens = tgt_tokens + [0] * (max_tgt_len_in_batch - len(tgt_tokens))
+        else:
+            padded_tgt_tokens = tgt_tokens[:max_tgt_len_in_batch]
         tgt_len = len(tgt_tokens)
         tgt_mask = [1] * tgt_len + [0] * (max_tgt_len_in_batch - len(tgt_tokens))
 
