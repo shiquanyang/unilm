@@ -397,8 +397,8 @@ def main():
                             output_sequence = " [X_SEP] ".join(output_sequence.split('\n'))
 
                         # Compute Entity F1 here using output_sequence.
-                        pred, gold_ent, kb_arr_plain, gold_entity_list = output_sequence, ent_index[i], kb_arr_plain[i], []
-                        single_f1, count = compute_prf(gold_ent, pred, gold_entity_list, kb_arr_plain)
+                        pred, gold_ent, kb_arr_plain_t, gold_entity_list = output_sequence, ent_index[i], kb_arr_plain[i], []
+                        single_f1, count = compute_prf(gold_ent, pred, gold_entity_list, kb_arr_plain_t)
                         F1_pred += single_f1
                         F1_count += count
 
