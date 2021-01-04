@@ -1492,7 +1492,7 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
         first_step = True
         src_len = curr_ids.shape[1]
         curr_timestep = 0
-        losses4ppl = torch.zeros(batch_size, 1).float()
+        losses4ppl = torch.zeros(batch_size, 1).float().cuda()
         while next_pos < output_length:
             curr_length = list(curr_ids.size())[1]
 
