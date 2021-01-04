@@ -21,6 +21,7 @@ from torch.nn import CrossEntropyLoss, MSELoss
 import torch.nn.functional as F
 
 from transformers.file_utils import cached_path
+from multimodalKB.utils.config import *
 
 from torch.nn.modules.loss import _Loss
 
@@ -1492,7 +1493,10 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
         first_step = True
         src_len = curr_ids.shape[1]
         curr_timestep = 0
-        losses4ppl = torch.zeros(batch_size, 1).float().cuda()
+        if USE_CUDA:
+            losses4ppl = torch.zeros(batch_size, 1).float().cuda()
+        else:
+            losses4ppl = torch.zeros(batch_size, 1).float()
         while next_pos < output_length:
             curr_length = list(curr_ids.size())[1]
 
@@ -1516,8 +1520,6 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
                           output_all_encoded_layers=True, prev_embedding=prev_embedding,
                           prev_encoded_layers=prev_encoded_layers, mask_qkv=mask_qkv)
 
-            first_step = False
-
             last_hidden = new_encoded_layers[-1][:, -1:, :]
             prediction_scores, _ = self.cls(
                 last_hidden, None, task_idx=task_idx)
@@ -1525,12 +1527,23 @@ class BertForSeq2SeqDecoder(PreTrainedBertModel):
                 prediction_scores, dim=-1)
 
             # Compute ppl here.
-            curr_tgt_ids = padded_tgt_tokens[:, curr_timestep]
-            log_scores_t = log_scores.squeeze(1)
-            curr_tgt_ids_t = curr_tgt_ids.unsqueeze(1)
-            losses_flat = -torch.gather(log_scores_t, dim=1, index=curr_tgt_ids_t)
-            losses = losses_flat * tgt_mask[:, curr_timestep].unsqueeze(1)
-            losses4ppl = losses4ppl + losses
+            if first_step:
+                curr_tgt_ids = padded_tgt_tokens[:, curr_timestep]
+                log_scores_t = log_scores.squeeze(1)
+                curr_tgt_ids_t = curr_tgt_ids.unsqueeze(1)
+                losses_flat = -torch.gather(log_scores_t, dim=1, index=curr_tgt_ids_t)
+                losses = losses_flat * tgt_mask[:, curr_timestep].unsqueeze(1)
+                losses4ppl = losses4ppl + losses
+            else:
+                curr_tgt_ids = padded_tgt_tokens[:, curr_timestep]
+                log_scores_t = log_scores.squeeze(1).view([batch_size, K, -1])
+                log_scores_t = log_scores_t[:, 0, :]
+                curr_tgt_ids_t = curr_tgt_ids.unsqueeze(1)
+                losses_flat = -torch.gather(log_scores_t, dim=1, index=curr_tgt_ids_t)
+                losses = losses_flat * tgt_mask[:, curr_timestep].unsqueeze(1)
+                losses4ppl = losses4ppl + losses
+
+            first_step = False
 
             if forbid_word_mask is not None:
                 log_scores += (forbid_word_mask * -10000.0)
